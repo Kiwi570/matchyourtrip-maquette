@@ -19,7 +19,7 @@ export default (c) => html`
   <div class="conteneur ouv-plein-contenu">
     <div class="feuille ouv-feuille">
       ${pastille(c, 'Merci !', { classe: 'ouv-pastille ouv-pastille--feuille' })}
-      ${titre(c, 'don.hero', { niveau: 'h1', classe: 'ouv-titre ouv-titre--moyen', attrs: 'data-anime="gsap"' })}
+      ${titre(c, 'don.hero', { niveau: 'h1', classe: 'ouv-titre ouv-titre--moyen titre-colle', attrs: 'data-anime="gsap" data-grille="typo"' })}
       <p class="ouv-intro" data-anime="gsap">${c.t('don.hero.texte')}</p>
       <p class="ouv-actions" data-anime="gsap"><a class="bouton" href="#don" data-action-principale data-survol="magnetique">${c.t('don.hero.action')}</a></p>
       <p class="ouv-info" data-info-cle><span class="point-vivant" aria-hidden="true"></span>${c.t('don.hero.info')}</p>
@@ -48,7 +48,8 @@ export default (c) => html`
 
 <section class="don conteneur" id="don">
   <div class="don-visuel" data-visuel>
-    <div class="don-ciel" aria-hidden="true"><span class="nuage nuage--1"></span><span class="nuage nuage--2"></span><span class="nuage nuage--3"></span></div>
+    <div class="don-ciel" aria-hidden="true"><span class="nuage nuage--1"></span><span class="nuage nuage--2"></span><span class="nuage nuage--3"></span><span class="soleil"></span></div>
+    <svg class="don-collines" viewBox="0 0 400 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 L30 48 L62 58 L96 40 L130 54 L166 36 L204 52 L240 34 L276 50 L312 38 L350 54 L400 42 L400 140 L0 140Z" fill="#E9A6C6"/><path d="M0 84 L40 72 L80 86 L120 70 L160 84 L200 68 L240 82 L280 70 L320 86 L360 74 L400 82 L400 140 L0 140Z" fill="#F5BE8C"/><path d="M0 108 L44 98 L88 110 L132 96 L176 108 L220 98 L264 110 L308 98 L352 108 L400 100 L400 140 L0 140Z" fill="#EFE2CF"/></svg>
     ${brut(ballon('don-ballon').replace('<svg class=', '<svg data-effet="ballon" class='))}
     <p class="don-montant-affiche" aria-hidden="true"><span data-don-affiche>20</span>&nbsp;€</p>
   </div>
@@ -66,7 +67,7 @@ export default (c) => html`
     <div class="champ"><label for="don-prenom">${c.t('don.form.prenom')}</label><input id="don-prenom" name="prenom" autocomplete="given-name"></div>
     <div class="champ"><label for="don-email">${c.t('don.form.email')} <span class="requis">(obligatoire)</span></label><input id="don-email" name="email" type="email" autocomplete="email" required></div>
     <div class="champ"><label for="don-mot">${c.t('don.form.mot')}</label><textarea id="don-mot" name="mot" rows="3"></textarea></div>
-    <p class="mention-donnees">${c.t('don.form.donnees')} ${c.t('commun.confidentialite')}${brut('&nbsp;')}: ${c.t('commun.aCompleter')}.</p>
+    <p class="mention-donnees">${c.t('don.form.donnees')} ${c.t('commun.confidentialiteBientot')}</p>
     <button type="submit" class="bouton">${c.t('don.form.envoyer')}</button>
     <p data-message-envoi data-texte="${c.s('don.form.simule')}" role="status" tabindex="-1" hidden></p>
   </form>

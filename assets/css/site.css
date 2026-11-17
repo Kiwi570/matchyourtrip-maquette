@@ -53,6 +53,7 @@ main > section { overflow-x: clip; }
 [data-nav] a[aria-current] { text-decoration-color: var(--accent); }
 [data-menu-bouton] { background: var(--prune); color: var(--papier); }
 .menu-note { font-family: var(--police-main); font-size: 1.6rem; color: var(--accent); }
+.menu-action { margin: 0 0 18px; }
 .pied { position: relative; background: var(--prune); color: var(--papier); border-top: 0; padding-top: 72px; }
 .pied-dechirure { position: absolute; left: 0; bottom: calc(100% - 1px); width: 100%; height: 26px; fill: var(--prune); }
 .pied-logo { display: flex; align-items: center; gap: .6em; margin: 0 0 .6em; }
@@ -107,11 +108,24 @@ html.js:not(.secours) .ouverture-panneau .ouverture-logo { opacity: 0; }
 .couche path { stroke: rgba(43, 31, 36, .12); stroke-width: 2; vector-effect: non-scaling-stroke; }
 .couche--1 { fill: #E9A6C6; }
 .couche--2 { fill: #F5BE8C; }
-.couche--3 { fill: var(--papier); }
-.hero-feuille { position: relative; z-index: 2; width: min(580px, 100%); padding: clamp(30px, 3.6vw, 48px) clamp(24px, 3.4vw, 48px) clamp(26px, 3vw, 40px); background: var(--feuille); border-radius: 4px; box-shadow: var(--ombre); transform: rotate(-1deg); }
+.couche--3 { fill: var(--prune); }
+@media (max-width: 760px) { .couche--3 { fill: var(--papier); } }
+.dechirure--telephone { display: none; }
+@media (max-width: 760px) { .dechirure--telephone { display: block; } }
+.hero-reve, .hero-avion { display: none; }
+@media (min-width: 1000px) and (min-height: 600px) {
+  .hero-reve { display: block; position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; overflow: visible; }
+  .hero-reve-trait { fill: none; stroke: var(--papier); stroke-width: 2.5; stroke-dasharray: 3 10; stroke-linecap: round; opacity: .9; }
+  .hero-avion { display: block; position: absolute; left: 0; top: 0; z-index: 1; width: 52px; height: 44px; color: var(--encre); pointer-events: none; }
+}
+.hero-feuille { position: relative; z-index: 2; width: min(630px, 100%); padding: clamp(30px, 3.6vw, 48px) clamp(24px, 3.4vw, 48px) clamp(26px, 3vw, 40px); background: var(--feuille); border-radius: 4px; box-shadow: var(--ombre); transform: rotate(-1deg); }
 .hero-pastille { top: -52px; left: -40px; }
 .hero-note { margin-left: 64px; }
-.hero-titre { font-size: clamp(2.5rem, min(5vw, 8.6vh), 5.2rem); line-height: 1.04; margin: .1em 0 .35em; }
+.hero-titre { font-size: clamp(2.4rem, min(4.6vw, 7.8vh), 4.8rem); line-height: 1.04; margin: .1em 0 .35em; }
+.ligne-masque--match { font-size: 1.5em; line-height: 1; margin-top: -.04em; }
+.mot-match { position: relative; display: inline-block; padding-right: .12em; }
+.mot-match::after { content: ''; position: absolute; left: .02em; right: .1em; bottom: -.1em; height: .2em; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30' preserveAspectRatio='none'%3E%3Cpath d='M4 20 C 60 6, 140 28, 210 14 S 290 8, 296 16' fill='none' stroke='%23F29B4B' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 0 0 / 100% 100%; clip-path: inset(0 calc(100% - var(--trace, 100%)) 0 0); }
+html.js:not(.secours):not([data-arrivee="retour"]) .mot-match { --trace: 0%; }
 .ligne-masque { display: block; clip-path: inset(-.3em -.5em -.25em -.5em); }
 .hero-ligne { display: block; }
 html.js:not(.secours):not([data-arrivee="retour"]) .hero-ligne { transform: translateY(118%); }
@@ -121,7 +135,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) :is(.hero-note, .hero-intro, 
 .hero-info, .ouv-info { margin: 0; font-weight: 600; font-size: 1rem; color: var(--encre); }
 
 /* ---------- Le match ---------- */
-.match { background: var(--prune); color: var(--papier); padding-block: clamp(80px, 11vw, 140px); }
+.match { background: var(--prune); color: var(--papier); padding-block: clamp(56px, 8vw, 110px) clamp(70px, 9vw, 120px); }
 .match-tete { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 16px 48px; align-items: end; margin-bottom: clamp(32px, 5vw, 56px); }
 .match-tete h2 { margin: 0; }
 .match-tete h2 em { color: var(--accent-clair); }
@@ -144,10 +158,11 @@ html.js:not(.secours):not([data-arrivee="retour"]) :is(.hero-note, .hero-intro, 
 .match-phrase { font-family: var(--police-titres); font-size: clamp(1.25rem, 1rem + 1vw, 1.7rem); max-width: 34ch; margin: 0 auto 18px; min-height: 2.5em; }
 .match-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 22px; margin: 0; }
 .match-aide { margin: 16px 0 0; font-size: .95rem; color: color-mix(in srgb, var(--papier) 82%, var(--prune)); }
-@media (hover: none) { .match-aide { display: block; } }
+.aide-souris { display: none; }
+@media (hover: hover) and (pointer: fine) { .aide-souris { display: inline; } .aide-tactile { display: none; } }
 
 /* ---------- Pourquoi un travel planner : fiches de carnet ---------- */
-.pourquoi { padding-block: clamp(80px, 11vw, 150px) clamp(64px, 8vw, 110px); }
+.pourquoi { padding-block: clamp(70px, 9vw, 120px) clamp(50px, 6vw, 90px); }
 .fiches { list-style: none; margin: clamp(32px, 4vw, 52px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(18px, 2.4vw, 32px); }
 .fiche { position: relative; background: var(--feuille); border-radius: 4px; padding: 34px 24px 26px; box-shadow: var(--ombre); transform: rotate(var(--r, 0deg)); }
 .fiche h3 { font-size: 1.32rem; margin: 14px 0 8px; }
@@ -157,7 +172,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) :is(.hero-note, .hero-intro, 
 .note-coeur { width: .8em; height: .74em; }
 
 /* ---------- Thèmes en vedette ---------- */
-.vedettes { padding-block: clamp(40px, 6vw, 80px) clamp(70px, 9vw, 120px); }
+.vedettes { padding-block: clamp(36px, 5vw, 64px) clamp(56px, 7vw, 96px); }
 .vedettes-tete { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 12px 48px; align-items: end; margin-bottom: clamp(36px, 5vw, 64px); }
 .vedettes-tete h2, .vedettes-tete p { margin: 0; }
 .vedettes-tete p { max-width: 42ch; font-size: 1.1rem; }
@@ -175,7 +190,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) :is(.hero-note, .hero-intro, 
 .vedettes-tous { margin-top: clamp(110px, 10vw, 140px); text-align: center; }
 
 /* ---------- Destinations : étiquettes de bagage ---------- */
-.destinations { padding-block: clamp(40px, 6vw, 80px) clamp(80px, 10vw, 140px); }
+.destinations { padding-block: clamp(36px, 5vw, 64px) clamp(64px, 8vw, 110px); }
 .destinations-tete { margin-bottom: 28px; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 12px 48px; align-items: end; }
 .destinations-tete h2, .destinations-tete p { margin: 0; }
 .destinations-tete p { max-width: 42ch; font-size: 1.1rem; }
@@ -191,7 +206,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) :is(.hero-note, .hero-intro, 
 .etiquette-pays a:hover { color: var(--accent-fonce); }
 
 /* ---------- Étapes et avion ---------- */
-.etapes { padding-block: clamp(70px, 9vw, 130px); }
+.etapes { padding-block: clamp(56px, 7vw, 100px); }
 .etapes-parcours { position: relative; margin-top: clamp(40px, 5vw, 64px); padding-top: 96px; }
 .etapes-trace { position: absolute; left: 0; top: 0; width: 100%; height: 120px; overflow: visible; pointer-events: none; }
 .etapes-trace path { fill: none; stroke-width: 2.5; stroke-linecap: round; }
@@ -205,7 +220,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) :is(.hero-note, .hero-intro, 
 .etapes-action { margin-top: 40px; }
 
 /* ---------- Formules et tampons ---------- */
-.formules { padding-block: clamp(30px, 5vw, 70px) clamp(90px, 11vw, 150px); }
+.formules { padding-block: clamp(24px, 4vw, 56px) clamp(72px, 9vw, 120px); }
 .formules-tete { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 12px 48px; align-items: end; margin-bottom: clamp(32px, 4vw, 52px); }
 .formules-tete h2, .formules-tete p { margin: 0; }
 .formules-tete p { max-width: 40ch; font-size: 1.1rem; }
@@ -288,7 +303,28 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
 
 /* ---------- Comment ça marche ---------- */
 .benefices { padding-block: clamp(70px, 9vw, 130px); }
-.benefices-liste { list-style: none; margin: clamp(32px, 4vw, 52px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 4vw, 56px) clamp(24px, 5vw, 80px); }
+.benefices-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); align-items: start; margin-top: clamp(32px, 4vw, 52px); }
+.onglets-scene { position: sticky; top: calc(var(--entete-h) + 32px); }
+.navigateur { position: relative; background: var(--feuille); border-radius: 12px; box-shadow: var(--ombre); overflow: hidden; border: 1.5px solid color-mix(in srgb, var(--encre) 14%, transparent); }
+.nav-barre { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px 0; background: var(--sable); }
+.nav-points { display: flex; gap: 5px; padding-top: 8px; flex: none; }
+.nav-points i { width: 10px; height: 10px; border-radius: 50%; background: color-mix(in srgb, var(--encre) 25%, var(--sable)); }
+.nav-points i:first-child { background: var(--accent); } .nav-points i:nth-child(2) { background: var(--abricot); }
+.onglets { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; min-height: 92px; align-content: flex-start; }
+.onglets li { padding: 6px 10px 7px; border-radius: 8px 8px 0 0; background: var(--feuille); font-size: .82rem; font-weight: 600; line-height: 1.1; color: var(--texte-doux); box-shadow: 0 -1px 0 color-mix(in srgb, var(--encre) 10%, transparent) inset; transform-origin: 50% 100%; transition: transform .32s var(--courbe), visibility 0s; }
+.onglets li.ferme { visibility: hidden; transform: translateY(6px) scale(0); transition: transform .32s var(--courbe), visibility 0s linear .32s; }
+.nav-page { position: relative; min-height: clamp(220px, 28vw, 320px); padding: 22px 24px 26px; display: grid; }
+.nav-lignes { grid-area: 1 / 1; display: grid; align-content: start; gap: 12px; padding: 4px 2px; }
+.nav-ligne { display: block; height: 12px; border-radius: 6px; background: color-mix(in srgb, var(--encre) 9%, var(--feuille)); }
+.nav-ligne--courte { width: 62%; }
+.carnet-mini { grid-area: 1 / 1; position: relative; z-index: 1; background: var(--prune); color: var(--papier); border-radius: 8px; padding: 22px 24px; display: grid; align-content: start; gap: 8px; opacity: 0; transform: translateY(30px) rotate(-3deg); transition: opacity .5s var(--courbe), transform .6s var(--courbe); }
+.carnet-mini.visible { opacity: 1; transform: rotate(-1.5deg); }
+.carnet-mini p { margin: 0; }
+.carnet-mini-titre { font-family: var(--police-titres); font-size: 1.45rem; font-weight: 600; margin-bottom: 4px !important; }
+.carnet-mini img { width: 34px; height: 34px; }
+.onglets-compteur { margin: 14px 0 0; font-weight: 700; color: var(--accent-fonce); }
+.onglets-n { display: inline-block; min-width: 2ch; text-align: right; font-variant-numeric: tabular-nums; font-family: var(--police-titres); font-size: 1.6rem; }
+.benefices-liste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 52px); }
 .benefice { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; align-items: start; }
 .benefice-icone { display: grid; place-items: center; width: clamp(76px, 8vw, 104px); aspect-ratio: 1; border-radius: 50%; background: var(--feuille); box-shadow: var(--ombre); color: var(--accent); transform: rotate(-6deg); }
 .benefice-icone .icone { width: 56%; height: 56%; }
@@ -315,7 +351,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
 
 /* ---------- Thèmes & destinations ---------- */
 .catalogue { padding-block: clamp(70px, 9vw, 120px); }
-.catalogue-tete { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 20px 48px; align-items: end; margin-bottom: clamp(28px, 4vw, 44px); }
+.catalogue-tete { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 20px 48px; align-items: start; margin-bottom: clamp(28px, 4vw, 44px); }
 .catalogue-tete h2 { margin: 0; }
 .filtres { display: grid; gap: 14px; }
 .filtres-familles { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -332,6 +368,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
 .famille-phrase { color: var(--texte-doux); margin: 0 0 12px; }
 .famille-items { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
 .famille-items li.est-masquee { display: none; }
+.famille-items li.est-trouve a { background: var(--accent); color: #fff; }
 .famille-items a { display: inline-flex; align-items: center; min-height: 44px; padding: .35em .9em; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, var(--feuille)); color: var(--encre); text-decoration: none; font-weight: 600; font-size: .95rem; line-height: 1.25; }
 .famille-items a:hover { background: var(--accent); color: #fff; }
 .catalogue-vide { text-align: center; padding: 40px 0; }
@@ -361,11 +398,13 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
 .utilite-liste, .ensuite-liste { list-style: none; margin: clamp(28px, 4vw, 44px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(18px, 2.4vw, 32px); }
 .fiche--simple { transform: none; }
 .don { padding-block: 0 clamp(90px, 11vw, 150px); display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
-.don-visuel { position: relative; aspect-ratio: 4 / 5; max-height: 640px; border-radius: 10px; background: var(--prune); overflow: hidden; display: grid; place-items: center; }
-.don-ciel .nuage { position: absolute; height: 22px; border-radius: 999px 999px 6px 6px; background: color-mix(in srgb, var(--papier) 22%, var(--prune)); clip-path: polygon(0 40%, 8% 10%, 22% 30%, 35% 0, 52% 25%, 66% 5%, 80% 30%, 92% 12%, 100% 45%, 100% 100%, 0 100%); }
+.don-visuel { position: relative; aspect-ratio: 4 / 5; max-height: 640px; border-radius: 10px; background: #F6E6D2; overflow: hidden; display: grid; place-items: center; box-shadow: var(--ombre); }
+.don-collines { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 34%; }
+.soleil { position: absolute; right: 16%; top: 14%; width: 70px; height: 70px; border-radius: 50%; background: var(--abricot); opacity: .85; }
+.don-ciel .nuage { position: absolute; z-index: 1; height: 22px; border-radius: 999px 999px 6px 6px; background: var(--feuille); clip-path: polygon(0 40%, 8% 10%, 22% 30%, 35% 0, 52% 25%, 66% 5%, 80% 30%, 92% 12%, 100% 45%, 100% 100%, 0 100%); }
 .nuage--1 { width: 120px; left: 8%; top: 18%; } .nuage--2 { width: 90px; right: 10%; top: 36%; } .nuage--3 { width: 150px; left: 22%; bottom: 16%; }
-.ballon { position: relative; width: 46%; height: auto; transform-origin: 50% 90%; transform: scale(var(--taille, 1)); transition: transform .5s var(--courbe); }
-.don-montant-affiche { position: absolute; left: 0; right: 0; bottom: 6%; margin: 0; text-align: center; font-family: var(--police-titres); font-size: clamp(2rem, 4vw, 3rem); color: var(--papier); }
+.ballon { position: relative; z-index: 2; width: 42%; height: auto; transform-origin: 50% 90%; transform: translateY(calc(-16% - var(--monte, .2) * 32%)) scale(var(--taille, 1)); transition: transform .6s var(--courbe); }
+.don-montant-affiche { position: absolute; z-index: 3; left: 0; right: 0; bottom: 5%; margin: 0; text-align: center; font-family: var(--police-titres); font-weight: 600; font-size: clamp(2rem, 4vw, 3rem); color: var(--encre); font-variant-numeric: tabular-nums; }
 .don-form { padding: clamp(28px, 4vw, 48px); }
 .don-form h2 { margin-bottom: .6em; }
 .pas-a-pas { display: flex; align-items: stretch; gap: 8px; max-width: 280px; }
@@ -407,6 +446,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
 .billet-lignes dt { color: color-mix(in srgb, var(--papier) 82%, var(--prune)); }
 .billet-lignes dd { margin: 0; font-weight: 700; overflow-wrap: anywhere; }
 .billet-pro { margin: 12px 0 0; color: var(--abricot); font-weight: 700; }
+.tampon--billet { position: absolute; right: 18px; top: 46%; z-index: 3; padding: .3em .55em; font-size: 1.35rem; color: var(--abricot); border: 3px solid currentColor; transform: rotate(-10deg); background: var(--prune); }
 .billet-souche { margin: 16px -24px 0; padding: 18px 24px 22px; border-top: 2px dashed rgba(247, 240, 230, .45); }
 .billet-code { font-family: var(--police-main); font-size: 1.6rem; color: var(--abricot); }
 .ensuite { padding-block: clamp(70px, 9vw, 120px); }
@@ -426,7 +466,8 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
   .match-tete, .vedettes-tete, .destinations-tete, .formules-tete, .catalogue-tete, .tableau-tete { grid-template-columns: minmax(0, 1fr); }
   .match-table { grid-template-columns: minmax(0, 1fr); }
   .match-centre { width: auto; grid-auto-flow: column; align-items: center; }
-  .benefices-liste { grid-template-columns: minmax(0, 1fr); }
+  .benefices-grille { grid-template-columns: minmax(0, 1fr); }
+  .onglets-scene { position: relative; top: auto; max-width: 560px; }
   .histoire-grille, .questions, .don, .projet-grille { grid-template-columns: minmax(0, 1fr); }
   .billet { position: relative; top: auto; transform: none; }
   .ouv--scindee, .ouv--billet { grid-template-columns: minmax(0, 1fr); min-height: 0; }
@@ -437,14 +478,15 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
 /* ---------- Téléphone ---------- */
 @media (max-width: 760px) {
   .hero { display: block; justify-items: normal; min-height: 0; padding: 0 0 36px; background: var(--papier); }
-  .hero-media { position: relative; inset: auto; height: 32svh; margin-top: var(--entete-h); }
-  .hero-couches { top: calc(var(--entete-h) + 32svh - 54px); bottom: auto; height: 60px; }
+  .hero-media { position: relative; inset: auto; height: 28svh; margin-top: var(--entete-h); }
+  .hero-couches { top: calc(var(--entete-h) + 28svh - 54px); bottom: auto; height: 60px; }
   .hero-feuille { width: auto; margin: -26px var(--gouttiere) 0; padding: 30px 20px 22px; transform: none; }
   .hero-pastille { width: 88px; height: 88px; top: -50px; left: auto; right: 4px; }
   .hero-pastille img { width: 34px; height: 34px; }
   .hero-pastille .pastille-texte { font-size: 1.1rem; }
   .hero-note { margin-left: 0; font-size: 1.3rem; }
-  .hero-titre { font-size: clamp(2rem, 9.4vw, 2.6rem); }
+  .hero-titre { font-size: clamp(1.9rem, 8.8vw, 2.5rem); }
+  .ligne-masque--match { font-size: 1.35em; }
   .hero-intro { font-size: 1rem; }
   .hero-actions .bouton--contour { display: none; }
   .fiches, .formules-liste, .etiquettes, .zones, .familles { grid-template-columns: minmax(0, 1fr); }
@@ -515,6 +557,15 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
   .jumelles-media, .billet-media { max-height: 66svh; }
 }
 @media (max-height: 640px) and (min-width: 761px) {
+  .hero { padding-top: calc(var(--entete-h) + 30px); padding-bottom: 64px; }
+  .hero-note { display: none; }
+  .hero-titre { font-size: clamp(2rem, 7.2vh, 3rem); }
+  .ligne-masque--match { font-size: 1.32em; }
+  .hero-feuille { padding-block: 26px 18px; }
+  .hero-intro { font-size: .95rem; margin-bottom: .8em; }
+  .hero-pastille { width: 84px; height: 84px; top: -30px; left: auto; right: -22px; }
+  .hero-pastille img { width: 32px; height: 32px; }
+  .hero-pastille .pastille-texte { font-size: 1rem; }
   .ouv-intro, .ouv-texte > .note-main { display: none; }
   .ouv-titre, .ouv-titre--moyen { font-size: clamp(1.8rem, 6.8vh, 3rem); }
   .ouv--scindee, .ouv--billet { padding-top: calc(var(--entete-h) + 24px); padding-bottom: 32px; }
@@ -531,7 +582,8 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
   .hero-pastille img { width: 30px; height: 30px; }
   .hero-pastille .pastille-texte { font-size: 1rem; }
   .hero-note, .hero-intro { display: none; }
-  .hero-titre { font-size: clamp(1.7rem, 7.6vh, 2.4rem); }
+  .hero-titre { font-size: clamp(1.6rem, 6.4vh, 2.1rem); }
+  .ligne-masque--match { font-size: 1.25em; }
   .hero-actions { margin-bottom: .5em; }
   .hero-actions .bouton--contour { display: none; }
   .ouv-titre, .ouv-titre--moyen { font-size: clamp(1.6rem, 7.4vh, 2.3rem); }
@@ -548,3 +600,29 @@ html.js:not(.secours):not([data-arrivee="retour"]) .ouv [data-anime="gsap"] { op
   .mosaique-pastille { width: 72px; height: 72px; top: -30px; }
   .mosaique-pastille img { width: 28px; height: 28px; }
 }
+
+/* ---------- Aperçus flous des images d’ouverture (aucune case vide au chargement ni au retour) ---------- */
+.jumelles-media, .billet-media, .hero-media, .ouv-fond[data-effet="envol"], .mosaique-photo { background-size: cover; background-position: var(--cadrage, 50% 50%); background-repeat: no-repeat; }
+.jumelles-media { background-image: url("data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAACwBQCdASoUABkAPu1sq1EppaOiqAqpMB2JagCdMoR1cM/BFFATUE/lMDn+iJOSfXOxRX7z/WAA+OWsOvHmHhuJIlEUHJBUDfkozoSjq5gqaB+eOccylRlEjvzAyIHy+eQpsi8D4Z/njrL+VF7QZ4A71jU/XDGVR2QY4OzuQN/YP3tcF0y5eUXw3C9c7apHzAOlatZg2XyxKZOP5BQdxSmq6fBTMRlcoqHjD8JgAAA="); }
+.billet-media { background-image: url("data:image/webp;base64,UklGRhIBAABXRUJQVlA4IAYBAACwBgCdASoUABkAPu1gq1AppSOisBgIATAdiWwAnTKEfhpGfqW58AWxYWJBADEqgx7QAHaPDDgDcvxzCxrgAAD+VfT7qGzv0foz+/b2Bfp+1VPyWBdLxDL7u1NwyChSWRuTLapIMfDbtgv6FCzEIDxGs34LFBVJMC5CyR72i21nOd38j4qurJ8RZvTSYaWnhyc7e/Un26exJw/bueIhLi+0PEDUszdE0YawrHTsMiRDZsuRRjX3vvAhSweG0W7Z5lkqBd9/90wYwpwjP8Uoh/4tl+8d3csLK8kV79hFCIyZ5xJJQA8PYv1VsxVkyav8lH9f3TP1Yu2OVIR4TDo4uRlnNZjIAAAA"); }
+.hero-media { background-image: url("data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoUAAsAPu1iqU2ppaQiMAgBMB2JQBOmUABfmEbG36SQDAAA/mvgPAEvO5CnU99tTD3sW5m7j/rSQ43ukpYgW7oiCl+6svzCpCxtTqFT4AA="); }
+.ouv-fond[data-effet="envol"] { background-image: url("data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQBACdASoUAAsAPu1iqU2ppaQiMAgBMB2JbACdMoR3ACnDXE2AwqsU3m9AAP7tQgiPMvNn101nJuwZZA8Mnp9mQDrhSVbHO7Bubdwk6fYjpD7150NIR5wcNXCWnXEmcbEr8ZW4jKgEaVVbRQAAAA=="); }
+.mosaique-photo { background-image: url("data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoUAAkAPu1iqU2ppaOiMAgBMB2JagCdDKAAMC4xj0T+lkVQgAD+6Exsy6mNzdWbNT0w0HWXxhlUrXv3uaW/c4Ub4iyixYPm+iA/u77VMTv3HBQofIF+BRsOaFdlU1smDzhgeSDAAAA="); }
+@media (max-width: 760px) {
+  .jumelles-media, .billet-media { background-position: var(--cadrage-mobile, var(--cadrage, 50% 50%)); }
+}
+@media (max-width: 760px) and (orientation: portrait) {
+  .hero-media, .ouv-fond[data-effet="envol"], .mosaique-photo { background-position: var(--cadrage-mobile, var(--cadrage, 50% 50%)); }
+  .hero-media { background-image: url("data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwBACdASoUACQAPu1qrE8ppiQmqrgMATAdiWUAygALNaox78xJ3TrUKAxrmZvzrgAA/ucXmcdWjJ+nszqbX7DI5RbX1PVVPNiXCbsMdjwLfQJUedpF+mHtl7mFE19/hzrnaJDIA5nBjhS/DQKnwNcXwAA="); }
+  .ouv-fond[data-effet="envol"] { background-image: url("data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAAAwBwCdASoUACQAPu1sq1GppaOipWzJMB2JaAC7Mz2+MMwxkgFHPZgZ4+otiLZ6VKpPn11M/M0TrBDs5Mv7btbfFQAA/vTKW20e7mtVuSdh7G0ruqf3dBFdyfEHmXQW8ztPIo75IcVhlDMoalVLYjyf/XD3MZgALN00qYSnLvqVer/5wRH57mo2n23q03bBt3GWaLoPSBpaaXl3kzNDWp4KNRNTAdEQL8+cSyA0DStF5ySYfhvupcY83lREk374LOQM5PPBhNPYLE8XDOTOp99QhDpAblUnMVCMAAAA"); }
+  .mosaique-photo { background-image: url("data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQBACdASoUABkAPu1qrFEppaQiqAqpMB2JZACw/f/gXkgFJEEDnekNxqvWVsmqYAD+9Mip4qNGYwUQUZo/b+9y1p7EyroWoldpYGMELa+5U6GFCUKJw2lXacmGWuM3Fvqq+0cP4tRQgYzR+NylncCmGOcZa7BO3PW2pz0exiQ4d3+RM/uP9fdwGFC+9AAA"); }
+}
+
+/* Mentions « Illustration générée » lisibles (13 px). */
+.mention-ia { font-size: 13px; }
+
+/* Titres des pages intérieures : le mot clé est collé sur une bande de papier déchiré (fait main, comme le reste du carnet). */
+.titre-colle em { position: relative; display: inline-block; padding: 0 .16em; margin: 0 -.04em; z-index: 0; white-space: nowrap; }
+.titre-colle em::before { content: ''; position: absolute; inset: .1em -.02em .02em; z-index: -1; background: #FBDDC6; transform: rotate(-2.2deg) scaleX(var(--colle, 1)); transform-origin: 0 50%;
+  clip-path: polygon(0% 9%, 6% 1%, 14% 7%, 23% 1%, 31% 8%, 42% 2%, 51% 9%, 60% 1%, 71% 7%, 80% 0%, 90% 8%, 100% 2%, 98% 30%, 100% 55%, 97% 80%, 100% 97%, 91% 92%, 80% 100%, 70% 93%, 58% 99%, 47% 92%, 36% 100%, 25% 94%, 14% 100%, 5% 93%, 0% 98%, 2% 70%, 0% 45%, 3% 22%); }
+html.js:not(.secours):not([data-arrivee="retour"]) .titre-colle em { --colle: 0; }

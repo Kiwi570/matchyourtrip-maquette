@@ -11,7 +11,7 @@ export default (c) => {
   return html`
 <section class="ouv ouv--bandeau" id="debut">
   <div class="conteneur ouv-texte ouv-texte--large">
-    ${titre(c, 'themes.hero', { niveau: 'h1', classe: 'ouv-titre', attrs: 'data-anime="gsap"', suite: true })}
+    ${titre(c, 'themes.hero', { niveau: 'h1', classe: 'ouv-titre titre-colle', attrs: 'data-anime="gsap" data-grille="typo"', suite: true })}
     <div class="ouv-ligne">
       <p class="ouv-intro" data-anime="gsap">${c.t('themes.hero.texte')}</p>
       <p class="ouv-actions" data-anime="gsap"><a class="bouton" href="#catalogue" data-action-principale>${c.t('themes.hero.action')}</a></p>

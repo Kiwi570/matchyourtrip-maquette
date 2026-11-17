@@ -2,7 +2,7 @@
    d'effets ; ici : l'intro (épingle, bandes de papier qui se rejoignent), les ouvertures des pages, et les effets du plan
    (papier-couches, match, fiches, colonnes, etiquettes, avion, tampons, jumelles, mosaique, envol, billet, ballon…).
    Chaque effet propre porte data-effet="nom" sur l'élément qui bouge. */
-import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=1';
+import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -19,12 +19,15 @@ function ouverturePage(tl, t) {
     tl.fromTo('.hero-couches .couche', { yPercent: 70, y: 0 }, { yPercent: 0, y: 0, duration: 0.9, stagger: 0.08, ease: 'power3.out' }, t - 0.2)
       .fromTo('.hero-ligne', { yPercent: 118, y: 0 }, { yPercent: 0, y: 0, duration: 0.85, stagger: 0.12, ease: 'power3.out' }, t)
       .fromTo('.hero-note', { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.5 }, t + 0.1)
-      .fromTo('.hero-intro, .hero-actions, .hero-info', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.55, stagger: 0.08 }, t + 0.25);
+      .fromTo('.hero-intro, .hero-actions, .hero-info', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.55, stagger: 0.08 }, t + 0.25)
+      .fromTo('.mot-match', { '--trace': '0%' }, { '--trace': '100%', duration: 0.7, ease: 'power2.inOut' }, t + 0.6);
   }
   const ouv = $('.ouv');
   if (ouv) {
     const blocs = $$('[data-anime="gsap"]', ouv);
     if (blocs.length) tl.fromTo(blocs, { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.7, stagger: 0.09, ease: 'power3.out' }, t);
+    const colle = $$('.titre-colle em', ouv);
+    if (colle.length) tl.fromTo(colle, { '--colle': 0 }, { '--colle': 1, duration: 0.6, ease: 'power2.out' }, t + 0.45);
     const jm = $('.jumelles-media');
     if (jm) tl.fromTo(jm, { '--rj': '22%' }, { '--rj': '100%', duration: 1.1, ease: 'power2.inOut' }, t + 0.1);
     const bandes = $$('.mosaique-bande');
@@ -38,6 +41,8 @@ function etatFinalPage() {
   if (!gsap) return;
   gsap.set('.hero-couches .couche, .hero-ligne, .hero-note, .hero-intro, .hero-actions, .hero-info, .ouv [data-anime="gsap"], .mosaique-bande', { clearProps: 'transform,opacity' });
   gsap.set('.jumelles-media', { '--rj': '100%' });
+  gsap.set('.mot-match', { '--trace': '100%' });
+  gsap.set('.titre-colle em', { '--colle': 1 });
   gsap.set('.billet-cadre', { clearProps: 'transform,opacity' });
 }
 
@@ -52,6 +57,36 @@ function papierCouches() {
   boucle(hero, (dt, t) => {
     couches.forEach((c, i) => { c.style.translate = `${(Math.sin(t * (0.45 + i * 0.12) + i * 1.7) * (6 + i * 3)).toFixed(2)}px 0`; });
     if (bord) bord.style.rotate = `${(t * 9) % 360}deg`;
+  });
+}
+
+/* ---------- Accueil : le rêve en pointillés, de la silhouette du collage jusqu'à la feuille (ordinateur) ---------- */
+function reve() {
+  const hero = $('.hero'), svg = $('.hero-reve'), trait = $('.hero-reve-trait'), av = $('.hero-avion'), feuille = $('.hero-feuille'), img = $('.hero-media img');
+  if (!hero || !svg || !av || !feuille || !img) return;
+  let geo = null;
+  const mesurer = () => {
+    if (getComputedStyle(svg).display === 'none') { geo = null; return; }
+    const r = hero.getBoundingClientRect(), f = feuille.getBoundingClientRect();
+    const W = r.width, H = r.height, iw = img.naturalWidth || 1280, ih = img.naturalHeight || 720;
+    const k = Math.max(W / iw, H / ih), dw = iw * k, dh = ih * k, ox = 0, oy = (H - dh) * 0.46;
+    const a = { x: ox + 0.16 * dw, y: oy + 0.14 * dh };
+    const b = { x: f.left - r.left - 34, y: f.top - r.top + f.height * 0.46 };
+    const c = { x: (a.x + b.x) / 2, y: Math.min(a.y, b.y) - H * 0.16 };
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    trait.setAttribute('d', `M${a.x.toFixed(1)} ${a.y.toFixed(1)} Q${c.x.toFixed(1)} ${c.y.toFixed(1)} ${b.x.toFixed(1)} ${b.y.toFixed(1)}`);
+    geo = { a, b, c };
+  };
+  const point = (p) => { const { a, b, c } = geo, q = 1 - p; return { x: q * q * a.x + 2 * q * p * c.x + p * p * b.x, y: q * q * a.y + 2 * q * p * c.y + p * p * b.y }; };
+  if (img.complete) mesurer(); else img.addEventListener('load', mesurer, { once: true });
+  new ResizeObserver(mesurer).observe(hero);
+  boucle(hero, (dt, t) => {
+    if (!geo) return;
+    const cycle = (t % 7.5) / 6;
+    const p = Math.min(1, cycle), m = point(p), n = point(Math.min(1, p + 0.01));
+    const ang = Math.atan2(n.y - m.y, n.x - m.x) * 180 / Math.PI;
+    av.style.transform = `translate(${(m.x - 26).toFixed(1)}px, ${(m.y - 22).toFixed(1)}px) rotate(${(ang - 18).toFixed(1)}deg)`;
+    av.style.opacity = cycle < 0.06 ? cycle / 0.06 : cycle > 1 ? Math.max(0, 1 - (cycle - 1) / 0.12) : 1;
   });
 }
 
@@ -177,6 +212,30 @@ function interieures() {
   if (recap) entree(recap, { rotation: 6, y: 60, opacity: 0 }, { rotation: 1, y: 0, opacity: 1, ease: 'back.out(1.4)', delay: 0.2 }, '.projet', 'top 80%');
 }
 
+/* ---------- Comment ça marche : les onglets se ferment un à un, le carnet de voyage apparaît ---------- */
+function onglets() {
+  const scene = $('.onglets-scene'); if (!scene || !ST) return;
+  const tabs = $$('.onglets li', scene), n = $('[data-onglets-n]', scene), carnet = $('.carnet-mini', scene), total = tabs.length;
+  const libelle = $('[data-onglets-libelle]', scene), pluriel = libelle ? libelle.textContent : '';
+  const poser = (p) => {
+    const restants = Math.max(0, Math.round(total * (1 - Math.min(1, p / 0.85))));
+    tabs.forEach((t, i) => t.classList.toggle('ferme', i >= restants));
+    n.textContent = String(restants);
+    if (libelle) libelle.textContent = restants <= 1 ? libelle.dataset.singulier : pluriel;
+    carnet.classList.toggle('visible', p > 0.88);
+  };
+  poser(0);
+  const mm = gsap.matchMedia();
+  /* Ordinateur : la scène reste collée pendant qu'on lit les bénéfices, les onglets se ferment au fil de la lecture. */
+  mm.add('(min-width: 901px)', () => { poser(0); ST.create({ trigger: '.benefices-liste', start: 'top 72%', end: 'bottom 62%', onUpdate: (s) => poser(s.progress) }); });
+  /* Tablette et téléphone : la scène est au-dessus de la liste, elle se joue d'un coup quand on la regarde. */
+  mm.add('(max-width: 900px)', () => {
+    poser(0);
+    const prog = { p: 0 };
+    ST.create({ trigger: scene, start: 'top 62%', once: true, onEnter: () => gsap.to(prog, { p: 1, duration: 2.8, delay: 0.25, ease: 'power1.inOut', onUpdate: () => poser(prog.p) }) });
+  });
+}
+
 /* ---------- Catalogue des thèmes : familles, recherche, filtres gardés dans l'adresse ---------- */
 const norme = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(Boolean).map((m) => (m.length > 3 ? m.replace(/(s|x)$/, '') : m)).join(' ');
 function catalogue() {
@@ -195,6 +254,7 @@ function catalogue() {
         const texte = norme(li.dataset.item + ' ' + $('h3', f).textContent);
         const garde = ok && mots.every((m) => texte.includes(m));
         li.classList.toggle('est-masquee', !garde); if (garde) vus++;
+        li.classList.toggle('est-trouve', garde && mots.length > 0 && mots.every((m) => norme(li.dataset.item).includes(m)));
       });
       const montre = ok && vus > 0;
       f.classList.toggle('est-masquee', !montre); n += montre ? vus : 0;
@@ -202,6 +262,7 @@ function catalogue() {
     $$('[data-famille]', filtres).forEach((b) => b.setAttribute('aria-pressed', b.dataset.famille === famille ? 'true' : 'false'));
     compte.textContent = `${n} thème${n > 1 ? 's' : ''} affiché${n > 1 ? 's' : ''}`;
     vide.hidden = n > 0;
+    const lienVide = $('a', vide); if (lienVide) { const base = lienVide.getAttribute('href').split('?')[0].split('#')[0]; lienVide.setAttribute('href', q ? `${base}?envie=${encodeURIComponent(q)}#formulaire` : `${base}#formulaire`); }
     const p = new URLSearchParams(location.search); famille ? p.set('famille', famille) : p.delete('famille'); q ? p.set('q', q) : p.delete('q');
     history.replaceState(history.state, '', `${location.pathname}${p.toString() ? '?' + p : ''}${location.hash}`);
     if (ST) ST.refresh();
@@ -225,7 +286,7 @@ function projet() {
   let n = 1;
   const majRecap = () => {
     const fam = $$('input[name="famille"]:checked', f).map((c) => c.value);
-    const env = [envie, ...fam].filter(Boolean);
+    const env = [...new Set([envie, ...fam].filter(Boolean))];
     R('envies').textContent = env.length ? env.join(', ') : vide;
     R('destination').textContent = (ta.value.trim() || vide).slice(0, 90);
     R('participants').textContent = $('input[name="participants"]', f).value || '1';
@@ -265,6 +326,14 @@ function projet() {
   f.addEventListener('input', majRecap); f.addEventListener('change', majRecap);
   pas(f, majRecap);
   majRecap();
+  /* Retour de l'envoi (simulé) : le billet reçoit son tampon « Prêt au départ ». */
+  const msg = $('[data-message-envoi]', f), tampon = $('[data-tampon-billet]');
+  if (msg && tampon) new MutationObserver(() => {
+    if (msg.hidden || !tampon.hidden) return;
+    tampon.hidden = false;
+    if (gsap) gsap.fromTo(tampon, { scale: 2.4, opacity: 0, rotation: 24 }, { scale: 1, opacity: 1, rotation: -10, duration: 0.55, ease: 'back.out(2)' });
+    const billet = $('[data-recap]'); if (billet && telephone()) billet.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }).observe(msg, { attributes: true, attributeFilter: ['hidden'] });
 }
 
 /* Boutons − / + des champs numériques. */
@@ -281,7 +350,7 @@ function pas(racine, apres) {
 function don() {
   const f = $('[data-don]'); if (!f) return;
   const ballon = $('.don-ballon'), aff = $('[data-don-affiche]'), champ = $('input[name="montant"]', f);
-  const maj = () => { const v = Math.max(0, +champ.value || 0); aff.textContent = v; ballon.style.setProperty('--taille', (0.72 + Math.min(v, 250) / 250 * 0.62).toFixed(3)); };
+  const maj = () => { const v = Math.max(0, +champ.value || 0), k = Math.min(v, 250) / 250; aff.textContent = v; ballon.style.setProperty('--taille', (0.78 + k * 0.42).toFixed(3)); ballon.style.setProperty('--monte', k.toFixed(3)); };
   f.addEventListener('input', maj); pas(f, maj); maj();
   ballon.setAttribute('data-effet', 'ballon');
   boucle(ballon, (dt, t) => { ballon.style.translate = `${Math.sin(t * 0.7) * 6}px ${Math.sin(t * 1.1) * 9}px`; });
@@ -290,7 +359,7 @@ function don() {
 demarrer({
   preparer() {
     if (!gsap) return;
-    papierCouches(); match(); fiches(); colonnes(); etiquettes(); avion(); tampons(); interieures(); catalogue(); projet(); don();
+    papierCouches(); reve(); match(); onglets(); fiches(); colonnes(); etiquettes(); avion(); tampons(); interieures(); catalogue(); projet(); don();
   },
   /* Intro (2,4 s) : l'épingle tombe et se plante, deux bandes de papier arrivent des côtés et se rejoignent sous elle,
      un cœur bat, MatchYourTrip et le slogan montent ; puis l'épingle glisse jusqu'à la pastille de la page et le panneau

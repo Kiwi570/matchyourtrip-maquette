@@ -1,0 +1,17 @@
+{
+ "id": "20261117-194837-complet-partiel",
+ "date": "2026-11-17T19:56:48.954Z",
+ "niveau": "complet",
+ "pages": "toutes",
+ "etapes": [
+  "fichiers",
+  "mesures",
+  "films"
+ ],
+ "version": "2",
+ "echecs": 1,
+ "aRegarder": 12,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

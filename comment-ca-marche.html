@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-curseur>
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F7F0E6">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -63,8 +63,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Comment ça marche</span></div></div>
 <div class="ouverture-panneau" data-ouverture aria-hidden="true">
   <div class="intro-scene">
-    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 14 L600 6 L590 18 L598 30 L586 44 L597 58 L588 72 L600 84 L0 80 Z"/></svg>
-    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 10 L0 4 L12 16 L2 30 L14 42 L3 56 L13 70 L0 86 L600 82 Z"/></svg>
+    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 18 L60 8 L120 20 L190 6 L250 18 L320 4 L390 16 L450 6 L520 18 L600 8 L590 22 L598 36 L586 50 L597 64 L588 76 L600 86 L530 76 L460 88 L390 74 L320 86 L250 72 L180 86 L110 74 L50 86 L0 76 Z"/></svg>
+    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 14 L540 4 L470 18 L400 6 L330 18 L260 4 L190 16 L130 6 L60 18 L0 8 L12 22 L2 36 L14 50 L3 64 L13 76 L0 86 L70 76 L140 88 L210 74 L280 86 L350 72 L420 86 L490 74 L550 86 L600 78 Z"/></svg>
     <img class="ouverture-logo" src="/assets/images/logo.svg" alt="" width="72" height="72" data-ouverture-objet>
     <svg class="intro-coeur" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg>
   </div>
@@ -106,13 +106,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
   <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
   <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/comment-ca-marche" class="menu-lien" data-libelle="Comment ça marche" aria-current="page">Comment ça marche</a></li><li style="--i:2"><a href="/themes-et-destinations" class="menu-lien" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li style="--i:3"><a href="/faire-un-don" class="menu-lien" data-libelle="Faire un don">Faire un don</a></li><li style="--i:4"><a href="/mon-projet-de-voyage" class="menu-lien" data-libelle="Mon projet de voyage">Mon projet de voyage</a></li></ul>
+  <p class="menu-action"><a href="/mon-projet-de-voyage#formulaire" class="bouton" data-libelle="Mon projet de voyage">Je trouve mon travel planner</a></p>
   <p class="menu-note">Du rêve au trip, il n’y a qu’un match</p>
 </div>
 <main id="contenu" tabindex="-1">
 <section class="ouv ouv--scindee" id="debut">
   <div class="ouv-texte">
     <p class="note-main">Des voyages qui vous ressemblent</p>
-    <h1 class="ouv-titre" data-anime="gsap">Et si votre prochain voyage était encore mieux que vous l’<em>imaginez</em>&nbsp;?</h1>
+    <h1 class="ouv-titre titre-colle" data-anime="gsap" data-grille="typo">Et si votre prochain voyage était encore mieux que vous l’<em>imaginez</em>&nbsp;?</h1>
     <p class="ouv-intro" data-anime="gsap">Avec MatchYourTrip, vous êtes accompagné·e par un·e professionnel·le du voyage qui conçoit un séjour 100 % personnalisé, selon vos envies, votre rythme et votre budget.</p>
     <p class="ouv-actions" data-anime="gsap"><a href="/mon-projet-de-voyage#formulaire" class="bouton" data-libelle="Mon projet de voyage" data-action-principale data-survol="magnetique">Je trouve mon travel planner</a></p>
     <p class="ouv-info" data-info-cle><span class="point-vivant" aria-hidden="true"></span>En attendant l’application : un formulaire, et l’équipe cherche votre pro avec vous.</p>
@@ -132,6 +133,23 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="benefices conteneur" id="benefices">
   <h2 class="titre-section" data-anime="lignes">Ce que votre pro <em>change</em> à votre voyage</h2>
+  <div class="benefices-grille">
+  <div class="onglets-scene" aria-hidden="true" data-visuel data-grille="scene">
+    <div class="navigateur">
+      <div class="nav-barre"><span class="nav-points"><i></i><i></i><i></i></span>
+        <ul class="onglets"><li data-effet="onglets">Vols</li><li data-effet="onglets">Hôtel</li><li data-effet="onglets">Visa</li><li data-effet="onglets">Météo</li><li data-effet="onglets">Avis</li><li data-effet="onglets">Train</li><li data-effet="onglets">Budget</li><li data-effet="onglets">Forum</li><li data-effet="onglets">Voiture</li><li data-effet="onglets">Assurance</li><li data-effet="onglets">Carte</li><li data-effet="onglets">Plages</li><li data-effet="onglets">Musées</li><li data-effet="onglets">Change</li></ul>
+      </div>
+      <div class="nav-page">
+        <div class="nav-lignes"><span class="nav-ligne"></span><span class="nav-ligne nav-ligne--courte"></span><span class="nav-ligne"></span><span class="nav-ligne nav-ligne--courte"></span></div>
+        <div class="carnet-mini">
+          <img src="/assets/images/logo.svg" alt="" width="34" height="34">
+          <p class="carnet-mini-titre">Votre carnet de voyage</p>
+          <p>✓ Étapes et itinéraire</p><p>✓ Bonnes adresses</p><p>✓ Réservations et conseils</p>
+        </div>
+      </div>
+    </div>
+    <p class="onglets-compteur"><span class="onglets-n" data-onglets-n>14</span> <span data-onglets-libelle data-singulier="onglet ouvert">onglets ouverts</span></p>
+  </div>
   <ol class="benefices-liste" role="list">
     <li class="benefice">
       <span class="benefice-icone" data-effet="benefices"><svg class="icone " viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg></span>
@@ -147,6 +165,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <div><h3><span class="benefice-num">4.</span> Un carnet de voyage personnalisé</h3><p>Vos étapes, vos bonnes adresses, vos conseils et vos réservations réunis au même endroit, pour éviter les pertes de temps et les galères en tout genre.</p></div>
     </li>
   </ol>
+  </div>
 </section>
 <section class="histoire" id="rencontres">
   <svg class="dechirure dechirure--haut dechirure--prune" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 22.3 L42 11.4 L85 7.9 L127 10.1 L169 19.7 L212 9.5 L254 11.9 L296 20.4 L339 12.1 L381 17.1 L424 21.2 L466 23.1 L508 15.3 L551 11.4 L593 14.2 L635 14.0 L678 16.5 L720 10.6 L762 20.6 L805 8.1 L847 20.0 L889 6.7 L932 11.7 L974 13.9 L1016 15.7 L1059 16.7 L1101 17.8 L1144 19.2 L1186 12.7 L1228 21.1 L1271 6.7 L1313 7.1 L1355 13.3 L1398 21.6 L1440 7.5 L1440 40 Z"/></svg>

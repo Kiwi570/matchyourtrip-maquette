@@ -1,15 +1,21 @@
 {
- "id": "20261117-181312-standard-cible-partiel",
- "date": "2026-11-17T18:14:01.096Z",
- "niveau": "standard",
- "pages": "/,/faire-un-don",
+ "id": "20261117-200142-complet-partiel",
+ "date": "2026-11-17T20:16:41.267Z",
+ "niveau": "complet",
+ "pages": "toutes",
  "etapes": [
-  "fichiers",
-  "mesures"
+  "grille",
+  "bords",
+  "parcours",
+  "ecran",
+  "fluidite",
+  "mouvement",
+  "vitesse",
+  "captures"
  ],
- "version": "1",
+ "version": "2",
  "echecs": 0,
- "aRegarder": 13,
+ "aRegarder": 0,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

@@ -11,7 +11,7 @@ export default (c) => {
   return html`
 <section class="ouv ouv--billet" id="debut">
   <div class="ouv-texte">
-    ${titre(c, 'projet.hero', { niveau: 'h1', classe: 'ouv-titre', attrs: 'data-anime="gsap"' })}
+    ${titre(c, 'projet.hero', { niveau: 'h1', classe: 'ouv-titre titre-colle', attrs: 'data-anime="gsap" data-grille="typo"' })}
     <p class="ouv-intro" data-anime="gsap">${c.t('projet.hero.texte')}</p>
     <p class="ouv-actions" data-anime="gsap"><a class="bouton" href="#formulaire" data-action-principale data-survol="magnetique">${c.t('projet.hero.action')}</a></p>
     <p class="ouv-info" data-info-cle><span class="point-vivant" aria-hidden="true"></span>${c.t('projet.hero.info')}</p>
@@ -80,7 +80,8 @@ export default (c) => {
       <p data-message-envoi data-texte="${c.s('projet.form.simule')}" role="status" tabindex="-1" hidden></p>
     </form>
 
-    <aside class="billet" aria-label="${c.s('projet.recap.titre')}" data-recap data-effet="recap">
+    <aside class="billet" aria-label="${c.s('projet.recap.titre')}" data-recap data-effet="recap" data-grille="retour">
+      <span class="tampon tampon--billet" data-tampon-billet hidden>${c.t('projet.recap.tampon')}</span>
       <div class="billet-haut">
         <img src="/assets/images/logo-clair.svg" alt="" width="34" height="34">
         <p class="billet-titre">${c.t('projet.recap.titre')}</p>

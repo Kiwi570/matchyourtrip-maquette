@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-curseur>
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F7F0E6">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -63,8 +63,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Faire un don</span></div></div>
 <div class="ouverture-panneau" data-ouverture aria-hidden="true">
   <div class="intro-scene">
-    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 14 L600 6 L590 18 L598 30 L586 44 L597 58 L588 72 L600 84 L0 80 Z"/></svg>
-    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 10 L0 4 L12 16 L2 30 L14 42 L3 56 L13 70 L0 86 L600 82 Z"/></svg>
+    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 18 L60 8 L120 20 L190 6 L250 18 L320 4 L390 16 L450 6 L520 18 L600 8 L590 22 L598 36 L586 50 L597 64 L588 76 L600 86 L530 76 L460 88 L390 74 L320 86 L250 72 L180 86 L110 74 L50 86 L0 76 Z"/></svg>
+    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 14 L540 4 L470 18 L400 6 L330 18 L260 4 L190 16 L130 6 L60 18 L0 8 L12 22 L2 36 L14 50 L3 64 L13 76 L0 86 L70 76 L140 88 L210 74 L280 86 L350 72 L420 86 L490 74 L550 86 L600 78 Z"/></svg>
     <img class="ouverture-logo" src="/assets/images/logo.svg" alt="" width="72" height="72" data-ouverture-objet>
     <svg class="intro-coeur" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg>
   </div>
@@ -106,6 +106,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
   <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
   <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/comment-ca-marche" class="menu-lien" data-libelle="Comment ça marche">Comment ça marche</a></li><li style="--i:2"><a href="/themes-et-destinations" class="menu-lien" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li style="--i:3"><a href="/faire-un-don" class="menu-lien" data-libelle="Faire un don" aria-current="page">Faire un don</a></li><li style="--i:4"><a href="/mon-projet-de-voyage" class="menu-lien" data-libelle="Mon projet de voyage">Mon projet de voyage</a></li></ul>
+  <p class="menu-action"><a href="/mon-projet-de-voyage#formulaire" class="bouton" data-libelle="Mon projet de voyage">Je trouve mon travel planner</a></p>
   <p class="menu-note">Du rêve au trip, il n’y a qu’un match</p>
 </div>
 <main id="contenu" tabindex="-1">
@@ -122,7 +123,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <img src="/assets/images/logo.svg" alt="" width="46" height="46">
   <span class="pastille-texte">Merci !</span>
 </div>
-      <h1 class="ouv-titre ouv-titre--moyen" data-anime="gsap">Un petit geste peut aider un grand projet à prendre son <em>envol</em></h1>
+      <h1 class="ouv-titre ouv-titre--moyen titre-colle" data-anime="gsap" data-grille="typo">Un petit geste peut aider un grand projet à prendre son <em>envol</em></h1>
       <p class="ouv-intro" data-anime="gsap">Votre don contribue à développer MatchYourTrip, à créer de nouvelles possibilités et à imaginer un voyage plus authentique, plus engagé et plus proche des envies de chacun.</p>
       <p class="ouv-actions" data-anime="gsap"><a class="bouton" href="#don" data-action-principale data-survol="magnetique">Je fais un don</a></p>
       <p class="ouv-info" data-info-cle><span class="point-vivant" aria-hidden="true"></span>Chaque soutien compte.</p>
@@ -148,7 +149,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="don conteneur" id="don">
   <div class="don-visuel" data-visuel>
-    <div class="don-ciel" aria-hidden="true"><span class="nuage nuage--1"></span><span class="nuage nuage--2"></span><span class="nuage nuage--3"></span></div>
+    <div class="don-ciel" aria-hidden="true"><span class="nuage nuage--1"></span><span class="nuage nuage--2"></span><span class="nuage nuage--3"></span><span class="soleil"></span></div>
+    <svg class="don-collines" viewBox="0 0 400 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 L30 48 L62 58 L96 40 L130 54 L166 36 L204 52 L240 34 L276 50 L312 38 L350 54 L400 42 L400 140 L0 140Z" fill="#E9A6C6"/><path d="M0 84 L40 72 L80 86 L120 70 L160 84 L200 68 L240 82 L280 70 L320 86 L360 74 L400 82 L400 140 L0 140Z" fill="#F5BE8C"/><path d="M0 108 L44 98 L88 110 L132 96 L176 108 L220 98 L264 110 L308 98 L352 108 L400 100 L400 140 L0 140Z" fill="#EFE2CF"/></svg>
     <svg data-effet="ballon" class="ballon don-ballon" viewBox="0 0 120 170" aria-hidden="true">
   <g class="ballon-enveloppe"><path d="M60 6C29 6 8 29 8 57c0 30 28 50 40 66h24c12-16 40-36 40-66C112 29 91 6 60 6z" fill="#C42A7E"/>
   <path d="M60 6C45 6 36 29 36 57c0 30 12 50 16 66h16c4-16 16-36 16-66C84 29 75 6 60 6z" fill="#F29B4B"/>
@@ -172,7 +174,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="champ"><label for="don-prenom">Prénom</label><input id="don-prenom" name="prenom" autocomplete="given-name"></div>
     <div class="champ"><label for="don-email">E-mail <span class="requis">(obligatoire)</span></label><input id="don-email" name="email" type="email" autocomplete="email" required></div>
     <div class="champ"><label for="don-mot">Un mot pour l’équipe (facultatif)</label><textarea id="don-mot" name="mot" rows="3"></textarea></div>
-    <p class="mention-donnees">Vos données servent uniquement à vous remercier et à vous tenir informé·e du projet. Politique de confidentialité&nbsp;: à compléter.</p>
+    <p class="mention-donnees">Vos données servent uniquement à vous remercier et à vous tenir informé·e du projet. La politique de confidentialité sera publiée avec le site final.</p>
     <button type="submit" class="bouton">Je soutiens le projet</button>
     <p data-message-envoi data-texte="Don simulé : aucun paiement n’a été effectué. La plateforme de paiement reste à choisir." role="status" tabindex="-1" hidden></p>
   </form>

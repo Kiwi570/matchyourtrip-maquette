@@ -24,7 +24,9 @@
     "mentions": "Mentions légales",
     "confidentialite": "Politique de confidentialité",
     "aCompleter": "à compléter",
-    "copyright": "© 2026 MatchYourTrip"
+    "confidentialiteBientot": "La politique de confidentialité sera publiée avec le site final.",
+    "copyright": "© 2026 MatchYourTrip",
+    "menuAction": "Je trouve mon travel planner"
   },
   "pages": {
     "accueil": {
@@ -92,7 +94,8 @@
       "tampon": "Match !",
       "action": "Déposer ce projet",
       "tous": "Voir les thèmes et les pays",
-      "aide": "Touchez une envie, puis une destination."
+      "aide": "Touchez une envie, puis une destination.",
+      "aideSouris": "Cliquez sur une envie, puis sur une destination."
     },
     "pourquoi": {
       "titre1": "Pourquoi passer par un",
@@ -173,6 +176,15 @@
     "faq": {
       "titre1": "Vos",
       "titre2": "questions"
+    },
+    "onglets": {
+      "titre": "Sans pro du voyage",
+      "ouverts": "onglets ouverts",
+      "ouvert": "onglet ouvert",
+      "carnet": "Votre carnet de voyage",
+      "l1": "Étapes et itinéraire",
+      "l2": "Bonnes adresses",
+      "l3": "Réservations et conseils"
     }
   },
   "themes": {
@@ -278,7 +290,7 @@
       "suivant": "Étape suivante",
       "precedent": "Retour",
       "envoyer": "Envoyer mon projet",
-      "donnees": "Vos données servent uniquement à étudier votre projet et à vous recontacter. Politique de confidentialité : à compléter.",
+      "donnees": "Vos données servent uniquement à étudier votre projet et à vous recontacter. La politique de confidentialité sera publiée avec le site final.",
       "simule": "Projet simulé : rien n’a été envoyé. Sur le site final, il partira vers l’équipe MatchYourTrip.",
       "requis": "obligatoire"
     },
@@ -289,7 +301,8 @@
       "participants": "Participants",
       "budget": "Budget / pers.",
       "vide": "à choisir",
-      "pro": "Profil : professionnel·le du voyage"
+      "pro": "Profil : professionnel·le du voyage",
+      "tampon": "Prêt au départ"
     },
     "ensuite": {
       "titre1": "Et",

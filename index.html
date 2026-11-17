@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-curseur>
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F7F0E6">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -63,8 +63,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Accueil</span></div></div>
 <div class="ouverture-panneau" data-ouverture aria-hidden="true">
   <div class="intro-scene">
-    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 14 L600 6 L590 18 L598 30 L586 44 L597 58 L588 72 L600 84 L0 80 Z"/></svg>
-    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 10 L0 4 L12 16 L2 30 L14 42 L3 56 L13 70 L0 86 L600 82 Z"/></svg>
+    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 18 L60 8 L120 20 L190 6 L250 18 L320 4 L390 16 L450 6 L520 18 L600 8 L590 22 L598 36 L586 50 L597 64 L588 76 L600 86 L530 76 L460 88 L390 74 L320 86 L250 72 L180 86 L110 74 L50 86 L0 76 Z"/></svg>
+    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 14 L540 4 L470 18 L400 6 L330 18 L260 4 L190 16 L130 6 L60 18 L0 8 L12 22 L2 36 L14 50 L3 64 L13 76 L0 86 L70 76 L140 88 L210 74 L280 86 L350 72 L420 86 L490 74 L550 86 L600 78 Z"/></svg>
     <img class="ouverture-logo" src="/assets/images/logo.svg" alt="" width="72" height="72" data-ouverture-objet>
     <svg class="intro-coeur" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg>
   </div>
@@ -106,11 +106,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
   <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
   <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/comment-ca-marche" class="menu-lien" data-libelle="Comment ça marche">Comment ça marche</a></li><li style="--i:2"><a href="/themes-et-destinations" class="menu-lien" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li style="--i:3"><a href="/faire-un-don" class="menu-lien" data-libelle="Faire un don">Faire un don</a></li><li style="--i:4"><a href="/mon-projet-de-voyage" class="menu-lien" data-libelle="Mon projet de voyage">Mon projet de voyage</a></li></ul>
+  <p class="menu-action"><a href="/mon-projet-de-voyage#formulaire" class="bouton" data-libelle="Mon projet de voyage">Je trouve mon travel planner</a></p>
   <p class="menu-note">Du rêve au trip, il n’y a qu’un match</p>
 </div>
 <main id="contenu" tabindex="-1">
 <section class="hero" id="debut">
-  <figure class="media hero-media" data-effet="papier-couches" style="--cadrage:0% 46%;--cadrage-mobile:14% 50%">
+  <figure class="media hero-media" data-effet="papier-couches" style="--cadrage:0% 46%;--cadrage-mobile:14% 28%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-ouverture-mobile-640.webp 640w, /assets/images/accueil-ouverture-mobile-1080.webp 1080w" sizes="100vw">
     <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w, /assets/images/accueil-ouverture-1920.webp 1920w" sizes="100vw" alt="Collage en papier découpé : une silhouette regarde l’horizon depuis une falaise" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
   </picture>
@@ -120,6 +121,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <svg class="couche couche--2" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 92 L90 78 L170 98 L260 74 L370 96 L470 80 L560 102 L660 76 L760 98 L860 82 L970 104 L1070 78 L1170 98 L1270 84 L1370 100 L1440 86 L1440 160 L0 160Z"/></svg>
     <svg class="couche couche--3" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 122 L70 112 L160 128 L250 108 L350 126 L450 114 L550 130 L650 110 L750 128 L850 116 L950 132 L1050 112 L1150 128 L1250 116 L1350 130 L1440 118 L1440 160 L0 160Z"/></svg>
   </div>
+  <svg class="hero-reve" aria-hidden="true" data-visuel><path class="hero-reve-trait" d=""/></svg>
+  <svg class="avion hero-avion" viewBox="0 0 48 40" aria-hidden="true" data-visuel data-effet="reve"><path d="M2 20L46 2 34 38 24 26z" fill="#F7F0E6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 26L46 2 18 22z" fill="#F29B4B" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
   <div class="hero-feuille">
     <div class="pastille hero-pastille" data-iris-centre="disque" data-grille="fil">
   <svg class="pastille-bord" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/></svg>
@@ -127,7 +130,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <span class="pastille-texte">Match !</span>
 </div>
     <p class="note-main hero-note">Votre voyage, notre passion !</p>
-    <h1 class="hero-titre" data-grille="typo"><span class="ligne-masque"><span class="hero-ligne">Du rêve au trip,</span></span><span class="ligne-masque"><span class="hero-ligne">il n’y a qu’un <em>match</em></span></span></h1>
+    <h1 class="hero-titre" data-grille="typo"><span class="ligne-masque"><span class="hero-ligne">Du rêve au trip,</span></span><span class="ligne-masque"><span class="hero-ligne">il n’y a qu’un</span></span><span class="ligne-masque ligne-masque--match"><span class="hero-ligne"><em class="mot-match">match</em></span></span></h1>
     <p class="hero-intro">Un·e professionnel·le du voyage, spécialiste de votre destination ou de votre envie, conçoit pour vous un séjour 100 % personnalisé, selon vos envies, votre rythme et votre budget.</p>
     <p class="hero-actions">
       <a href="/mon-projet-de-voyage#formulaire" class="bouton" data-libelle="Mon projet de voyage" data-action-principale data-survol="magnetique">Je trouve mon travel planner</a>
@@ -137,7 +140,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 <section class="match" id="match">
-  <svg class="dechirure dechirure--haut dechirure--prune" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 9.9 L42 22.8 L85 12.9 L127 17.8 L169 10.6 L212 23.3 L254 13.7 L296 12.8 L339 14.7 L381 23.1 L424 19.0 L466 12.5 L508 17.4 L551 18.6 L593 6.3 L635 22.2 L678 19.2 L720 21.5 L762 8.9 L805 10.2 L847 11.8 L889 21.1 L932 17.2 L974 20.4 L1016 12.3 L1059 11.7 L1101 19.0 L1144 7.9 L1186 19.1 L1228 15.1 L1271 15.4 L1313 11.0 L1355 16.1 L1398 6.4 L1440 12.9 L1440 40 Z"/></svg>
+  <svg class="dechirure dechirure--haut dechirure--prune dechirure--telephone" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 9.9 L42 22.8 L85 12.9 L127 17.8 L169 10.6 L212 23.3 L254 13.7 L296 12.8 L339 14.7 L381 23.1 L424 19.0 L466 12.5 L508 17.4 L551 18.6 L593 6.3 L635 22.2 L678 19.2 L720 21.5 L762 8.9 L805 10.2 L847 11.8 L889 21.1 L932 17.2 L974 20.4 L1016 12.3 L1059 11.7 L1101 19.0 L1144 7.9 L1186 19.1 L1228 15.1 L1271 15.4 L1313 11.0 L1355 16.1 L1398 6.4 L1440 12.9 L1440 40 Z"/></svg>
   <div class="conteneur">
     <div class="match-tete">
       <h2 class="titre-section" data-anime="lignes">Une envie, une destination : votre <em>match</em></h2>
@@ -163,7 +166,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <a class="bouton bouton--clair" data-match-lien href="/mon-projet-de-voyage?envie=Partir%20avec%20son%20chien&amp;destination=Europe#formulaire" data-libelle="Mon projet de voyage">Déposer ce projet</a>
         <a href="/themes-et-destinations" class="lien-fleche lien-fleche--clair" data-libelle="Thèmes &amp; destinations">Voir les thèmes et les pays</a>
       </p>
-      <p class="match-aide">Touchez une envie, puis une destination.</p>
+      <p class="match-aide"><span class="aide-tactile">Touchez une envie, puis une destination.</span><span class="aide-souris">Cliquez sur une envie, puis sur une destination.</span></p>
     </div>
   </div>
   <svg class="dechirure dechirure--bas dechirure--prune" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 22.0 L42 15.4 L85 20.7 L127 15.9 L169 12.8 L212 6.4 L254 8.8 L296 23.7 L339 14.0 L381 8.1 L424 19.5 L466 15.2 L508 21.4 L551 7.8 L593 17.3 L635 20.1 L678 14.0 L720 9.8 L762 11.8 L805 9.7 L847 18.3 L889 22.0 L932 20.3 L974 14.3 L1016 22.1 L1059 17.5 L1101 23.2 L1144 19.7 L1186 8.5 L1228 16.6 L1271 22.2 L1313 19.0 L1355 19.9 L1398 19.2 L1440 20.5 L1440 40 Z"/></svg>

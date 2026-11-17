@@ -10,7 +10,7 @@ export default (c) => {
 <section class="ouv ouv--scindee" id="debut">
   <div class="ouv-texte">
     <p class="note-main">${c.t('cmm.hero.note')}</p>
-    ${titre(c, 'cmm.hero', { niveau: 'h1', classe: 'ouv-titre', attrs: 'data-anime="gsap"', suite: true })}
+    ${titre(c, 'cmm.hero', { niveau: 'h1', classe: 'ouv-titre titre-colle', attrs: 'data-anime="gsap" data-grille="typo"', suite: true })}
     <p class="ouv-intro" data-anime="gsap">${c.t('cmm.hero.texte')}</p>
     <p class="ouv-actions" data-anime="gsap">${c.lien('mon-projet', { ancre: 'formulaire', classe: 'bouton', texte: c.t('cmm.hero.action'), attrs: 'data-action-principale data-survol="magnetique"' })}</p>
     <p class="ouv-info" data-info-cle><span class="point-vivant" aria-hidden="true"></span>${c.t('cmm.hero.info')}</p>
@@ -23,12 +23,30 @@ export default (c) => {
 
 <section class="benefices conteneur" id="benefices">
   ${titre(c, 'cmm.benefices', { classe: 'titre-section', suite: true })}
+  <div class="benefices-grille">
+  <div class="onglets-scene" aria-hidden="true" data-visuel data-grille="scene">
+    <div class="navigateur">
+      <div class="nav-barre"><span class="nav-points"><i></i><i></i><i></i></span>
+        <ul class="onglets">${["Vols", "Hôtel", "Visa", "Météo", "Avis", "Train", "Budget", "Forum", "Voiture", "Assurance", "Carte", "Plages", "Musées", "Change"].map((o) => html`<li data-effet="onglets">${o}</li>`)}</ul>
+      </div>
+      <div class="nav-page">
+        <div class="nav-lignes"><span class="nav-ligne"></span><span class="nav-ligne nav-ligne--courte"></span><span class="nav-ligne"></span><span class="nav-ligne nav-ligne--courte"></span></div>
+        <div class="carnet-mini">
+          <img src="/assets/images/logo.svg" alt="" width="34" height="34">
+          <p class="carnet-mini-titre">${c.t('cmm.onglets.carnet')}</p>
+          <p>✓ ${c.t('cmm.onglets.l1')}</p><p>✓ ${c.t('cmm.onglets.l2')}</p><p>✓ ${c.t('cmm.onglets.l3')}</p>
+        </div>
+      </div>
+    </div>
+    <p class="onglets-compteur"><span class="onglets-n" data-onglets-n>14</span> <span data-onglets-libelle data-singulier="${c.t('cmm.onglets.ouvert')}">${c.t('cmm.onglets.ouverts')}</span></p>
+  </div>
   <ol class="benefices-liste" role="list">
     ${D.benefices.map((b, i) => html`<li class="benefice">
       <span class="benefice-icone" data-effet="benefices">${icone(b.icone)}</span>
       <div><h3><span class="benefice-num">${i + 1}.</span> ${b.titre}</h3><p>${b.texte}</p></div>
     </li>`)}
   </ol>
+  </div>
 </section>
 
 <section class="histoire" id="rencontres">

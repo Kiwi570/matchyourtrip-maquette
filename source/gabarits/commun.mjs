@@ -84,6 +84,7 @@ function entete(c) {
 <div id="menu" data-menu role="dialog" aria-modal="true" aria-label="${c.s('commun.menu')}">
   <p class="menu-sansjs-fermer"><a href="#menu-ferme">${c.t('commun.fermer')}</a></p>
   <ul>${navigation(c).map((k, i) => html`<li style="--i:${i}">${c.lien(k, { classe: 'menu-lien' })}</li>`)}</ul>
+  <p class="menu-action">${c.lien('mon-projet', { ancre: 'formulaire', classe: 'bouton', texte: c.t('commun.menuAction') })}</p>
   <p class="menu-note">${c.t('commun.slogan')}</p>
   ${autreLangue.map((a) => html`<p><a class="entete-langue" href="${a.url}" hreflang="${a.l}" lang="${a.l}" data-langue="${a.l}">${c.s('commun.langueAutre')}</a></p>`)}
 </div>`;
@@ -140,8 +141,8 @@ ${tete(c)}
 ${voile(c)}
 <div class="ouverture-panneau" data-ouverture aria-hidden="true">
   <div class="intro-scene">
-    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 14 L600 6 L590 18 L598 30 L586 44 L597 58 L588 72 L600 84 L0 80 Z"/></svg>
-    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 10 L0 4 L12 16 L2 30 L14 42 L3 56 L13 70 L0 86 L600 82 Z"/></svg>
+    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 18 L60 8 L120 20 L190 6 L250 18 L320 4 L390 16 L450 6 L520 18 L600 8 L590 22 L598 36 L586 50 L597 64 L588 76 L600 86 L530 76 L460 88 L390 74 L320 86 L250 72 L180 86 L110 74 L50 86 L0 76 Z"/></svg>
+    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 14 L540 4 L470 18 L400 6 L330 18 L260 4 L190 16 L130 6 L60 18 L0 8 L12 22 L2 36 L14 50 L3 64 L13 76 L0 86 L70 76 L140 88 L210 74 L280 86 L350 72 L420 86 L490 74 L550 86 L600 78 Z"/></svg>
     <img class="ouverture-logo" src="/assets/images/logo.svg" alt="" width="72" height="72" data-ouverture-objet>
     <svg class="intro-coeur" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg>
   </div>

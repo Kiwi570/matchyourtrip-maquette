@@ -1,29 +1,40 @@
 # Rapport d’audit
 
-Projet : `matchyourtrip-maquette` · 17/11/2026 19:14:01 · 1 min · 2 page(s) · audit standard ciblé sur /,/faire-un-don (étapes : fichiers, mesures)
+Projet : `matchyourtrip-maquette` · 17/11/2026 21:16:41 · 15 min · 6 page(s) · audit complet (étapes : grille, bords, parcours, ecran, fluidite, mouvement, vitesse, captures)
 
 ## Résumé
 
 - Statut : **tout a tourné, aucun échec**
-- Passe : `20261117-181312-standard-cible-partiel` · version ?v=1
+- Passe : `20261117-200142-complet-partiel` · version ?v=2
 - Échecs : **0**
-- À regarder : **13**
+- À regarder : **0**
 - Non lancé : **0**
-- Contrôles passés : vercel.json (1), .vercelignore (1), robots.txt (1), numéro de version (1), langues (1), mesures (22), balayage (2)
+- Contrôles passés : grille wouahou (7), bords de l’écran (6), intro accélérable et passable (7), menu (1), clavier (6), liens et boutons (6), liens profonds (16), liens vers la page en cours (5), changements de hauteur (5), parcours du projet (1), fluidité (10), défilement selon l’appareil (5), mouvement (10), effets du plan (17), souris immobile (5), vitesse (5), captures (1)
 
-## Passes de cette version (?v=1)
+## Grille wouahou
+
+| Point | État | Détail |
+|---|---|---|
+| 1. L’effet signature se manipule | ✓ présent | accueil |
+| 2. L’intro devient la page | ✓ présent | objet d’ouverture sur 5 page(s), versObjet dans l’intro |
+| 3. La transition reprend le motif | ✓ présent | voile en vague |
+| 4. Quelque chose relie les sections et les pages | ✓ présent | sur les 5 page(s) |
+| 5. Un titre fait l’événement sur chaque page | ✓ présent | sur les 5 page(s) |
+| 6. La scène est un geste du métier | ✓ présent | geste du métier sur /comment-ca-marche |
+| 7. L’action principale a un retour physique | ✓ présent | sur /, /mon-projet-de-voyage |
+
+Le script vérifie les marques (`data-grille`, `data-iris-centre`, forme du voile, `versObjet`) ; la force et la justesse de chaque point se jugent sur les captures et les films.
+
+## Passes de cette version (?v=2)
 
 Chaque passe garde son rapport dans `_audit/passes/` : une relance ciblée ne fait pas disparaître la preuve d’une passe plus large.
 
 | Passe | Niveau | Pages | Étapes | Échecs | À regarder | Non lancé | Statut |
 |---|---|---|---|---:|---:|---:|---|
-| 20261117-131239-rapide-cible | rapide | / | toutes | 146 | 17 | 1 | échecs |
-| 20261117-132141-rapide-cible | rapide | / | toutes | 25 | 16 | 1 | échecs |
-| 20261117-172550-standard | standard | toutes | toutes | 45 | 44 | 1 | échecs |
-| 20261117-174837-standard-cible-partiel | standard | /,/404,/comment-ca-marche,/faire-un-don,/mon-projet-de-voyage,/themes-et-destinations | fichiers, mesures, parcours, mouvement | 4 | 29 | 0 | échecs |
-| 20261117-175955-complet-partiel | complet | toutes | fichiers, mesures, ecran | 2 | 29 | 0 | échecs |
-| 20261117-180656-complet-cible-partiel | complet | /,/comment-ca-marche,/faire-un-don,/mon-projet-de-voyage,/themes-et-destinations,/404 | fichiers, mesures | 0 | 29 | 0 | complet |
-| **20261117-181312-standard-cible-partiel** (celle-ci) | standard | /,/faire-un-don | fichiers, mesures | 0 | 13 | 0 | complet |
+| 20261117-191538-complet | complet | toutes | toutes | 9 | 34 | 1 | échecs |
+| 20261117-194837-complet-partiel | complet | toutes | fichiers, mesures, films | 1 | 12 | 0 | échecs |
+| 20261117-195801-complet-cible-partiel | complet | /,/comment-ca-marche | fichiers, mesures | 0 | 6 | 0 | complet |
+| **20261117-200142-complet-partiel** (celle-ci) | complet | toutes | grille, bords, parcours, ecran, fluidite, mouvement, vitesse, captures | 0 | 0 | 0 | complet |
 
 ## Échecs
 
@@ -31,27 +42,7 @@ Aucun.
 
 ## À regarder
 
-### « à compléter » visible (2)
-
-- **« à compléter » visible** — `faire-un-don.html` — 1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)
-- **« à compléter » visible** — `mon-projet-de-voyage.html` — 1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)
-
-### section sans visuel (5)
-
-- **section sans visuel** — `/` — section#match « Une envie, une destination : votre match Choisisse » — une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11) _(768×1024 normal, 390×844 normal, 844×390 normal, 320×568 normal, 390×844 sansJs, 390×844 sansWebgl, +1)_
-- **section sans visuel** — `/` — section#pourquoi « Pourquoi passer par un travel planner ? Son domain » — une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11) _(768×1024 normal, 390×844 normal, 844×390 normal, 320×568 normal, 390×844 sansJs, 1920×1080 normal, +5)_
-- **section sans visuel** — `/` — section#formules « Plusieurs façons de préparer son aventure Le trave » — une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11) _(768×1024 normal, 390×844 normal, 844×390 normal, 320×568 normal, 390×844 sansJs, 1920×1080 normal, +5)_
-- **section sans visuel** — `/` — section#etapes « Comment ça marche ? 1 Vous partagez vos envies Des » — une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11) _(390×844 normal, 320×568 normal, 390×844 sansJs, 390×844 sansWebgl, 320×568 sansJs)_
-- **section sans visuel** — `/faire-un-don` — section#utilite « À quoi sert votre don Développer MatchYourTrip Fai » — une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11) _(320×568 normal, 390×844 normal, 768×1024 normal, 844×390 normal, 390×844 sansJs, 1366×768 normal, +5)_
-
-### texte de contenu sous 13 px (ordinateur) (6)
-
-- **texte de contenu sous 13 px (ordinateur)** — `/` — div.vedettes-piste:nth-of-type(2) > article.vedette.vedette--1:nth-of-type(5) > figure.media.vedette-media > figcaption.mention-ia « Illustration générée » — 12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px _(1920×1080 normal, 1366×768 normal, 1366×768 sansJs, 1366×768 sansWebgl)_
-- **texte de contenu sous 13 px (ordinateur)** — `/` — div.vedettes-piste:nth-of-type(2) > article.vedette.vedette--2:nth-of-type(6) > figure.media.vedette-media > figcaption.mention-ia « Illustration générée » — 12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px _(1920×1080 normal, 1366×768 normal, 1366×768 sansJs, 1366×768 sansWebgl)_
-- **texte de contenu sous 13 px (ordinateur)** — `/` — section#destinations > figure.media.destinations-bande > figcaption.mention-ia « Illustration générée » — 12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px _(1920×1080 normal, 1366×768 normal, 1366×768 sansJs, 1366×768 sansWebgl)_
-- **texte de contenu sous 13 px (ordinateur)** — `/` — section#fin > figure.media.fin-media > figcaption.mention-ia « Illustration générée » — 12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px _(1920×1080 normal, 1366×768 normal, 1366×768 sansJs, 1366×768 sansWebgl)_
-- **texte de contenu sous 13 px (ordinateur)** — `/faire-un-don` — section#debut > figure.media.ouv-fond > figcaption.mention-ia « Illustration générée » — 12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px _(1366×768 normal, 1920×1080 normal, 1366×768 sansJs, 1366×768 sansWebgl)_
-- **texte de contenu sous 13 px (ordinateur)** — `/faire-un-don` — section#fin > figure.media.fin-media > figcaption.mention-ia « Illustration générée » — 12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px _(1366×768 normal, 1920×1080 normal, 1366×768 sansJs, 1366×768 sansWebgl)_
+Rien.
 
 ## Non lancé
 
@@ -60,10 +51,29 @@ Tout a été lancé.
 
 ## Repères
 
-- Numéro de version des fichiers : ?v=1
-- Journal v1 : 6 étape(s) notée(s), 68 min de travail pour 115 min de budget, 258 min d’attente de l’utilisateur.
-- Audit standard : étapes lourdes sur /, /faire-un-don.
 - Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.
+- bords de l’écran / 1920×1080 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)
+- Bords de l’écran : 493 images d’intro, 26 de voile et 207 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.
+- Tient dans l'écran / : aucune section épinglée ou plein écran.
+- Tient dans l'écran /comment-ca-marche : aucune section épinglée ou plein écran.
+- Tient dans l'écran /faire-un-don : aucune section épinglée ou plein écran.
+- Tient dans l'écran /mon-projet-de-voyage : aucune section épinglée ou plein écran.
+- Tient dans l'écran /themes-et-destinations : aucune section épinglée ou plein écran.
+- Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 425, tâche la plus longue 0 ms
+- Fluidité /comment-ca-marche 1366×768 (molette) : 0 % d'images lentes sur 279, tâche la plus longue 0 ms
+- Fluidité /faire-un-don 1366×768 (molette) : 0 % d'images lentes sur 180, tâche la plus longue 0 ms
+- Fluidité /mon-projet-de-voyage 1366×768 (molette) : 0 % d'images lentes sur 179, tâche la plus longue 0 ms
+- Fluidité /themes-et-destinations 1366×768 (molette) : 0 % d'images lentes sur 329, tâche la plus longue 0 ms
+- Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1337, tâche la plus longue 0 ms
+- Fluidité /comment-ca-marche 390×844 (doigt) : 0 % d'images lentes sur 1346, tâche la plus longue 0 ms
+- Fluidité /faire-un-don 390×844 (doigt) : 0 % d'images lentes sur 1343, tâche la plus longue 0 ms
+- Fluidité /mon-projet-de-voyage 390×844 (doigt) : 0 % d'images lentes sur 1338, tâche la plus longue 0 ms
+- Fluidité /themes-et-destinations 390×844 (doigt) : 0 % d'images lentes sur 1342, tâche la plus longue 0 ms
+- Vitesse / : 0.61 s de calcul au chargement (téléphone ralenti).
+- Vitesse /comment-ca-marche : 0.50 s de calcul au chargement (téléphone ralenti).
+- Vitesse /faire-un-don : 0.45 s de calcul au chargement (téléphone ralenti).
+- Vitesse /mon-projet-de-voyage : 0.43 s de calcul au chargement (téléphone ralenti).
+- Vitesse /themes-et-destinations : 0.50 s de calcul au chargement (téléphone ralenti).
 
 ## Fichiers
 

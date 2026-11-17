@@ -2,14 +2,34 @@
   "nom": "MatchYourTrip",
   "adresse": "https://matchyourtrip-maquette.vercel.app",
   "siteActuel": "matchyourtrip.fr",
-  "version": 1,
-  "langues": ["fr"],
-  "navigation": ["accueil", "comment-ca-marche", "themes-et-destinations", "faire-un-don", "mon-projet"],
-  "actionEntete": { "page": "mon-projet" },
-  "couleurs": { "fond": "#F7F0E6", "texte": "#2B1F24", "voile": "#2B1A27", "ouverture": "#F7F0E6", "menu": "#F7F0E6", "theme": "#F7F0E6" },
+  "version": 2,
+  "langues": [
+    "fr"
+  ],
+  "navigation": [
+    "accueil",
+    "comment-ca-marche",
+    "themes-et-destinations",
+    "faire-un-don",
+    "mon-projet"
+  ],
+  "actionEntete": {
+    "page": "mon-projet"
+  },
+  "couleurs": {
+    "fond": "#F7F0E6",
+    "texte": "#2B1F24",
+    "voile": "#2B1A27",
+    "ouverture": "#F7F0E6",
+    "menu": "#F7F0E6",
+    "theme": "#F7F0E6"
+  },
   "formeVoile": "vague",
   "contact": {},
-  "polices": ["/assets/fonts/fraunces.woff2", "/assets/fonts/figtree-var.woff2"],
+  "polices": [
+    "/assets/fonts/fraunces.woff2",
+    "/assets/fonts/figtree-var.woff2"
+  ],
   "imagePartage": "accueil-ouverture-1280.webp",
   "curseur": true
 }

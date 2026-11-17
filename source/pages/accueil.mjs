@@ -24,16 +24,18 @@ export default (c) => {
   const envieDe = (v) => `envie=${encodeURIComponent(v)}`;
   return html`
 <section class="hero" id="debut">
-  ${c.media({ nom: 'accueil-ouverture', alt: "Collage en papier découpé : une silhouette regarde l’horizon depuis une falaise", priorite: true, classe: 'hero-media', sizes: '100vw', cadrage: '0% 46%', cadrageMobile: '14% 50%', attrs: 'data-effet="papier-couches"' })}
+  ${c.media({ nom: 'accueil-ouverture', alt: "Collage en papier découpé : une silhouette regarde l’horizon depuis une falaise", priorite: true, classe: 'hero-media', sizes: '100vw', cadrage: '0% 46%', cadrageMobile: '14% 28%', attrs: 'data-effet="papier-couches"' })}
   <div class="hero-couches" aria-hidden="true" data-visuel>
     <svg class="couche couche--1" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 70 L60 52 L140 74 L230 46 L320 70 L410 40 L520 66 L620 44 L720 72 L830 48 L930 70 L1040 42 L1150 68 L1250 50 L1350 74 L1440 56 L1440 160 L0 160Z"/></svg>
     <svg class="couche couche--2" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 92 L90 78 L170 98 L260 74 L370 96 L470 80 L560 102 L660 76 L760 98 L860 82 L970 104 L1070 78 L1170 98 L1270 84 L1370 100 L1440 86 L1440 160 L0 160Z"/></svg>
     <svg class="couche couche--3" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 122 L70 112 L160 128 L250 108 L350 126 L450 114 L550 130 L650 110 L750 128 L850 116 L950 132 L1050 112 L1150 128 L1250 116 L1350 130 L1440 118 L1440 160 L0 160Z"/></svg>
   </div>
+  <svg class="hero-reve" aria-hidden="true" data-visuel><path class="hero-reve-trait" d=""/></svg>
+  ${avion('hero-avion', 'data-effet="reve"')}
   <div class="hero-feuille">
     ${pastille(c, c.t('accueil.hero.pastille'), { classe: 'hero-pastille' })}
     <p class="note-main hero-note">${c.t('accueil.hero.note')}</p>
-    <h1 class="hero-titre" data-grille="typo"><span class="ligne-masque"><span class="hero-ligne">${c.t('accueil.hero.titre1')}</span></span><span class="ligne-masque"><span class="hero-ligne">${c.t('accueil.hero.titre2')} <em>${c.t('accueil.hero.titre3')}</em></span></span></h1>
+    <h1 class="hero-titre" data-grille="typo"><span class="ligne-masque"><span class="hero-ligne">${c.t('accueil.hero.titre1')}</span></span><span class="ligne-masque"><span class="hero-ligne">${c.t('accueil.hero.titre2')}</span></span><span class="ligne-masque ligne-masque--match"><span class="hero-ligne"><em class="mot-match">${c.t('accueil.hero.titre3')}</em></span></span></h1>
     <p class="hero-intro">${c.t('accueil.hero.texte')}</p>
     <p class="hero-actions">
       ${c.lien('mon-projet', { ancre: 'formulaire', classe: 'bouton', texte: c.t('accueil.hero.action'), attrs: 'data-action-principale data-survol="magnetique"' })}
@@ -44,7 +46,7 @@ export default (c) => {
 </section>
 
 <section class="match" id="match">
-  ${dechirure('dechirure--haut dechirure--prune', 3)}
+  ${dechirure('dechirure--haut dechirure--prune dechirure--telephone', 3)}
   <div class="conteneur">
     <div class="match-tete">
       ${titre(c, 'accueil.match', { classe: 'titre-section' })}
@@ -70,7 +72,7 @@ export default (c) => {
         <a class="bouton bouton--clair" data-match-lien href="${c.url('mon-projet', 'formulaire', `${envieDe(defaut.envie)}&destination=${encodeURIComponent(defaut.destination)}`)}" data-libelle="${c.libelle('mon-projet')}">${c.t('accueil.match.action')}</a>
         ${c.lien('themes-et-destinations', { classe: 'lien-fleche lien-fleche--clair', texte: c.t('accueil.match.tous') })}
       </p>
-      <p class="match-aide">${c.t('accueil.match.aide')}</p>
+      <p class="match-aide"><span class="aide-tactile">${c.t('accueil.match.aide')}</span><span class="aide-souris">${c.t('accueil.match.aideSouris')}</span></p>
     </div>
   </div>
   ${dechirure('dechirure--bas dechirure--prune', 5)}

@@ -1,0 +1,22 @@
+{
+ "id": "20261117-200142-complet-partiel",
+ "date": "2026-11-17T20:16:41.267Z",
+ "niveau": "complet",
+ "pages": "toutes",
+ "etapes": [
+  "grille",
+  "bords",
+  "parcours",
+  "ecran",
+  "fluidite",
+  "mouvement",
+  "vitesse",
+  "captures"
+ ],
+ "version": "2",
+ "echecs": 0,
+ "aRegarder": 0,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}
