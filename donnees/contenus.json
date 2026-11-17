@@ -1,0 +1,96 @@
+{
+  "benefices": [
+    {
+      "icone": "carte",
+      "titre": "Son domaine, son expertise",
+      "texte": "Une destination, une passion ou un type de voyage qu’il ou elle connaît particulièrement bien. Le·la pro partage ses connaissances et vous conseille des expériences adaptées à vos envies."
+    },
+    {
+      "icone": "boussole",
+      "titre": "Un itinéraire sur mesure",
+      "texte": "Un voyage adapté à vos envies, votre rythme, vos contraintes et votre budget. Le·la pro vous accompagne à chaque étape et vous propose plusieurs alternatives."
+    },
+    {
+      "icone": "onglets",
+      "titre": "Moins de charge mentale",
+      "texte": "Fini les heures de recherches et les dizaines d’onglets ouverts ! Le·la pro s’occupe des recherches pour vous faire gagner du temps et simplifier l’organisation de votre voyage."
+    },
+    {
+      "icone": "carnet",
+      "titre": "Un carnet de voyage personnalisé",
+      "texte": "Vos étapes, vos bonnes adresses, vos conseils et vos réservations réunis au même endroit, pour éviter les pertes de temps et les galères en tout genre."
+    }
+  ],
+  "etapes": [
+    {
+      "titre": "Vous partagez vos envies",
+      "texte": "Destination, thème, nombre de voyageurs, budget : quelques lignes suffisent pour raconter le voyage dont vous rêvez."
+    },
+    {
+      "titre": "Nous cherchons votre pro",
+      "texte": "L’équipe MatchYourTrip regarde avec vous quel·le professionnel·le du voyage peut vous accompagner."
+    },
+    {
+      "titre": "Votre voyage se dessine",
+      "texte": "Votre pro conçoit un itinéraire sur mesure et votre carnet de voyage personnalisé, avec plusieurs alternatives."
+    }
+  ],
+  "formules": [
+    {
+      "id": "planner",
+      "titre": "Travel planner",
+      "texte": "Un·e spécialiste organise pour vous un voyage sur mesure, sans charge de préparation.",
+      "statut": "disponible"
+    },
+    {
+      "id": "existants",
+      "titre": "Voyages existants",
+      "texte": "Découvrez des voyages proposés par des professionnels ou par d’autres voyageurs.",
+      "statut": "bientot"
+    },
+    {
+      "id": "compagnons",
+      "titre": "Compagnons de voyage",
+      "texte": "Trouvez des voyageurs qui partagent vos thèmes, votre destination, votre budget et vos dates.",
+      "statut": "bientot"
+    },
+    {
+      "id": "idee",
+      "titre": "Partager une idée de voyage",
+      "texte": "Publiez un projet ou un thème : un voyageur peut s’y joindre, ou un·e pro peut le concrétiser.",
+      "statut": "bientot"
+    }
+  ],
+  "faq": [
+    {
+      "q": "L’application MatchYourTrip est-elle disponible ?",
+      "r": "Pas encore : elle est en cours de construction. En attendant son lancement, partagez vos envies dans le formulaire, et l’équipe voit avec vous quel·le professionnel·le pourrait vous accompagner."
+    },
+    {
+      "q": "Qui sont les professionnel·les du voyage ?",
+      "r": "Des travel planners passionné·es, qui connaissent leur destination ou leur type de voyage sur le bout des doigts et qui ont à cœur de créer des voyages uniques, pensés pour vous."
+    },
+    {
+      "q": "Mon voyage sera-t-il vraiment sur mesure ?",
+      "r": "Oui : votre pro conçoit un séjour 100 % personnalisé, selon vos envies, votre rythme, vos contraintes et votre budget, et vous propose plusieurs alternatives."
+    },
+    {
+      "q": "Je suis un·e pro du voyage : comment vous rejoindre ?",
+      "r": "Présentez-vous avec le formulaire « Mon projet de voyage », en cochant la case « Je suis un·e professionnel·le du voyage » : l’équipe pourra vous recontacter."
+    }
+  ],
+  "envies": [
+    "Partir avec son chien",
+    "Voyage de noces & lune de miel",
+    "Rencontre d’animaux sauvages éthique",
+    "Bien-être",
+    "Gastronomie & œnologie",
+    "Road trips & itinéraires",
+    "Partir hors des sentiers battus",
+    "Voyage surprise"
+  ],
+  "matchDefaut": {
+    "envie": "Partir avec son chien",
+    "destination": "Europe"
+  }
+}

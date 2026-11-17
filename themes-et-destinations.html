@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thèmes et destinations : MatchYourTrip</title>
+<meta name="description" content="Plus de quarante thèmes de voyage, de la lune de miel au safari éthique, et une quarantaine de destinations sur 8 grandes régions du monde.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://matchyourtrip-maquette.vercel.app/themes-et-destinations">
+<style>:root{--fond:#F7F0E6;--texte:#2B1F24;--voile-fond:#2B1A27;--ouverture-fond:#F7F0E6;--menu-fond:#F7F0E6}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F7F0E6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MatchYourTrip">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Thèmes et destinations : MatchYourTrip">
+<meta property="og:description" content="Plus de quarante thèmes de voyage, de la lune de miel au safari éthique, et une quarantaine de destinations sur 8 grandes régions du monde.">
+<meta property="og:url" content="https://matchyourtrip-maquette.vercel.app/themes-et-destinations">
+<meta property="og:image" content="https://matchyourtrip-maquette.vercel.app/assets/partage/themes-et-destinations-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Panorama en papier déchiré : lagon, collines, dunes et sommets">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MatchYourTrip","url":"https://www.matchyourtrip.fr","slogan":"Du rêve au trip, il n'y a qu'un match","description":"Mise en relation entre voyageurs et professionnels du voyage (travel planners) pour des voyages 100 % personnalisés."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Thèmes &amp; destinations</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="intro-scene">
+    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 14 L600 6 L590 18 L598 30 L586 44 L597 58 L588 72 L600 84 L0 80 Z"/></svg>
+    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 10 L0 4 L12 16 L2 30 L14 42 L3 56 L13 70 L0 86 L600 82 Z"/></svg>
+    <img class="ouverture-logo" src="/assets/images/logo.svg" alt="" width="72" height="72" data-ouverture-objet>
+    <svg class="intro-coeur" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg>
+  </div>
+  <p class="ouverture-nom"><span>Match</span><em>Your</em><span>Trip</span></p>
+  <p class="ouverture-ligne">Du rêve au trip, il n’y a qu’un match</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span class="logo-mot">Match<em>Your</em>Trip</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/comment-ca-marche" data-libelle="Comment ça marche">Comment ça marche</a></li><li><a href="/themes-et-destinations" data-libelle="Thèmes &amp; destinations" aria-current="page">Thèmes &amp; destinations</a></li><li><a href="/faire-un-don" data-libelle="Faire un don">Faire un don</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/mon-projet-de-voyage" data-libelle="Mon projet de voyage">Mon projet de voyage</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/comment-ca-marche" class="menu-lien" data-libelle="Comment ça marche">Comment ça marche</a></li><li style="--i:2"><a href="/themes-et-destinations" class="menu-lien" data-libelle="Thèmes &amp; destinations" aria-current="page">Thèmes &amp; destinations</a></li><li style="--i:3"><a href="/faire-un-don" class="menu-lien" data-libelle="Faire un don">Faire un don</a></li><li style="--i:4"><a href="/mon-projet-de-voyage" class="menu-lien" data-libelle="Mon projet de voyage">Mon projet de voyage</a></li></ul>
+  <p class="menu-note">Du rêve au trip, il n’y a qu’un match</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--bandeau" id="debut">
+  <div class="conteneur ouv-texte ouv-texte--large">
+    <h1 class="ouv-titre" data-anime="gsap">Des thèmes de voyage inédits et des destinations de <em>rêve</em> à explorer</h1>
+    <div class="ouv-ligne">
+      <p class="ouv-intro" data-anime="gsap">Choisissez une envie, un pays, ou les deux : chaque choix part dans votre projet de voyage.</p>
+      <p class="ouv-actions" data-anime="gsap"><a class="bouton" href="#catalogue" data-action-principale>Explorer les thèmes</a></p>
+      <p class="ouv-info" data-info-cle><span class="point-vivant" aria-hidden="true"></span>9 familles · 44 thèmes · 40 destinations</p>
+    </div>
+  </div>
+  <div class="mosaique">
+    <figure class="media mosaique-photo" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/themes-ouverture-mobile-640.webp 640w, /assets/images/grok/themes-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/themes-ouverture-1280.webp" srcset="/assets/images/grok/themes-ouverture-640.webp 640w, /assets/images/grok/themes-ouverture-1280.webp 1280w, /assets/images/grok/themes-ouverture-1920.webp 1920w" sizes="100vw" alt="Panorama en papier déchiré mêlant lagon, collines, dunes et sommets enneigés" width="1280" height="549" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="mosaique-bande mosaique-bande--0" data-effet="mosaique" aria-hidden="true" data-visuel><div class="mosaique-fond" style="--fond-o:url(/assets/images/grok/themes-ouverture-1920.webp);--fond-m:url(/assets/images/grok/themes-ouverture-mobile-1080.webp)"></div></div><div class="mosaique-bande mosaique-bande--1" data-effet="mosaique" aria-hidden="true" data-visuel><div class="mosaique-fond" style="--fond-o:url(/assets/images/grok/themes-ouverture-1920.webp);--fond-m:url(/assets/images/grok/themes-ouverture-mobile-1080.webp)"></div></div>
+    <div class="pastille mosaique-pastille" data-iris-centre="disque" data-grille="fil">
+  <svg class="pastille-bord" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/></svg>
+  <img src="/assets/images/logo.svg" alt="" width="46" height="46">
+  <span class="pastille-texte">Bon voyage</span>
+</div>
+  </div>
+</section>
+<section class="catalogue conteneur" id="catalogue">
+  <div class="catalogue-tete">
+    <h2 class="titre-section" data-anime="lignes">Toutes les <em>envies</em></h2>
+    <form class="filtres" data-filtres role="search" onsubmit="return false">
+      <div class="filtres-familles" role="group" aria-label="Familles de thèmes">
+        <button type="button" class="puce puce--claire" data-famille="" aria-pressed="true">Toutes</button>
+        <button type="button" class="puce puce--claire" data-famille="bien-etre" aria-pressed="false">Bien-être</button><button type="button" class="puce puce--claire" data-famille="occasions" aria-pressed="false">Occasions spéciales</button><button type="button" class="puce puce--claire" data-famille="styles" aria-pressed="false">Styles de voyage</button><button type="button" class="puce puce--claire" data-famille="nature" aria-pressed="false">Nature et aventure</button><button type="button" class="puce puce--claire" data-famille="mer" aria-pressed="false">Mer et îles</button><button type="button" class="puce puce--claire" data-famille="engage" aria-pressed="false">Voyage engagé</button><button type="button" class="puce puce--claire" data-famille="cultures" aria-pressed="false">Cultures et rencontres</button><button type="button" class="puce puce--claire" data-famille="saveurs" aria-pressed="false">Saveurs et sens</button><button type="button" class="puce puce--claire" data-famille="facons" aria-pressed="false">Façons de voyager</button>
+      </div>
+      <div class="filtres-recherche champ">
+        <label for="recherche-theme">Chercher un thème</label>
+        <input id="recherche-theme" name="q" type="search" placeholder="Ex. : chien, volcans, lune de miel…" autocomplete="off">
+      </div>
+      <p class="filtres-compte" data-filtres-compte aria-live="polite">44 thèmes affichés</p>
+    </form>
+  </div>
+  <ul class="familles" role="list" data-catalogue data-anime="cascade">
+    <li class="famille" id="famille-bien-etre" data-famille-id="bien-etre">
+      <figure class="media famille-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/theme-bien-etre-784.webp" srcset="/assets/images/grok/theme-bien-etre-480.webp 480w, /assets/images/grok/theme-bien-etre-640.webp 640w, /assets/images/grok/theme-bien-etre-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage : une personne de dos médite au-dessus d’une mer de nuages" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="famille-texte">
+        <h3>Bien-être</h3>
+        <p class="famille-phrase">Prendre le temps, se retrouver, revenir apaisé·e.</p>
+        <ul class="famille-items" role="list"><li data-item="Introspection"><a href="/mon-projet-de-voyage?envie=Introspection#formulaire" data-libelle="Mon projet de voyage">Introspection</a></li><li data-item="Voyage intérieur"><a href="/mon-projet-de-voyage?envie=Voyage%20int%C3%A9rieur#formulaire" data-libelle="Mon projet de voyage">Voyage intérieur</a></li><li data-item="Séjour spirituel"><a href="/mon-projet-de-voyage?envie=S%C3%A9jour%20spirituel#formulaire" data-libelle="Mon projet de voyage">Séjour spirituel</a></li></ul>
+      </div>
+    </li><li class="famille" id="famille-occasions" data-famille-id="occasions">
+      <figure class="media famille-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/theme-occasions-784.webp" srcset="/assets/images/grok/theme-occasions-480.webp 480w, /assets/images/grok/theme-occasions-640.webp 640w, /assets/images/grok/theme-occasions-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage : deux silhouettes de dos au bout d’un ponton, sous des lampions" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="famille-texte">
+        <h3>Occasions spéciales</h3>
+        <p class="famille-phrase">Les voyages qui marquent une date, pour soi ou pour ceux qu’on aime.</p>
+        <ul class="famille-items" role="list"><li data-item="Voyage de noces &amp; lune de miel"><a href="/mon-projet-de-voyage?envie=Voyage%20de%20noces%20%26%20lune%20de%20miel#formulaire" data-libelle="Mon projet de voyage">Voyage de noces &amp; lune de miel</a></li><li data-item="Enterrement de vie de jeune fille et de jeune homme"><a href="/mon-projet-de-voyage?envie=Enterrement%20de%20vie%20de%20jeune%20fille%20et%20de%20jeune%20homme#formulaire" data-libelle="Mon projet de voyage">Enterrement de vie de jeune fille et de jeune homme</a></li><li data-item="Anniversaire ailleurs"><a href="/mon-projet-de-voyage?envie=Anniversaire%20ailleurs#formulaire" data-libelle="Mon projet de voyage">Anniversaire ailleurs</a></li><li data-item="Voyage surprise, pour ses proches ou soi-même"><a href="/mon-projet-de-voyage?envie=Voyage%20surprise%2C%20pour%20ses%20proches%20ou%20soi-m%C3%AAme#formulaire" data-libelle="Mon projet de voyage">Voyage surprise, pour ses proches ou soi-même</a></li></ul>
+      </div>
+    </li><li class="famille" id="famille-styles" data-famille-id="styles">
+      <figure class="media famille-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/theme-chien-784.webp" srcset="/assets/images/theme-chien-480.webp 480w, /assets/images/theme-chien-640.webp 640w, /assets/images/theme-chien-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage : voyager avec son chien, de la plage à la montagne" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="famille-texte">
+        <h3>Styles de voyage</h3>
+        <p class="famille-phrase">Seul·e, à deux, en tribu… ou avec son chien.</p>
+        <ul class="famille-items" role="list"><li data-item="Solo"><a href="/mon-projet-de-voyage?envie=Solo#formulaire" data-libelle="Mon projet de voyage">Solo</a></li><li data-item="Entre femmes"><a href="/mon-projet-de-voyage?envie=Entre%20femmes#formulaire" data-libelle="Mon projet de voyage">Entre femmes</a></li><li data-item="Entre hommes"><a href="/mon-projet-de-voyage?envie=Entre%20hommes#formulaire" data-libelle="Mon projet de voyage">Entre hommes</a></li><li data-item="En couple"><a href="/mon-projet-de-voyage?envie=En%20couple#formulaire" data-libelle="Mon projet de voyage">En couple</a></li><li data-item="En famille"><a href="/mon-projet-de-voyage?envie=En%20famille#formulaire" data-libelle="Mon projet de voyage">En famille</a></li><li data-item="Entre amis"><a href="/mon-projet-de-voyage?envie=Entre%20amis#formulaire" data-libelle="Mon projet de voyage">Entre amis</a></li><li data-item="Avec d’autres voyageurs"><a href="/mon-projet-de-voyage?envie=Avec%20d%E2%80%99autres%20voyageurs#formulaire" data-libelle="Mon projet de voyage">Avec d’autres voyageurs</a></li><li data-item="Partir avec son chien"><a href="/mon-projet-de-voyage?envie=Partir%20avec%20son%20chien#formulaire" data-libelle="Mon projet de voyage">Partir avec son chien</a></li></ul>
+      </div>
+    </li><li class="famille" id="famille-nature" data-famille-id="nature">
+      <figure class="media famille-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/theme-aventure-784.webp" srcset="/assets/images/theme-aventure-480.webp 480w, /assets/images/theme-aventure-640.webp 640w, /assets/images/theme-aventure-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage : randonnée, paddle, yoga et volley sur la plage" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="famille-texte">
+        <h3>Nature et aventure</h3>
+        <p class="famille-phrase">Pour celles et ceux qui ont besoin de grand air et de sensations.</p>
+        <ul class="famille-items" role="list"><li data-item="Voyages sportifs et d’aventures"><a href="/mon-projet-de-voyage?envie=Voyages%20sportifs%20et%20d%E2%80%99aventures#formulaire" data-libelle="Mon projet de voyage">Voyages sportifs et d’aventures</a></li><li data-item="Aventures &amp; sensations"><a href="/mon-projet-de-voyage?envie=Aventures%20%26%20sensations#formulaire" data-libelle="Mon projet de voyage">Aventures &amp; sensations</a></li><li data-item="Sports extrêmes"><a href="/mon-projet-de-voyage?envie=Sports%20extr%C3%AAmes#formulaire" data-libelle="Mon projet de voyage">Sports extrêmes</a></li><li data-item="Montagne &amp; nature"><a href="/mon-projet-de-voyage?envie=Montagne%20%26%20nature#formulaire" data-libelle="Mon projet de voyage">Montagne &amp; nature</a></li><li data-item="Forêts &amp; randonnées"><a href="/mon-projet-de-voyage?envie=For%C3%AAts%20%26%20randonn%C3%A9es#formulaire" data-libelle="Mon projet de voyage">Forêts &amp; randonnées</a></li><li data-item="Découverte des volcans"><a href="/mon-projet-de-voyage?envie=D%C3%A9couverte%20des%20volcans#formulaire" data-libelle="Mon projet de voyage">Découverte des volcans</a></li><li data-item="Découverte de la jungle"><a href="/mon-projet-de-voyage?envie=D%C3%A9couverte%20de%20la%20jungle#formulaire" data-libelle="Mon projet de voyage">Découverte de la jungle</a></li></ul>
+      </div>
+    </li><li class="famille" id="famille-mer" data-famille-id="mer">
+      <figure class="media famille-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/theme-engage-784.webp" srcset="/assets/images/grok/theme-engage-480.webp 480w, /assets/images/grok/theme-engage-640.webp 640w, /assets/images/grok/theme-engage-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage : une tortue de mer nage au-dessus d’un récif de corail" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="famille-texte">
+        <h3>Mer et îles</h3>
+        <p class="famille-phrase">Le sable, le large et les fonds marins.</p>
+        <ul class="famille-items" role="list"><li data-item="Plages &amp; îles paradisiaques"><a href="/mon-projet-de-voyage?envie=Plages%20%26%20%C3%AEles%20paradisiaques#formulaire" data-libelle="Mon projet de voyage">Plages &amp; îles paradisiaques</a></li><li data-item="Mer &amp; océans"><a href="/mon-projet-de-voyage?envie=Mer%20%26%20oc%C3%A9ans#formulaire" data-libelle="Mon projet de voyage">Mer &amp; océans</a></li></ul>
+      </div>
+    </li><li class="famille" id="famille-engage" data-famille-id="engage">
+      <figure class="media famille-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/theme-animaux-784.webp" srcset="/assets/images/theme-animaux-480.webp 480w, /assets/images/theme-animaux-640.webp 640w, /assets/images/theme-animaux-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage d’animaux sauvages : orang-outan, éléphant, léopard, calao" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="famille-texte">
+        <h3>Voyage engagé</h3>
+        <p class="famille-phrase">Voyager en respectant ce qu’on vient voir.</p>
+        <ul class="famille-items" role="list"><li data-item="Rencontre d’animaux sauvages éthique"><a href="/mon-projet-de-voyage?envie=Rencontre%20d%E2%80%99animaux%20sauvages%20%C3%A9thique#formulaire" data-libelle="Mon projet de voyage">Rencontre d’animaux sauvages éthique</a></li><li data-item="Écotourisme &amp; voyages responsables"><a href="/mon-projet-de-voyage?envie=%C3%89cotourisme%20%26%20voyages%20responsables#formulaire" data-libelle="Mon projet de voyage">Écotourisme &amp; voyages responsables</a></li><li data-item="Nature préservée"><a href="/mon-projet-de-voyage?envie=Nature%20pr%C3%A9serv%C3%A9e#formulaire" data-libelle="Mon projet de voyage">Nature préservée</a></li><li data-item="Voyage scientifique : étudier la planète"><a href="/mon-projet-de-voyage?envie=Voyage%20scientifique%20%3A%20%C3%A9tudier%20la%20plan%C3%A8te#formulaire" data-libelle="Mon projet de voyage">Voyage scientifique : étudier la planète</a></li><li data-item="Explorer, comprendre, protéger"><a href="/mon-projet-de-voyage?envie=Explorer%2C%20comprendre%2C%20prot%C3%A9ger#formulaire" data-libelle="Mon projet de voyage">Explorer, comprendre, protéger</a></li></ul>
+      </div>
+    </li><li class="famille" id="famille-cultures" data-famille-id="cultures">
+      <figure class="media famille-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/theme-villes-784.webp" srcset="/assets/images/grok/theme-villes-480.webp 480w, /assets/images/grok/theme-villes-640.webp 640w, /assets/images/grok/theme-villes-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage : toits d’une vieille ville aux tuiles ocre" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="famille-texte">
+        <h3>Cultures et rencontres</h3>
+        <p class="famille-phrase">Les gens, les histoires et les lieux qui les racontent.</p>
+        <ul class="famille-items" role="list"><li data-item="Partir hors des sentiers battus"><a href="/mon-projet-de-voyage?envie=Partir%20hors%20des%20sentiers%20battus#formulaire" data-libelle="Mon projet de voyage">Partir hors des sentiers battus</a></li><li data-item="Voyage authentique et immersif"><a href="/mon-projet-de-voyage?envie=Voyage%20authentique%20et%20immersif#formulaire" data-libelle="Mon projet de voyage">Voyage authentique et immersif</a></li><li data-item="Rencontres &amp; expériences locales"><a href="/mon-projet-de-voyage?envie=Rencontres%20%26%20exp%C3%A9riences%20locales#formulaire" data-libelle="Mon projet de voyage">Rencontres &amp; expériences locales</a></li><li data-item="Villes &amp; cultures"><a href="/mon-projet-de-voyage?envie=Villes%20%26%20cultures#formulaire" data-libelle="Mon projet de voyage">Villes &amp; cultures</a></li><li data-item="Histoire &amp; patrimoine"><a href="/mon-projet-de-voyage?envie=Histoire%20%26%20patrimoine#formulaire" data-libelle="Mon projet de voyage">Histoire &amp; patrimoine</a></li></ul>
+      </div>
+    </li><li class="famille" id="famille-saveurs" data-famille-id="saveurs">
+      <figure class="media famille-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/theme-experiences-784.webp" srcset="/assets/images/grok/theme-experiences-480.webp 480w, /assets/images/grok/theme-experiences-640.webp 640w, /assets/images/grok/theme-experiences-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage : étal d’épices colorées sous des tentures" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="famille-texte">
+        <h3>Saveurs et sens</h3>
+        <p class="famille-phrase">Sentir, goûter, vivre.</p>
+        <ul class="famille-items" role="list"><li data-item="Gastronomie &amp; œnologie"><a href="/mon-projet-de-voyage?envie=Gastronomie%20%26%20%C5%93nologie#formulaire" data-libelle="Mon projet de voyage">Gastronomie &amp; œnologie</a></li><li data-item="Spécialités locales"><a href="/mon-projet-de-voyage?envie=Sp%C3%A9cialit%C3%A9s%20locales#formulaire" data-libelle="Mon projet de voyage">Spécialités locales</a></li><li data-item="Voyage sensoriel"><a href="/mon-projet-de-voyage?envie=Voyage%20sensoriel#formulaire" data-libelle="Mon projet de voyage">Voyage sensoriel</a></li><li data-item="Éveil des sens"><a href="/mon-projet-de-voyage?envie=%C3%89veil%20des%20sens#formulaire" data-libelle="Mon projet de voyage">Éveil des sens</a></li></ul>
+      </div>
+    </li><li class="famille" id="famille-facons" data-famille-id="facons">
+      <figure class="media famille-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/theme-route-784.webp" srcset="/assets/images/grok/theme-route-480.webp 480w, /assets/images/grok/theme-route-640.webp 640w, /assets/images/grok/theme-route-784.webp 784w" sizes="(max-width: 760px) 92vw, 30vw" alt="Collage : route côtière sinueuse et petit van" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="famille-texte">
+        <h3>Façons de voyager</h3>
+        <p class="famille-phrase">La route compte autant que la destination.</p>
+        <ul class="famille-items" role="list"><li data-item="Road trips &amp; itinéraires"><a href="/mon-projet-de-voyage?envie=Road%20trips%20%26%20itin%C3%A9raires#formulaire" data-libelle="Mon projet de voyage">Road trips &amp; itinéraires</a></li><li data-item="Itinéraires sur mesure"><a href="/mon-projet-de-voyage?envie=Itin%C3%A9raires%20sur%20mesure#formulaire" data-libelle="Mon projet de voyage">Itinéraires sur mesure</a></li><li data-item="Vanlife &amp; camping-car"><a href="/mon-projet-de-voyage?envie=Vanlife%20%26%20camping-car#formulaire" data-libelle="Mon projet de voyage">Vanlife &amp; camping-car</a></li><li data-item="Escapades en voiture"><a href="/mon-projet-de-voyage?envie=Escapades%20en%20voiture#formulaire" data-libelle="Mon projet de voyage">Escapades en voiture</a></li><li data-item="Backpacking &amp; aventure"><a href="/mon-projet-de-voyage?envie=Backpacking%20%26%20aventure#formulaire" data-libelle="Mon projet de voyage">Backpacking &amp; aventure</a></li><li data-item="Voyages low cost"><a href="/mon-projet-de-voyage?envie=Voyages%20low%20cost#formulaire" data-libelle="Mon projet de voyage">Voyages low cost</a></li></ul>
+      </div>
+    </li>
+  </ul>
+  <div class="catalogue-vide" data-catalogue-vide hidden>
+    <p>Aucun thème ne correspond. Racontez-nous quand même votre envie : elle a peut-être son pro.</p>
+    <p><a href="/mon-projet-de-voyage#formulaire" class="bouton" data-libelle="Mon projet de voyage">Décrire mon envie</a></p>
+  </div>
+</section>
+<section class="tableau" id="destinations">
+  <div class="conteneur">
+    <div class="tableau-tete">
+      <h2 class="titre-section" data-anime="lignes">Les <em>destinations</em></h2>
+      <p data-anime>Touchez un pays : il part directement dans votre projet de voyage.</p>
+    </div>
+    <figure class="media tableau-bande" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/tableau-volcan-1280.webp" srcset="/assets/images/tableau-volcan-640.webp 640w, /assets/images/tableau-volcan-1280.webp 1280w, /assets/images/tableau-volcan-1920.webp 1920w" sizes="(max-width: 1240px) 100vw, 1240px" alt="Collage en papier découpé : un volcan dans la nuit" width="1280" height="548" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="zones" data-anime="cascade">
+      <div class="zone" id="afrique">
+        <h3><svg class="icone zone-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Afrique</h3>
+        <ul class="zone-pays" role="list"><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=S%C3%A9n%C3%A9gal#formulaire" data-libelle="Mon projet de voyage">Sénégal</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Maroc#formulaire" data-libelle="Mon projet de voyage">Maroc</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Alg%C3%A9rie#formulaire" data-libelle="Mon projet de voyage">Algérie</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=%C3%89gypte#formulaire" data-libelle="Mon projet de voyage">Égypte</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Tanzanie#formulaire" data-libelle="Mon projet de voyage">Tanzanie</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Afrique%20du%20Sud#formulaire" data-libelle="Mon projet de voyage">Afrique du Sud</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=C%C3%B4te%20d%E2%80%99Ivoire#formulaire" data-libelle="Mon projet de voyage">Côte d’Ivoire</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Ouganda#formulaire" data-libelle="Mon projet de voyage">Ouganda</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Mozambique#formulaire" data-libelle="Mon projet de voyage">Mozambique</a></li></ul>
+      </div><div class="zone" id="asie">
+        <h3><svg class="icone zone-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Asie</h3>
+        <ul class="zone-pays" role="list"><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Japon#formulaire" data-libelle="Mon projet de voyage">Japon</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Cor%C3%A9e%20du%20Sud#formulaire" data-libelle="Mon projet de voyage">Corée du Sud</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Chine#formulaire" data-libelle="Mon projet de voyage">Chine</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Indon%C3%A9sie#formulaire" data-libelle="Mon projet de voyage">Indonésie</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Vietnam#formulaire" data-libelle="Mon projet de voyage">Vietnam</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Laos#formulaire" data-libelle="Mon projet de voyage">Laos</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Philippines#formulaire" data-libelle="Mon projet de voyage">Philippines</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Malaisie#formulaire" data-libelle="Mon projet de voyage">Malaisie</a></li></ul>
+      </div><div class="zone" id="europe">
+        <h3><svg class="icone zone-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Europe</h3>
+        <ul class="zone-pays" role="list"><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=France#formulaire" data-libelle="Mon projet de voyage">France</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Italie%20%26%20Gr%C3%A8ce#formulaire" data-libelle="Mon projet de voyage">Italie &amp; Grèce</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Autriche#formulaire" data-libelle="Mon projet de voyage">Autriche</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=%C3%89cosse#formulaire" data-libelle="Mon projet de voyage">Écosse</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Norv%C3%A8ge#formulaire" data-libelle="Mon projet de voyage">Norvège</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Islande#formulaire" data-libelle="Mon projet de voyage">Islande</a></li></ul>
+      </div><div class="zone" id="amerique-nord">
+        <h3><svg class="icone zone-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Amérique du Nord</h3>
+        <ul class="zone-pays" role="list"><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=USA%20et%20Canada#formulaire" data-libelle="Mon projet de voyage">USA et Canada</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Ouest%20am%C3%A9ricain#formulaire" data-libelle="Mon projet de voyage">Ouest américain</a></li></ul>
+      </div><div class="zone" id="amerique-centrale">
+        <h3><svg class="icone zone-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Amérique centrale &amp; Caraïbes</h3>
+        <ul class="zone-pays" role="list"><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Mexique#formulaire" data-libelle="Mon projet de voyage">Mexique</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Costa%20Rica#formulaire" data-libelle="Mon projet de voyage">Costa Rica</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Guadeloupe%20%26%20Martinique#formulaire" data-libelle="Mon projet de voyage">Guadeloupe &amp; Martinique</a></li></ul>
+      </div><div class="zone" id="amerique-sud">
+        <h3><svg class="icone zone-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Amérique du Sud</h3>
+        <ul class="zone-pays" role="list"><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Colombie#formulaire" data-libelle="Mon projet de voyage">Colombie</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=P%C3%A9rou#formulaire" data-libelle="Mon projet de voyage">Pérou</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Br%C3%A9sil#formulaire" data-libelle="Mon projet de voyage">Brésil</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Argentine%20%26%20Chili#formulaire" data-libelle="Mon projet de voyage">Argentine &amp; Chili</a></li></ul>
+      </div><div class="zone" id="ocean-indien">
+        <h3><svg class="icone zone-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Océan Indien</h3>
+        <ul class="zone-pays" role="list"><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Sri%20Lanka#formulaire" data-libelle="Mon projet de voyage">Sri Lanka</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=%C3%8Ele%20Maurice#formulaire" data-libelle="Mon projet de voyage">Île Maurice</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=%C3%8Ele%20de%20la%20R%C3%A9union#formulaire" data-libelle="Mon projet de voyage">Île de la Réunion</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Rodrigues#formulaire" data-libelle="Mon projet de voyage">Rodrigues</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Nosy%20Be#formulaire" data-libelle="Mon projet de voyage">Nosy Be</a></li></ul>
+      </div><div class="zone" id="oceanie">
+        <h3><svg class="icone zone-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Océanie</h3>
+        <ul class="zone-pays" role="list"><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Nouvelle-Z%C3%A9lande#formulaire" data-libelle="Mon projet de voyage">Nouvelle-Zélande</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Australie#formulaire" data-libelle="Mon projet de voyage">Australie</a></li><li><a class="puce puce--lien" href="/mon-projet-de-voyage?destination=Polyn%C3%A9sie%20fran%C3%A7aise#formulaire" data-libelle="Mon projet de voyage">Polynésie française</a></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="autre conteneur" id="autre">
+  <div class="feuille autre-feuille">
+    <svg class="icone autre-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 39s-13-8-13-17a7 7 0 0 1 13-3.6A7 7 0 0 1 37 22c0 9-13 17-13 17z"/></g></svg>
+    <h2 class="titre-section" data-anime="lignes">Votre envie n’est pas dans la <em>liste</em>&nbsp;?</h2>
+    <p data-anime>Racontez-la-nous : un voyage avec vos chiens en Autriche, une lune de miel au Japon, une première fois en Islande…</p>
+    <p data-anime><a href="/mon-projet-de-voyage#formulaire" class="bouton" data-libelle="Mon projet de voyage">Décrire mon envie</a></p>
+  </div>
+</section>
+<section class="fin" id="fin">
+  <svg class="dechirure dechirure--haut dechirure--prune" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 16.1 L42 8.1 L85 10.4 L127 14.0 L169 15.1 L212 7.4 L254 21.8 L296 16.6 L339 13.4 L381 11.1 L424 20.1 L466 17.8 L508 7.4 L551 15.0 L593 10.2 L635 18.1 L678 8.8 L720 16.1 L762 14.8 L805 9.2 L847 6.9 L889 22.9 L932 23.5 L974 8.2 L1016 14.0 L1059 23.2 L1101 9.4 L1144 13.5 L1186 15.9 L1228 18.1 L1271 11.1 L1313 9.1 L1355 23.7 L1398 14.0 L1440 10.2 L1440 40 Z"/></svg>
+  <figure class="media fin-media" data-grok data-fx="zoom" data-fx-force="12" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/appel-nuit-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/appel-nuit-1280.webp" srcset="/assets/images/grok/appel-nuit-640.webp 640w, /assets/images/grok/appel-nuit-1280.webp 1280w, /assets/images/grok/appel-nuit-1920.webp 1920w" sizes="100vw" alt="" width="1280" height="853" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur fin-contenu">
+    <p class="note-main fin-note">Du rêve au trip…</p>
+    <h2 class="titre-section" data-anime="lignes">Prêt·e à faire le <em>premier pas</em>&nbsp;?</h2>
+    <p class="fin-texte" data-anime>Racontez-nous le voyage dont vous rêvez : nous cherchons avec vous votre match.</p>
+    <p class="fin-actions" data-anime>
+      <a href="/mon-projet-de-voyage#formulaire" class="bouton bouton--clair" data-libelle="Mon projet de voyage" data-survol="magnetique">Je donne vie à mon idée de voyage</a>
+      <a href="/faire-un-don" class="bouton bouton--contour-clair" data-libelle="Faire un don">Soutenir le projet</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <svg class="pied-dechirure" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 18 L40 10 L86 22 L130 8 L178 20 L226 6 L270 19 L318 9 L366 23 L410 7 L458 18 L506 8 L552 21 L600 10 L648 24 L694 9 L742 19 L790 6 L838 20 L884 10 L932 23 L980 8 L1026 18 L1074 7 L1120 21 L1168 9 L1216 22 L1262 8 L1310 19 L1358 10 L1404 21 L1440 12 L1440 40 Z"/></svg>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="44" height="44"><span class="logo-mot">Match<em>Your</em>Trip</span></p>
+      <p class="pied-slogan">Du rêve au trip, il n’y a qu’un match</p>
+      <p class="pied-signature">Des experts · des voyages · vous</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/comment-ca-marche" data-libelle="Comment ça marche">Comment ça marche</a></li><li><a href="/themes-et-destinations" data-libelle="Thèmes &amp; destinations" aria-current="page">Thèmes &amp; destinations</a></li><li><a href="/faire-un-don" data-libelle="Faire un don">Faire un don</a></li><li><a href="/mon-projet-de-voyage" data-libelle="Mon projet de voyage">Mon projet de voyage</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Pour aller plus loin</p>
+      <ul>
+        <li><a href="/mon-projet-de-voyage?profil=pro#formulaire" data-libelle="Mon projet de voyage">Vous êtes un·e pro du voyage ? Présentez-vous</a></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+      <p class="pied-legal">Mentions légales&nbsp;: à compléter<br>Politique de confidentialité&nbsp;: à compléter</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : formulaires et dons simulés, rien n’est envoyé.</p><p>© 2026 MatchYourTrip</p></div>
+</footer>
+<div data-barre-fixe>
+  <a href="/themes-et-destinations" class="bouton bouton--contour" data-libelle="Thèmes &amp; destinations" aria-current="page">Thèmes</a>
+  <a href="/mon-projet-de-voyage" class="bouton" data-libelle="Mon projet de voyage">Mon projet</a>
+</div>
+</body>
+</html>

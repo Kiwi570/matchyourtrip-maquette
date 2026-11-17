@@ -1,0 +1,313 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "Autre langue",
+    "actionEntete": "Mon projet de voyage",
+    "actionCourte": "Mon projet",
+    "themesCourt": "Thèmes",
+    "appeler": "Appeler",
+    "sommaire": "Sommaire",
+    "confort": "Pour aller plus loin",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette de démonstration : formulaires et dons simulés, rien n’est envoyé.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Du rêve au trip, il n’y a qu’un match",
+    "slogan": "Du rêve au trip, il n’y a qu’un match",
+    "signature": "Des experts · des voyages · vous",
+    "pro": "Vous êtes un·e pro du voyage ?",
+    "proLien": "Présentez-vous",
+    "mentions": "Mentions légales",
+    "confidentialite": "Politique de confidentialité",
+    "aCompleter": "à compléter",
+    "copyright": "© 2026 MatchYourTrip"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "MatchYourTrip : du rêve au trip, il n’y a qu’un match",
+      "description": "Un·e professionnel·le du voyage, spécialiste de votre destination ou de votre envie, conçoit un séjour 100 % personnalisé selon vos envies, votre rythme et votre budget.",
+      "nav": "Accueil",
+      "partageAlt": "MatchYourTrip : collage en papier découpé, une silhouette regarde l’horizon",
+      "accroche": "Du rêve au trip, il n’y a qu’un match"
+    },
+    "comment-ca-marche": {
+      "titre": "Comment ça marche : votre travel planner avec MatchYourTrip",
+      "description": "Un·e spécialiste de votre destination conçoit votre itinéraire sur mesure et votre carnet de voyage personnalisé. Moins de charge mentale, plus de voyage.",
+      "nav": "Comment ça marche",
+      "partageAlt": "Collage : une voyageuse observe le paysage aux jumelles",
+      "accroche": "Et si votre prochain voyage était encore mieux que vous l’imaginez ?"
+    },
+    "themes-et-destinations": {
+      "titre": "Thèmes et destinations : MatchYourTrip",
+      "description": "Plus de quarante thèmes de voyage, de la lune de miel au safari éthique, et une quarantaine de destinations sur 8 grandes régions du monde.",
+      "nav": "Thèmes & destinations",
+      "partageAlt": "Panorama en papier déchiré : lagon, collines, dunes et sommets",
+      "accroche": "Des thèmes inédits, des destinations de rêve"
+    },
+    "faire-un-don": {
+      "titre": "Faire un don : soutenir MatchYourTrip",
+      "description": "Faire du voyage une aventure plus humaine, plus accessible et plus responsable : chaque soutien compte.",
+      "nav": "Faire un don",
+      "partageAlt": "Montgolfière en papier qui s’élève au-dessus des collines",
+      "accroche": "Un petit geste, un grand envol"
+    },
+    "mon-projet": {
+      "titre": "Mon projet de voyage : MatchYourTrip",
+      "description": "Partagez vos envies de voyage : nous verrons ensemble quel·le professionnel·le du voyage pourrait vous accompagner.",
+      "nav": "Mon projet de voyage",
+      "partageAlt": "Carnet de voyage ouvert, avion en papier et boussole",
+      "accroche": "Votre prochaine aventure commence ici"
+    },
+    "404": {
+      "titre": "Page introuvable : MatchYourTrip",
+      "description": "Cette page n’existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Page introuvable"
+    }
+  },
+  "accueil": {
+    "hero": {
+      "note": "Votre voyage, notre passion !",
+      "titre1": "Du rêve au trip,",
+      "titre2": "il n’y a qu’un",
+      "titre3": "match",
+      "texte": "Un·e professionnel·le du voyage, spécialiste de votre destination ou de votre envie, conçoit pour vous un séjour 100 % personnalisé, selon vos envies, votre rythme et votre budget.",
+      "action": "Je trouve mon travel planner",
+      "secondaire": "Comment ça marche",
+      "info": "L’application est en construction : déposez votre projet dès maintenant.",
+      "pastille": "Match !"
+    },
+    "match": {
+      "titre1": "Une envie, une destination : votre",
+      "titre2": "match",
+      "texte": "Choisissez ce qui vous fait rêver. Nous cherchons pour vous le·la professionnel·le du voyage qui le connaît par cœur.",
+      "envie": "Votre envie",
+      "destination": "Votre destination",
+      "resultat": "{envie} × {destination} : nous cherchons pour vous le·la pro qui connaît les deux.",
+      "tampon": "Match !",
+      "action": "Déposer ce projet",
+      "tous": "Voir les thèmes et les pays",
+      "aide": "Touchez une envie, puis une destination."
+    },
+    "pourquoi": {
+      "titre1": "Pourquoi passer par un",
+      "titre2": "travel planner",
+      "titre3": "?",
+      "note": "Je trouve mon travel planner à vos côtés, pour un voyage qui vous ressemble !"
+    },
+    "themes": {
+      "titre1": "Des thèmes de voyage",
+      "titre2": "inédits",
+      "texte": "Plus de quarante envies, de la lune de miel au safari éthique, pour trouver le·la pro qui les partage.",
+      "tous": "Tous les thèmes",
+      "glisser": "Faites glisser"
+    },
+    "destinations": {
+      "titre1": "Et des destinations de",
+      "titre2": "rêve",
+      "texte": "Une quarantaine de destinations sur 8 grandes régions du monde. Touchez un pays pour le mettre dans votre projet.",
+      "tous": "Toutes les destinations"
+    },
+    "etapes": {
+      "titre1": "Comment ça",
+      "titre2": "marche",
+      "titre3": "?",
+      "action": "Je découvre comment ça marche"
+    },
+    "formules": {
+      "titre1": "Plusieurs façons de préparer son",
+      "titre2": "aventure",
+      "texte": "Le travel planner, c’est maintenant. Le reste arrive avec l’application.",
+      "disponible": "Disponible",
+      "bientot": "Prochainement",
+      "lien": "Matchez avec votre expert du voyage"
+    },
+    "rencontres": {
+      "titre": "Le voyage, c’est une histoire de rencontres…",
+      "texte": "Derrière chaque projet, il y a un·e professionnel·le passionné·e, qui connaît sa destination sur le bout des doigts et qui a à cœur de créer des voyages uniques, pensés pour vous."
+    }
+  },
+  "fin": {
+    "titre1": "Prêt·e à faire le",
+    "titre2": "premier pas",
+    "titre3": "?",
+    "texte": "Racontez-nous le voyage dont vous rêvez : nous cherchons avec vous votre match.",
+    "action": "Je donne vie à mon idée de voyage",
+    "don": "Soutenir le projet",
+    "note": "Du rêve au trip…"
+  },
+  "cmm": {
+    "hero": {
+      "note": "Des voyages qui vous ressemblent",
+      "titre1": "Et si votre prochain voyage était encore mieux que vous l’",
+      "titre2": "imaginez",
+      "titre3": "?",
+      "texte": "Avec MatchYourTrip, vous êtes accompagné·e par un·e professionnel·le du voyage qui conçoit un séjour 100 % personnalisé, selon vos envies, votre rythme et votre budget.",
+      "action": "Je trouve mon travel planner",
+      "info": "En attendant l’application : un formulaire, et l’équipe cherche votre pro avec vous."
+    },
+    "benefices": {
+      "titre1": "Ce que votre pro",
+      "titre2": "change",
+      "titre3": "à votre voyage"
+    },
+    "rencontres": {
+      "titre1": "Le voyage, c’est une histoire de",
+      "titre2": "rencontres",
+      "texte": "Derrière chaque projet, il y a un·e professionnel·le passionné·e, qui connaît sa destination sur le bout des doigts et qui a à cœur de créer des voyages uniques, pensés pour vous.",
+      "note": "Prêt·e à faire le premier pas ?"
+    },
+    "etapes": {
+      "titre1": "Trois étapes, du rêve au",
+      "titre2": "trip"
+    },
+    "formules": {
+      "titre1": "Plusieurs façons de préparer son",
+      "titre2": "aventure"
+    },
+    "faq": {
+      "titre1": "Vos",
+      "titre2": "questions"
+    }
+  },
+  "themes": {
+    "hero": {
+      "titre1": "Des thèmes de voyage inédits et des destinations de",
+      "titre2": "rêve",
+      "titre3": "à explorer",
+      "texte": "Choisissez une envie, un pays, ou les deux : chaque choix part dans votre projet de voyage.",
+      "action": "Explorer les thèmes",
+      "info": "{f} familles · {t} thèmes · {d} destinations"
+    },
+    "catalogue": {
+      "titre1": "Toutes les",
+      "titre2": "envies",
+      "toutes": "Toutes",
+      "recherche": "Chercher un thème",
+      "placeholder": "Ex. : chien, volcans, lune de miel…",
+      "aucun": "Aucun thème ne correspond. Racontez-nous quand même votre envie : elle a peut-être son pro.",
+      "aucunLien": "Décrire mon envie",
+      "resultats": "{n} thèmes affichés",
+      "choisir": "Ce thème me tente"
+    },
+    "destinations": {
+      "titre1": "Les",
+      "titre2": "destinations",
+      "texte": "Touchez un pays : il part directement dans votre projet de voyage."
+    },
+    "autre": {
+      "titre1": "Votre envie n’est pas dans la",
+      "titre2": "liste",
+      "titre3": "?",
+      "texte": "Racontez-la-nous : un voyage avec vos chiens en Autriche, une lune de miel au Japon, une première fois en Islande…",
+      "action": "Décrire mon envie"
+    }
+  },
+  "don": {
+    "hero": {
+      "titre1": "Un petit geste peut aider un grand projet à prendre son",
+      "titre2": "envol",
+      "texte": "Votre don contribue à développer MatchYourTrip, à créer de nouvelles possibilités et à imaginer un voyage plus authentique, plus engagé et plus proche des envies de chacun.",
+      "action": "Je fais un don",
+      "info": "Chaque soutien compte."
+    },
+    "mission": {
+      "titre1": "Faire du voyage une aventure plus",
+      "mot1": "humaine",
+      "mot2": "accessible",
+      "mot3": "responsable",
+      "texte": "Un voyage qui rassemble, qui fait découvrir le monde autrement, qui favorise les rencontres et donne vie à des projets qui nous ressemblent."
+    },
+    "utilite": {
+      "titre1": "À quoi sert votre",
+      "titre2": "don",
+      "u1t": "Développer MatchYourTrip",
+      "u1": "Faire grandir l’application et la plateforme, pour que chaque voyageur trouve son pro.",
+      "u2t": "Créer de nouvelles possibilités",
+      "u2": "Compagnons de voyage, voyages existants, idées partagées : les formules qui arrivent.",
+      "u3t": "Un voyage plus proche de vous",
+      "u3": "Imaginer un voyage plus authentique, plus engagé et plus proche des envies de chacun."
+    },
+    "form": {
+      "titre1": "Je soutiens",
+      "titre2": "MatchYourTrip",
+      "montant": "Montant de votre don (€)",
+      "moins": "Diminuer le montant",
+      "plus": "Augmenter le montant",
+      "prenom": "Prénom",
+      "email": "E-mail",
+      "mot": "Un mot pour l’équipe (facultatif)",
+      "envoyer": "Je soutiens le projet",
+      "simule": "Don simulé : aucun paiement n’a été effectué. La plateforme de paiement reste à choisir.",
+      "donnees": "Vos données servent uniquement à vous remercier et à vous tenir informé·e du projet.",
+      "ballon": "Votre montgolfière gonfle avec votre don."
+    }
+  },
+  "projet": {
+    "hero": {
+      "titre1": "Votre prochaine aventure commence",
+      "titre2": "ici",
+      "texte": "L’application MatchYourTrip est en cours de construction ! En attendant son lancement, partagez vos envies de voyage : nous verrons ensemble quel·le professionnel·le pourrait vous accompagner.",
+      "action": "Commencer",
+      "info": "3 étapes : votre envie, votre voyage, vous.",
+      "tampon": "C’est parti !"
+    },
+    "form": {
+      "titre": "Mon projet de voyage",
+      "etape": "Étape {n} sur 3",
+      "e1": "Votre envie",
+      "e2": "Votre voyage",
+      "e3": "Vous",
+      "envies": "Ce qui vous tente (facultatif)",
+      "destination": "Destination(s) ou type de voyage(s) envisagé(s)",
+      "destinationAide": "Un pays, une région, une envie : tout est bon.",
+      "exemple": "J’aimerais partir avec mes chiens en Autriche de façon la plus éco-responsable possible !",
+      "participants": "Combien de participants ?",
+      "moins": "Un participant de moins",
+      "plus": "Un participant de plus",
+      "budget": "Une idée de budget par personne ? (€, facultatif)",
+      "prenom": "Prénom",
+      "email": "E-mail",
+      "tel": "Téléphone (facultatif)",
+      "pro": "Je suis un·e professionnel·le du voyage et je souhaite rejoindre MatchYourTrip",
+      "suivant": "Étape suivante",
+      "precedent": "Retour",
+      "envoyer": "Envoyer mon projet",
+      "donnees": "Vos données servent uniquement à étudier votre projet et à vous recontacter. Politique de confidentialité : à compléter.",
+      "simule": "Projet simulé : rien n’a été envoyé. Sur le site final, il partira vers l’équipe MatchYourTrip.",
+      "requis": "obligatoire"
+    },
+    "recap": {
+      "titre": "Votre billet",
+      "envies": "Envies",
+      "destination": "Destination",
+      "participants": "Participants",
+      "budget": "Budget / pers.",
+      "vide": "à choisir",
+      "pro": "Profil : professionnel·le du voyage"
+    },
+    "ensuite": {
+      "titre1": "Et",
+      "titre2": "ensuite",
+      "titre3": "?",
+      "e1t": "On lit votre projet",
+      "e1": "L’équipe regarde vos envies, votre destination et votre budget.",
+      "e2t": "On cherche votre match",
+      "e2": "Nous voyons avec vous quel·le professionnel·le du voyage pourrait vous accompagner.",
+      "e3t": "Votre voyage se dessine",
+      "e3": "Le·la pro conçoit votre itinéraire sur mesure et votre carnet de voyage."
+    }
+  },
+  "introuvable": {
+    "titre1": "Là, vous êtes vraiment",
+    "titre2": "hors des sentiers battus",
+    "texte": "Cette page n’existe pas, ou plus. Revenez à l’accueil, ou laissez-vous tenter par un thème.",
+    "retour": "Retour à l’accueil",
+    "themes": "Voir les thèmes"
+  }
+}

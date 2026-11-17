@@ -1,0 +1,18 @@
+{
+ "id": "20261117-174837-standard-cible-partiel",
+ "date": "2026-11-17T17:58:00.406Z",
+ "niveau": "standard",
+ "pages": "/,/404,/comment-ca-marche,/faire-un-don,/mon-projet-de-voyage,/themes-et-destinations",
+ "etapes": [
+  "fichiers",
+  "mesures",
+  "parcours",
+  "mouvement"
+ ],
+ "version": "1",
+ "echecs": 4,
+ "aRegarder": 29,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

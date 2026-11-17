@@ -1,0 +1,127 @@
+[
+  {
+    "id": "bien-etre",
+    "nom": "Bien-être",
+    "image": "grok/theme-bien-etre",
+    "alt": "Collage : une personne de dos médite au-dessus d’une mer de nuages",
+    "phrase": "Prendre le temps, se retrouver, revenir apaisé·e.",
+    "items": [
+      "Introspection",
+      "Voyage intérieur",
+      "Séjour spirituel"
+    ]
+  },
+  {
+    "id": "occasions",
+    "nom": "Occasions spéciales",
+    "image": "grok/theme-occasions",
+    "alt": "Collage : deux silhouettes de dos au bout d’un ponton, sous des lampions",
+    "phrase": "Les voyages qui marquent une date, pour soi ou pour ceux qu’on aime.",
+    "items": [
+      "Voyage de noces & lune de miel",
+      "Enterrement de vie de jeune fille et de jeune homme",
+      "Anniversaire ailleurs",
+      "Voyage surprise, pour ses proches ou soi-même"
+    ]
+  },
+  {
+    "id": "styles",
+    "nom": "Styles de voyage",
+    "image": "theme-chien",
+    "alt": "Collage : voyager avec son chien, de la plage à la montagne",
+    "phrase": "Seul·e, à deux, en tribu… ou avec son chien.",
+    "items": [
+      "Solo",
+      "Entre femmes",
+      "Entre hommes",
+      "En couple",
+      "En famille",
+      "Entre amis",
+      "Avec d’autres voyageurs",
+      "Partir avec son chien"
+    ]
+  },
+  {
+    "id": "nature",
+    "nom": "Nature et aventure",
+    "image": "theme-aventure",
+    "alt": "Collage : randonnée, paddle, yoga et volley sur la plage",
+    "phrase": "Pour celles et ceux qui ont besoin de grand air et de sensations.",
+    "items": [
+      "Voyages sportifs et d’aventures",
+      "Aventures & sensations",
+      "Sports extrêmes",
+      "Montagne & nature",
+      "Forêts & randonnées",
+      "Découverte des volcans",
+      "Découverte de la jungle"
+    ]
+  },
+  {
+    "id": "mer",
+    "nom": "Mer et îles",
+    "image": "grok/theme-engage",
+    "alt": "Collage : une tortue de mer nage au-dessus d’un récif de corail",
+    "phrase": "Le sable, le large et les fonds marins.",
+    "items": [
+      "Plages & îles paradisiaques",
+      "Mer & océans"
+    ]
+  },
+  {
+    "id": "engage",
+    "nom": "Voyage engagé",
+    "image": "theme-animaux",
+    "alt": "Collage d’animaux sauvages : orang-outan, éléphant, léopard, calao",
+    "phrase": "Voyager en respectant ce qu’on vient voir.",
+    "items": [
+      "Rencontre d’animaux sauvages éthique",
+      "Écotourisme & voyages responsables",
+      "Nature préservée",
+      "Voyage scientifique : étudier la planète",
+      "Explorer, comprendre, protéger"
+    ]
+  },
+  {
+    "id": "cultures",
+    "nom": "Cultures et rencontres",
+    "image": "grok/theme-villes",
+    "alt": "Collage : toits d’une vieille ville aux tuiles ocre",
+    "phrase": "Les gens, les histoires et les lieux qui les racontent.",
+    "items": [
+      "Partir hors des sentiers battus",
+      "Voyage authentique et immersif",
+      "Rencontres & expériences locales",
+      "Villes & cultures",
+      "Histoire & patrimoine"
+    ]
+  },
+  {
+    "id": "saveurs",
+    "nom": "Saveurs et sens",
+    "image": "grok/theme-experiences",
+    "alt": "Collage : étal d’épices colorées sous des tentures",
+    "phrase": "Sentir, goûter, vivre.",
+    "items": [
+      "Gastronomie & œnologie",
+      "Spécialités locales",
+      "Voyage sensoriel",
+      "Éveil des sens"
+    ]
+  },
+  {
+    "id": "facons",
+    "nom": "Façons de voyager",
+    "image": "grok/theme-route",
+    "alt": "Collage : route côtière sinueuse et petit van",
+    "phrase": "La route compte autant que la destination.",
+    "items": [
+      "Road trips & itinéraires",
+      "Itinéraires sur mesure",
+      "Vanlife & camping-car",
+      "Escapades en voiture",
+      "Backpacking & aventure",
+      "Voyages low cost"
+    ]
+  }
+]

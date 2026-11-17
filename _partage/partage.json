@@ -1,0 +1,183 @@
+{
+  "avertissements": [
+    "logo pris dans assets/images (logo.svg) : aucun logo dans donnees/images.json, vérifier que ce n'est pas celui du socle",
+    "accueil : imagePartage « accueil-ouverture-mobile-1080.webp » absente de donnees/images.json (visuel provisoire), remplacée par une image du client"
+  ],
+  "cartes": [
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "accueil-ouverture-1280.webp",
+      "poids": 49419,
+      "sujet": {
+        "x": 600,
+        "y": 16,
+        "l": 600,
+        "h": 541
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "comment-ca-marche",
+      "langue": "fr",
+      "fichier": "assets/partage/comment-ca-marche-fr.jpg",
+      "gabarit": "droite",
+      "image": "cmm-ouverture-1080.webp",
+      "poids": 64928,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 227,
+          "l": 480,
+          "h": 208
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "faire-un-don",
+      "langue": "fr",
+      "fichier": "assets/partage/faire-un-don-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/don-ouverture-1280.webp",
+      "poids": 82296,
+      "sujet": {
+        "x": 600,
+        "y": 280,
+        "l": 600,
+        "h": 315
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "mon-projet",
+      "langue": "fr",
+      "fichier": "assets/partage/mon-projet-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/projet-ouverture-1080.webp",
+      "poids": 89562,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 577,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "themes-et-destinations",
+      "langue": "fr",
+      "fichier": "assets/partage/themes-et-destinations-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/themes-ouverture-1280.webp",
+      "poids": 81947,
+      "sujet": {
+        "x": 600,
+        "y": 180,
+        "l": 600,
+        "h": 450
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 202,
+          "l": 480,
+          "h": 258
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}

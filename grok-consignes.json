@@ -1,0 +1,170 @@
+{
+  "client": "MatchYourTrip",
+  "activite": "collage",
+  "direction": "Carnet de papier déchiré",
+  "date": "2026-11-17T12:53:01.976Z",
+  "images": [
+    {
+      "nom": "themes-ouverture",
+      "fichier": "themes-ouverture.png",
+      "page": "themes-et-destinations",
+      "emplacement": "Thèmes & destinations · bandeau d'ouverture sous le titre",
+      "role": "ouverture",
+      "format": "21:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A wide dreamlike panorama made entirely of torn-paper collage that blends several kinds of journeys side by side: a turquoise lagoon with a small island and two palm trees on the left, rolling green hills with a winding footpath in the middle, a golden dune, snowy peaks and a small hot-air balloon on the right, a few paper birds in a pale sky, the main elements kept in the central horizontal band. Panoramic composition, aspect ratio 21:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "don-ouverture",
+      "fichier": "don-ouverture.png",
+      "page": "faire-un-don",
+      "emplacement": "Faire un don · ouverture plein cadre (ordinateur)",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A single hot-air balloon made of fuchsia pink and apricot orange paper strips rising gently above layered torn-paper hills at sunrise, a few small paper birds flying alongside, a generous calm cream sky around it. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "don-ouverture",
+      "fichier": "don-ouverture-mobile.png",
+      "page": "faire-un-don",
+      "emplacement": "Faire un don · ouverture plein cadre (téléphone)",
+      "role": "ouverture",
+      "format": "9:16",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A single hot-air balloon made of fuchsia pink and apricot orange paper strips rising gently above layered torn-paper hills at sunrise, a few small paper birds flying alongside, a generous calm cream sky around it. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "projet-ouverture",
+      "fichier": "projet-ouverture.png",
+      "page": "mon-projet",
+      "emplacement": "Mon projet de voyage · image à côté du titre",
+      "role": "ouverture",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "texte parasite"
+      ],
+      "consigne": "Seen from directly above, an open travel journal made of cream paper lying on a kraft paper table, both pages completely blank except for one pressed dried flower, around it a folded paper airplane, a small compass with tick marks only and no numbers, a straw sun hat and torn scraps of coloured paper shaped like small islands. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. Pages completely blank, blank book spines, abstract unreadable marks, plain unmarked surfaces, dials with tick marks only and no numbers. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "theme-bien-etre",
+      "fichier": "theme-bien-etre.png",
+      "page": "themes-et-destinations",
+      "emplacement": "Carte du thème Bien-être",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "visages"
+      ],
+      "consigne": "A single person seen strictly from behind, sitting cross-legged on a rocky ledge above a soft sea of clouds at sunrise, distant mountain tops emerging from the clouds, calm and meditative. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. Seen strictly from behind, face never visible, head turned away, or cropped at the shoulders. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "theme-occasions",
+      "fichier": "theme-occasions.png",
+      "page": "themes-et-destinations",
+      "emplacement": "Carte du thème Occasions spéciales",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Two figures seen strictly from behind sitting close together at the end of a small wooden pier at sunset, warm paper lanterns strung above them, a small wrapped gift box with a ribbon beside them, a calm sea. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "theme-experiences",
+      "fichier": "theme-experiences.png",
+      "page": "themes-et-destinations",
+      "emplacement": "Carte du thème Expériences et saveurs",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A colourful spice market stall with woven baskets full of spice mounds in ochre, red and saffron, hanging fabric awnings and small lanterns, nobody in the scene. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "theme-villes",
+      "fichier": "theme-villes.png",
+      "page": "themes-et-destinations",
+      "emplacement": "Carte du thème Villes, cultures et patrimoine",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Rooftops of an old generic town at golden hour, terracotta tiles, a few small domes and arches, a narrow street descending between the houses, laundry lines, no recognizable monument, nobody in the scene. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "theme-route",
+      "fichier": "theme-route.png",
+      "page": "themes-et-destinations",
+      "emplacement": "Carte du thème Façons de voyager (road trip, vanlife)",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "véhicules"
+      ],
+      "consigne": "A winding coastal road seen from above running through green hills towards a turquoise sea, a small plain cream camper van with no lettering driving along it, a few paper clouds. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "theme-engage",
+      "fichier": "theme-engage.png",
+      "page": "themes-et-destinations",
+      "emplacement": "Carte du thème Voyage engagé",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A sea turtle gliding above a coral reef in clear turquoise water, a few small fish around, soft rays of sunlight from the surface. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "destinations-fond",
+      "fichier": "destinations-fond.png",
+      "page": "accueil",
+      "emplacement": "Accueil et Thèmes · bandeau des destinations",
+      "role": "section-fond",
+      "format": "21:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A long panorama of layered torn paper showing landscapes flowing from left to right: golden desert dunes, a savanna with one flat-topped acacia tree, a deep green jungle, snowy mountains, and an ocean with small islands, all in the lower half; a long calm band of pale cream sky in the upper half. Panoramic composition, aspect ratio 21:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "appel-nuit",
+      "fichier": "appel-nuit.png",
+      "page": "accueil",
+      "emplacement": "Appel final de chaque page · fond de nuit",
+      "role": "section-fond",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A calm night over the sea made of deep plum and dark midnight blue torn papers, a round cream paper moon in the upper right, tiny paper stars, a small folded paper airplane far away on the left, the central area stays dark, simple and uncluttered. Landscape composition, aspect ratio 3:2, calm empty space in the middle of the frame for a title. Hand-made torn-paper collage illustration, every element cut from textured paper with visible deckled and torn edges, subtle paper grain and soft drop shadows between the layers, warm, dreamy and joyful mood, palette of warm ochre, sage green, soft sky blue and cream paper, with small touches of fuchsia pink and apricot orange, soft golden morning light, made of textured cream paper, kraft paper and torn coloured papers, set in a dreamlike faraway land on a soft golden morning, naive and poetic storybook feel, calm composition with generous negative space, high detail, not a photograph. No recognizable monument or landmark, no flag, no map with names, no lettering on any sign, no visible face, no place presented as a real destination, no glossy 3D render. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

@@ -1,0 +1,1578 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays « Japon · Corée du Sud · Chine · Indonésie · Vietnam »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#destinations > figure.media.destinations-bande > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "768×1024 normal",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(3) « Chine »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#destinations > figure.media.destinations-bande > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "768×1024 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(5) « Tanzanie »",
+      "lieux": [
+        "768×1024 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "lieux": [
+        "768×1024 normal",
+        "320×568 normal",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(8) « Ouganda »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "lieux": [
+        "768×1024 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(9) « Mozambique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "lieux": [
+        "768×1024 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(1) « Mexique »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(2) « Costa Rica »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(1) « Colombie »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(2) « Pérou »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(3) « Brésil »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(1) « Sri Lanka »",
+      "lieux": [
+        "768×1024 normal",
+        "320×568 normal",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(2) « Île Maurice »",
+      "lieux": [
+        "768×1024 normal",
+        "320×568 normal",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(4) « Rodrigues »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "lieux": [
+        "768×1024 normal",
+        "320×568 normal",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(5) « Nosy Be »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "lieux": [
+        "768×1024 normal",
+        "320×568 normal",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(4) « Égypte »",
+      "lieux": [
+        "320×568 normal",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(5) « Tanzanie »",
+      "lieux": [
+        "320×568 normal",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(8) « Ouganda »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "lieux": [
+        "320×568 normal",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(4) « Indonésie »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "section#destinations > figure.media.destinations-bande > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#debut > div.conteneur.ouv-plein-contenu > div.feuille.ouv-feuille > h1.ouv-titre.ouv-titre--moyen « Là, vous êtes vraiment hors des sentiers battus »",
+      "etape": "mesures",
+      "page": "/404",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "div.conteneur.ouv-plein-contenu > div.feuille.ouv-feuille > div.pastille.ouv-pastille > span.pastille-texte « Oups ! »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/comment-ca-marche",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#debut > div.ouv-texte:nth-of-type(1) > p.ouv-info:nth-of-type(4) « En attendant l’application : un formulaire, et l’é »",
+      "lieux": [
+        "320×568 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#don « 20 € Je soutiens MatchYourTrip Montant de votre do »",
+      "etape": "mesures",
+      "page": "/faire-un-don",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "form.don-form.feuille > div.champ.champ--montant:nth-of-type(1) > div.pas-a-pas > button.pas:nth-of-type(2) « + »",
+      "lieux": [
+        "320×568 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#debut « Illustration générée Merci ! Un petit geste peut a »",
+      "etape": "mesures",
+      "page": "/faire-un-don",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#debut > figure.media.ouv-fond > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "768×1024 normal",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#debut > div.conteneur.ouv-plein-contenu > div.feuille.ouv-feuille > h1.ouv-titre.ouv-titre--moyen « Un petit geste peut aider un grand projet à prendr »",
+      "etape": "mesures",
+      "page": "/faire-un-don",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "div.conteneur.ouv-plein-contenu > div.feuille.ouv-feuille > div.pastille.ouv-pastille > span.pastille-texte « Merci ! »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#debut « Votre prochaine aventure commence ici L’applicatio »",
+      "etape": "mesures",
+      "page": "/mon-projet-de-voyage",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#debut > div.ouv-visuel.billet-cadre:nth-of-type(2) > div.pastille.ouv-pastille > span.pastille-texte « C’est parti ! »",
+      "lieux": [
+        "768×1024 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#debut « Votre prochaine aventure commence ici Commencer 3  »",
+      "etape": "mesures",
+      "page": "/mon-projet-de-voyage",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "section#debut > div.ouv-visuel.billet-cadre:nth-of-type(2) > div.pastille.ouv-pastille > span.pastille-texte « C’est parti ! »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mention « Illustration générée » absente",
+      "detail": "themes-ouverture-1280.webp",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "div.mosaique-bande.mosaique-bande--0:nth-of-type(1) > figure.media.mosaique-media > picture > img « Panorama en papier déchiré mêlant lagon, collines, »",
+      "lieux": [
+        "768×1024 normal",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mention « Illustration générée » absente",
+      "detail": "themes-ouverture-1280.webp",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "div.mosaique-bande.mosaique-bande--1:nth-of-type(2) > figure.media.mosaique-media > picture > img",
+      "lieux": [
+        "768×1024 normal",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#debut « Des thèmes de voyage inédits et des destinations d »",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#debut > div.mosaique:nth-of-type(2) > div.pastille.mosaique-pastille:nth-of-type(4) > span.pastille-texte « Bon voyage »",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mention « Illustration générée » absente",
+      "detail": "themes-ouverture-mobile-640.webp",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.mosaique-bande.mosaique-bande--0:nth-of-type(1) > figure.media.mosaique-media > picture > img « Panorama en papier déchiré mêlant lagon, collines, »",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mention « Illustration générée » absente",
+      "detail": "themes-ouverture-mobile-640.webp",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.mosaique-bande.mosaique-bande--1:nth-of-type(2) > figure.media.mosaique-media > picture > img",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#debut > div.mosaique:nth-of-type(2) > div.pastille.mosaique-pastille:nth-of-type(4) > span.pastille-texte « Bon voyage »",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "div.mosaique:nth-of-type(2) > div.mosaique-bande.mosaique-bande--2:nth-of-type(3) > figure.media.mosaique-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par section#debut > div.mosaique:nth-of-type(2) > div.pastille.mosaique-pastille:nth-of-type(4) > svg.pastille-bord",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#debut > div.conteneur.ouv-texte:nth-of-type(1) > div.ouv-ligne > p.ouv-info:nth-of-type(3) « 9 familles · 44 thèmes · 40 destinations »",
+      "lieux": [
+        "768×1024 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : aria-valid-attr-value",
+      "detail": "ARIA attributes must conform to valid values",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": ".mosaique-bande--1 ; .mosaique-bande--2",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mention « Illustration générée » absente",
+      "detail": "themes-ouverture-1920.webp",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.mosaique-bande.mosaique-bande--0:nth-of-type(1) > figure.media.mosaique-media > picture > img « Panorama en papier déchiré mêlant lagon, collines, »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mention « Illustration générée » absente",
+      "detail": "themes-ouverture-1920.webp",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.mosaique-bande.mosaique-bande--1:nth-of-type(2) > figure.media.mosaique-media > picture > img",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "clavier",
+      "detail": "le focus arrive sur un élément caché",
+      "etape": "parcours",
+      "page": "/mon-projet-de-voyage",
+      "taille": "1366×768",
+      "selecteur": "input «  »",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans effet au défilement",
+      "detail": "aucun élément data-effet (bibliothèque : data-anime=\"lignes|mots|lettres|cascade|rideau\", data-fx ; ou effet du projet marqué data-effet)",
+      "etape": "mouvement",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#afrique.zone",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans effet au défilement",
+      "detail": "aucun élément data-effet (bibliothèque : data-anime=\"lignes|mots|lettres|cascade|rideau\", data-fx ; ou effet du projet marqué data-effet)",
+      "etape": "mouvement",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#asie.zone",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans effet au défilement",
+      "detail": "aucun élément data-effet (bibliothèque : data-anime=\"lignes|mots|lettres|cascade|rideau\", data-fx ; ou effet du projet marqué data-effet)",
+      "etape": "mouvement",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#europe.zone",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans effet au défilement",
+      "detail": "aucun élément data-effet (bibliothèque : data-anime=\"lignes|mots|lettres|cascade|rideau\", data-fx ; ou effet du projet marqué data-effet)",
+      "etape": "mouvement",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#amerique-nord.zone",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans effet au défilement",
+      "detail": "aucun élément data-effet (bibliothèque : data-anime=\"lignes|mots|lettres|cascade|rideau\", data-fx ; ou effet du projet marqué data-effet)",
+      "etape": "mouvement",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#amerique-centrale.zone",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans effet au défilement",
+      "detail": "aucun élément data-effet (bibliothèque : data-anime=\"lignes|mots|lettres|cascade|rideau\", data-fx ; ou effet du projet marqué data-effet)",
+      "etape": "mouvement",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#amerique-sud.zone",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans effet au défilement",
+      "detail": "aucun élément data-effet (bibliothèque : data-anime=\"lignes|mots|lettres|cascade|rideau\", data-fx ; ou effet du projet marqué data-effet)",
+      "etape": "mouvement",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#ocean-indien.zone",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "section sans effet au défilement",
+      "detail": "aucun élément data-effet (bibliothèque : data-anime=\"lignes|mots|lettres|cascade|rideau\", data-fx ; ou effet du projet marqué data-effet)",
+      "etape": "mouvement",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#oceanie.zone",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "faire-un-don.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "mon-projet-de-voyage.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "absent de cette page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "page": "/comment-ca-marche",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "absent de cette page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "page": "/faire-un-don",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "absent de cette page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "page": "/mon-projet-de-voyage",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "absent de cette page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "page": "/themes-et-destinations",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#match « Une envie, une destination : votre match Choisisse »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#pourquoi « Pourquoi passer par un travel planner ? Son domain »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#formules « Plusieurs façons de préparer son aventure Le trave »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1920×1080 normal",
+        "1366×768 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#etapes « Comment ça marche ? 1 Vous partagez vos envies Des »",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1920×1080",
+      "mode": "normal",
+      "selecteur": "div.vedettes-piste:nth-of-type(2) > article.vedette.vedette--1:nth-of-type(5) > figure.media.vedette-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1920×1080",
+      "mode": "normal",
+      "selecteur": "div.vedettes-piste:nth-of-type(2) > article.vedette.vedette--2:nth-of-type(6) > figure.media.vedette-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1920×1080",
+      "mode": "normal",
+      "selecteur": "section#destinations > figure.media.destinations-bande > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1920×1080",
+      "mode": "normal",
+      "selecteur": "section#fin > figure.media.fin-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1920×1080 normal",
+        "1366×768 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/comment-ca-marche",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#benefices « Ce que votre pro change à votre voyage 1. Son doma »",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "768×1024 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/comment-ca-marche",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#etapes « Trois étapes, du rêve au trip 1 Vous partagez vos  »",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "390×844 sansJs",
+        "390×844 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/comment-ca-marche",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#formules « Plusieurs façons de préparer son aventure Travel p »",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "768×1024 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "320×568 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/comment-ca-marche",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#fin > figure.media.fin-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/faire-un-don",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#utilite « À quoi sert votre don Développer MatchYourTrip Fai »",
+      "lieux": [
+        "320×568 normal",
+        "390×844 normal",
+        "768×1024 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/faire-un-don",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#debut > figure.media.ouv-fond > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/faire-un-don",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#fin > figure.media.fin-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/mon-projet-de-voyage",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#formulaire « Mon projet de voyage Votre envie Votre voyage Vous »",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "768×1024 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/mon-projet-de-voyage",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#ensuite « Et ensuite ? On lit votre projet L’équipe regarde  »",
+      "lieux": [
+        "390×844 normal",
+        "320×568 normal",
+        "768×1024 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/mon-projet-de-voyage",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#debut > div.ouv-visuel.billet-cadre:nth-of-type(2) > figure.media.billet-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#afrique « Afrique Sénégal Maroc Algérie Égypte Tanzanie Afri »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#asie « Asie Japon Corée du Sud Chine Indonésie Vietnam La »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#europe « Europe France Italie & Grèce Autriche Écosse Norvè »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#amerique-nord « Amérique du Nord USA et Canada Ouest américain »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#amerique-centrale « Amérique centrale & Caraïbes Mexique Costa Rica Gu »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#amerique-sud « Amérique du Sud Colombie Pérou Brésil Argentine &  »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#ocean-indien « Océan Indien Sri Lanka Île Maurice Île de la Réuni »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#oceanie « Océanie Nouvelle-Zélande Australie Polynésie franç »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "768×1024",
+      "mode": "normal",
+      "selecteur": "section#autre « Votre envie n’est pas dans la liste ? Racontez-la- »",
+      "lieux": [
+        "768×1024 normal",
+        "390×844 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "1366×768 normal",
+        "1920×1080 normal",
+        "390×844 sansWebgl",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.mosaique:nth-of-type(2) > div.mosaique-bande.mosaique-bande--2:nth-of-type(3) > figure.media.mosaique-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "li#famille-bien-etre > figure.media.famille-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "li#famille-occasions > figure.media.famille-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "li#famille-mer > figure.media.famille-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "li#famille-cultures > figure.media.famille-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "li#famille-saveurs > figure.media.famille-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "li#famille-facons > figure.media.famille-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/themes-et-destinations",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#fin > figure.media.fin-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal",
+        "1920×1080 normal",
+        "1366×768 sansJs",
+        "1366×768 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 72 ms (différence 29 %) (films/retour-arrière-1366.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "lieux": [
+        "1366×768 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 78 ms (différence 21 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/comment-ca-marche",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 44 ms (différence 22 %) (films/retour-arrière-390.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "retour arrière",
+      "lieux": [
+        "390×844 retour arrière"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 6,
+    "mesures": 66,
+    "balayage": 5,
+    "films d’ouverture": 10,
+    "films de transition": 10,
+    "bords de l’écran": 6,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 6,
+    "liens et boutons": 6,
+    "liens profonds": 16,
+    "liens vers la page en cours": 5,
+    "changements de hauteur": 5,
+    "parcours du projet": 1,
+    "fluidité": 10,
+    "défilement selon l’appareil": 5,
+    "mouvement": 10,
+    "effets du plan": 15,
+    "souris immobile": 5,
+    "vitesse": 5,
+    "captures": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=1",
+    "Journal v1 : 2 étape(s) notée(s), 13 min de travail pour 30 min de budget, 1 min d’attente de l’utilisateur.",
+    "Audit standard : étapes lourdes sur /, /comment-ca-marche, /faire-un-don, /mon-projet-de-voyage, /themes-et-destinations.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 2899 ms depuis le premier octet",
+    "film de l'ouverture / 1366×768 : réussi à la tentative 3 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /comment-ca-marche (1366×768) : 2901 ms depuis le premier octet",
+    "film de l'ouverture /comment-ca-marche 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /faire-un-don (1366×768) : 2901 ms depuis le premier octet",
+    "Ouverture /mon-projet-de-voyage (1366×768) : 2904 ms depuis le premier octet",
+    "Ouverture /themes-et-destinations (1366×768) : 2889 ms depuis le premier octet",
+    "film de l'ouverture /themes-et-destinations 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture / (390×844) : 2904 ms depuis le premier octet",
+    "Ouverture /comment-ca-marche (390×844) : 2896 ms depuis le premier octet",
+    "Ouverture /faire-un-don (390×844) : 2890 ms depuis le premier octet",
+    "film de l'ouverture /faire-un-don 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /mon-projet-de-voyage (390×844) : 2891 ms depuis le premier octet",
+    "Ouverture /themes-et-destinations (390×844) : 2895 ms depuis le premier octet",
+    "bords de l’écran /mon-projet-de-voyage 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "bords de l’écran /themes-et-destinations 1366×768 : réussi à la tentative 3 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Bords de l’écran : 493 images d’intro, 30 de voile et 206 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Tient dans l'écran / : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /comment-ca-marche : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /faire-un-don : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /mon-projet-de-voyage : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /themes-et-destinations : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 429, tâche la plus longue 0 ms",
+    "Fluidité /comment-ca-marche 1366×768 (molette) : 0 % d'images lentes sur 281, tâche la plus longue 0 ms",
+    "Fluidité /faire-un-don 1366×768 (molette) : 0 % d'images lentes sur 221, tâche la plus longue 0 ms",
+    "Fluidité /mon-projet-de-voyage 1366×768 (molette) : 0 % d'images lentes sur 176, tâche la plus longue 0 ms",
+    "Fluidité /themes-et-destinations 1366×768 (molette) : 0 % d'images lentes sur 332, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1412, tâche la plus longue 0 ms",
+    "Fluidité /comment-ca-marche 390×844 (doigt) : 0 % d'images lentes sur 1349, tâche la plus longue 0 ms",
+    "Fluidité /faire-un-don 390×844 (doigt) : 0 % d'images lentes sur 1346, tâche la plus longue 0 ms",
+    "Fluidité /mon-projet-de-voyage 390×844 (doigt) : 0 % d'images lentes sur 1343, tâche la plus longue 0 ms",
+    "Fluidité /themes-et-destinations 390×844 (doigt) : 0 % d'images lentes sur 1341, tâche la plus longue 0 ms",
+    "Vitesse / : 0.57 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /comment-ca-marche : 0.50 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /faire-un-don : 0.39 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /mon-projet-de-voyage : 0.36 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /themes-et-destinations : 0.47 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "présent",
+      "detail": "accueil"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 5 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en vague"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "présent",
+      "detail": "sur les 5 page(s)"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "à regarder",
+      "detail": "présent sur / ; absent sur /comment-ca-marche, /faire-un-don, /mon-projet-de-voyage, /themes-et-destinations"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "sans objet",
+      "detail": "aucune scène épinglée marquée ni galerie générique"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "présent",
+      "detail": "sur /"
+    }
+  ]
+}

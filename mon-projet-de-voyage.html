@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon projet de voyage : MatchYourTrip</title>
+<meta name="description" content="Partagez vos envies de voyage : nous verrons ensemble quel·le professionnel·le du voyage pourrait vous accompagner.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://matchyourtrip-maquette.vercel.app/mon-projet-de-voyage">
+<style>:root{--fond:#F7F0E6;--texte:#2B1F24;--voile-fond:#2B1A27;--ouverture-fond:#F7F0E6;--menu-fond:#F7F0E6}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F7F0E6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MatchYourTrip">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Mon projet de voyage : MatchYourTrip">
+<meta property="og:description" content="Partagez vos envies de voyage : nous verrons ensemble quel·le professionnel·le du voyage pourrait vous accompagner.">
+<meta property="og:url" content="https://matchyourtrip-maquette.vercel.app/mon-projet-de-voyage">
+<meta property="og:image" content="https://matchyourtrip-maquette.vercel.app/assets/partage/mon-projet-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Carnet de voyage ouvert, avion en papier et boussole">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MatchYourTrip","url":"https://www.matchyourtrip.fr","slogan":"Du rêve au trip, il n'y a qu'un match","description":"Mise en relation entre voyageurs et professionnels du voyage (travel planners) pour des voyages 100 % personnalisés."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Mon projet de voyage</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="intro-scene">
+    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 14 L600 6 L590 18 L598 30 L586 44 L597 58 L588 72 L600 84 L0 80 Z"/></svg>
+    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 10 L0 4 L12 16 L2 30 L14 42 L3 56 L13 70 L0 86 L600 82 Z"/></svg>
+    <img class="ouverture-logo" src="/assets/images/logo.svg" alt="" width="72" height="72" data-ouverture-objet>
+    <svg class="intro-coeur" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg>
+  </div>
+  <p class="ouverture-nom"><span>Match</span><em>Your</em><span>Trip</span></p>
+  <p class="ouverture-ligne">Du rêve au trip, il n’y a qu’un match</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span class="logo-mot">Match<em>Your</em>Trip</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/comment-ca-marche" data-libelle="Comment ça marche">Comment ça marche</a></li><li><a href="/themes-et-destinations" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li><a href="/faire-un-don" data-libelle="Faire un don">Faire un don</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/mon-projet-de-voyage" data-libelle="Mon projet de voyage">Mon projet de voyage</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/comment-ca-marche" class="menu-lien" data-libelle="Comment ça marche">Comment ça marche</a></li><li style="--i:2"><a href="/themes-et-destinations" class="menu-lien" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li style="--i:3"><a href="/faire-un-don" class="menu-lien" data-libelle="Faire un don">Faire un don</a></li><li style="--i:4"><a href="/mon-projet-de-voyage" class="menu-lien" data-libelle="Mon projet de voyage" aria-current="page">Mon projet de voyage</a></li></ul>
+  <p class="menu-note">Du rêve au trip, il n’y a qu’un match</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv ouv--billet" id="debut">
+  <div class="ouv-texte">
+    <h1 class="ouv-titre" data-anime="gsap">Votre prochaine aventure commence <em>ici</em></h1>
+    <p class="ouv-intro" data-anime="gsap">L’application MatchYourTrip est en cours de construction ! En attendant son lancement, partagez vos envies de voyage : nous verrons ensemble quel·le professionnel·le pourrait vous accompagner.</p>
+    <p class="ouv-actions" data-anime="gsap"><a class="bouton" href="#formulaire" data-action-principale data-survol="magnetique">Commencer</a></p>
+    <p class="ouv-info" data-info-cle><span class="point-vivant" aria-hidden="true"></span>3 étapes : votre envie, votre voyage, vous.</p>
+  </div>
+  <div class="ouv-visuel billet-cadre">
+    <figure class="media billet-media" data-grok data-effet="billet" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/projet-ouverture-1080.webp" srcset="/assets/images/grok/projet-ouverture-640.webp 640w, /assets/images/grok/projet-ouverture-1080.webp 1080w" sizes="(max-width: 760px) 92vw, 40vw" alt="Carnet de voyage ouvert en papier, entouré d’un avion en papier, d’une boussole et d’un chapeau de paille" width="1080" height="1350" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="pastille ouv-pastille" data-iris-centre="disque" data-grille="fil">
+  <svg class="pastille-bord" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/></svg>
+  <img src="/assets/images/logo.svg" alt="" width="46" height="46">
+  <span class="pastille-texte">C’est parti !</span>
+</div>
+  </div>
+</section>
+<section class="projet" id="formulaire">
+  <div class="conteneur projet-grille">
+    <form class="projet-form feuille" data-formulaire data-etapes novalidate>
+      <h2 class="titre-section titre-section--moyen" data-anime="lignes">Mon projet de voyage</h2>
+      <ol class="etapes-points" role="list" aria-hidden="true">
+        <li class="actif">Votre envie</li><li>Votre voyage</li><li>Vous</li>
+      </ol>
+      <p class="etape-compte" data-etape-compte aria-live="polite">Étape 1 sur 3</p>
+      <fieldset class="etape-form" data-etape="1">
+        <legend class="visuellement-cache">Votre envie</legend>
+        <div class="champ">
+          <p class="champ-titre" id="envies-titre">Ce qui vous tente (facultatif)</p>
+          <div class="puces puces--form" role="group" aria-labelledby="envies-titre">
+            <label class="puce puce--case"><input type="checkbox" name="famille" value="Bien-être" data-items="Introspection|Voyage intérieur|Séjour spirituel"><span>Bien-être</span></label><label class="puce puce--case"><input type="checkbox" name="famille" value="Occasions spéciales" data-items="Voyage de noces &amp; lune de miel|Enterrement de vie de jeune fille et de jeune homme|Anniversaire ailleurs|Voyage surprise, pour ses proches ou soi-même"><span>Occasions spéciales</span></label><label class="puce puce--case"><input type="checkbox" name="famille" value="Styles de voyage" data-items="Solo|Entre femmes|Entre hommes|En couple|En famille|Entre amis|Avec d’autres voyageurs|Partir avec son chien"><span>Styles de voyage</span></label><label class="puce puce--case"><input type="checkbox" name="famille" value="Nature et aventure" data-items="Voyages sportifs et d’aventures|Aventures &amp; sensations|Sports extrêmes|Montagne &amp; nature|Forêts &amp; randonnées|Découverte des volcans|Découverte de la jungle"><span>Nature et aventure</span></label><label class="puce puce--case"><input type="checkbox" name="famille" value="Mer et îles" data-items="Plages &amp; îles paradisiaques|Mer &amp; océans"><span>Mer et îles</span></label><label class="puce puce--case"><input type="checkbox" name="famille" value="Voyage engagé" data-items="Rencontre d’animaux sauvages éthique|Écotourisme &amp; voyages responsables|Nature préservée|Voyage scientifique : étudier la planète|Explorer, comprendre, protéger"><span>Voyage engagé</span></label><label class="puce puce--case"><input type="checkbox" name="famille" value="Cultures et rencontres" data-items="Partir hors des sentiers battus|Voyage authentique et immersif|Rencontres &amp; expériences locales|Villes &amp; cultures|Histoire &amp; patrimoine"><span>Cultures et rencontres</span></label><label class="puce puce--case"><input type="checkbox" name="famille" value="Saveurs et sens" data-items="Gastronomie &amp; œnologie|Spécialités locales|Voyage sensoriel|Éveil des sens"><span>Saveurs et sens</span></label><label class="puce puce--case"><input type="checkbox" name="famille" value="Façons de voyager" data-items="Road trips &amp; itinéraires|Itinéraires sur mesure|Vanlife &amp; camping-car|Escapades en voiture|Backpacking &amp; aventure|Voyages low cost"><span>Façons de voyager</span></label>
+          </div>
+          <input type="hidden" name="envie" value="">
+        </div>
+        <div class="champ">
+          <label for="p-destination">Destination(s) ou type de voyage(s) envisagé(s) <span class="requis">(obligatoire)</span></label>
+          <p class="champ-aide" id="p-destination-aide">Un pays, une région, une envie : tout est bon.</p>
+          <textarea id="p-destination" name="destination" rows="4" required aria-describedby="p-destination-aide" placeholder="J’aimerais partir avec mes chiens en Autriche de façon la plus éco-responsable possible !"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="etape-form" data-etape="2" hidden>
+        <legend class="visuellement-cache">Votre voyage</legend>
+        <div class="champ">
+          <label for="p-participants">Combien de participants ?</label>
+          <div class="pas-a-pas">
+            <button type="button" class="pas" data-pas="-1" aria-label="Un participant de moins">−</button>
+            <input id="p-participants" name="participants" type="number" inputmode="numeric" min="1" max="40" step="1" value="2">
+            <button type="button" class="pas" data-pas="1" aria-label="Un participant de plus">+</button>
+          </div>
+        </div>
+        <div class="champ">
+          <label for="p-budget">Une idée de budget par personne ? (€, facultatif)</label>
+          <input id="p-budget" name="budget" type="number" inputmode="numeric" min="0" step="50">
+        </div>
+      </fieldset>
+      <fieldset class="etape-form" data-etape="3" hidden>
+        <legend class="visuellement-cache">Vous</legend>
+        <div class="champ"><label for="p-prenom">Prénom</label><input id="p-prenom" name="prenom" autocomplete="given-name"></div>
+        <div class="champ"><label for="p-email">E-mail <span class="requis">(obligatoire)</span></label><input id="p-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="champ"><label for="p-tel">Téléphone (facultatif)</label><input id="p-tel" name="tel" type="tel" autocomplete="tel"></div>
+        <label class="case"><input type="checkbox" name="profil" value="pro"><span>Je suis un·e professionnel·le du voyage et je souhaite rejoindre MatchYourTrip</span></label>
+        <p class="mention-donnees">Vos données servent uniquement à étudier votre projet et à vous recontacter. Politique de confidentialité : à compléter.</p>
+      </fieldset>
+      <div class="etapes-boutons">
+        <button type="button" class="bouton bouton--contour" data-etape-precedente hidden>Retour</button>
+        <button type="button" class="bouton" data-etape-suivante>Étape suivante</button>
+        <button type="submit" class="bouton" data-etape-envoi hidden>Envoyer mon projet</button>
+      </div>
+      <p data-message-envoi data-texte="Projet simulé : rien n’a été envoyé. Sur le site final, il partira vers l’équipe MatchYourTrip." role="status" tabindex="-1" hidden></p>
+    </form>
+    <aside class="billet" aria-label="Votre billet" data-recap data-effet="recap">
+      <div class="billet-haut">
+        <img src="/assets/images/logo-clair.svg" alt="" width="34" height="34">
+        <p class="billet-titre">Votre billet</p>
+      </div>
+      <dl class="billet-lignes">
+        <div><dt>Envies</dt><dd data-recap-envies>à choisir</dd></div>
+        <div><dt>Destination</dt><dd data-recap-destination>à choisir</dd></div>
+        <div><dt>Participants</dt><dd data-recap-participants>2</dd></div>
+        <div><dt>Budget / pers.</dt><dd data-recap-budget>à choisir</dd></div>
+      </dl>
+      <p class="billet-pro" data-recap-pro hidden>Profil : professionnel·le du voyage</p>
+      <div class="billet-souche" aria-hidden="true"><span class="billet-code">MYT · ✈</span></div>
+    </aside>
+  </div>
+</section>
+<section class="ensuite conteneur" id="ensuite">
+  <h2 class="titre-section" data-anime="lignes">Et <em>ensuite</em>&nbsp;?</h2>
+  <ol class="ensuite-liste" role="list" data-anime="cascade">
+    <li class="fiche fiche--simple"><svg class="icone fiche-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="7" width="26" height="34" rx="3"/><path d="M11 13H8M11 21H8M11 29H8M11 37H8"/><circle cx="25" cy="21" r="6.5"/><path d="M18.5 21h13M25 14.5c2.4 3.6 2.4 9.4 0 13M25 14.5c-2.4 3.6-2.4 9.4 0 13"/></g></svg><h3>On lit votre projet</h3><p>L’équipe regarde vos envies, votre destination et votre budget.</p></li><li class="fiche fiche--simple"><svg class="icone fiche-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="7"/><path d="M11 40c1.5-8 6.5-12 13-12s11.5 4 13 12"/><path d="M33 9l3-3M36 13h4"/></g></svg><h3>On cherche votre match</h3><p>Nous voyons avec vous quel·le professionnel·le du voyage pourrait vous accompagner.</p></li><li class="fiche fiche--simple"><svg class="icone fiche-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M29.5 18.5l-3.6 7.4-7.4 3.6 3.6-7.4z"/><path d="M24 6v4M24 38v4M6 24h4M38 24h4"/></g></svg><h3>Votre voyage se dessine</h3><p>Le·la pro conçoit votre itinéraire sur mesure et votre carnet de voyage.</p></li>
+  </ol>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <svg class="pied-dechirure" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 18 L40 10 L86 22 L130 8 L178 20 L226 6 L270 19 L318 9 L366 23 L410 7 L458 18 L506 8 L552 21 L600 10 L648 24 L694 9 L742 19 L790 6 L838 20 L884 10 L932 23 L980 8 L1026 18 L1074 7 L1120 21 L1168 9 L1216 22 L1262 8 L1310 19 L1358 10 L1404 21 L1440 12 L1440 40 Z"/></svg>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="44" height="44"><span class="logo-mot">Match<em>Your</em>Trip</span></p>
+      <p class="pied-slogan">Du rêve au trip, il n’y a qu’un match</p>
+      <p class="pied-signature">Des experts · des voyages · vous</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/comment-ca-marche" data-libelle="Comment ça marche">Comment ça marche</a></li><li><a href="/themes-et-destinations" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li><a href="/faire-un-don" data-libelle="Faire un don">Faire un don</a></li><li><a href="/mon-projet-de-voyage" data-libelle="Mon projet de voyage" aria-current="page">Mon projet de voyage</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Pour aller plus loin</p>
+      <ul>
+        <li><a href="/mon-projet-de-voyage?profil=pro#formulaire" data-libelle="Mon projet de voyage">Vous êtes un·e pro du voyage ? Présentez-vous</a></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+      <p class="pied-legal">Mentions légales&nbsp;: à compléter<br>Politique de confidentialité&nbsp;: à compléter</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : formulaires et dons simulés, rien n’est envoyé.</p><p>© 2026 MatchYourTrip</p></div>
+</footer>
+<div data-barre-fixe>
+  <a href="/themes-et-destinations" class="bouton bouton--contour" data-libelle="Thèmes &amp; destinations">Thèmes</a>
+  <a href="/mon-projet-de-voyage" class="bouton" data-libelle="Mon projet de voyage" aria-current="page">Mon projet</a>
+</div>
+</body>
+</html>

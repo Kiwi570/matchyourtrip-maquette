@@ -1,0 +1,30 @@
+{
+ "siteActuel": "matchyourtrip.fr",
+ "pagesTypes": [
+  "/",
+  "/comment-ca-marche",
+  "/themes-et-destinations",
+  "/faire-un-don",
+  "/mon-projet-de-voyage"
+ ],
+ "effets": [
+  "papier-couches",
+  "match",
+  "fiches",
+  "colonnes",
+  "etiquettes",
+  "avion",
+  "tampons",
+  "jumelles",
+  "mosaique",
+  "envol",
+  "billet",
+  "ballon",
+  "benefices",
+  "mots-papier",
+  "recap"
+ ],
+ "grille": {
+  "dispenses": {}
+ }
+}

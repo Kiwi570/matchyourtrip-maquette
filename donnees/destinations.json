@@ -1,0 +1,90 @@
+[
+  {
+    "id": "afrique",
+    "nom": "Afrique",
+    "pays": [
+      "Sénégal",
+      "Maroc",
+      "Algérie",
+      "Égypte",
+      "Tanzanie",
+      "Afrique du Sud",
+      "Côte d’Ivoire",
+      "Ouganda",
+      "Mozambique"
+    ]
+  },
+  {
+    "id": "asie",
+    "nom": "Asie",
+    "pays": [
+      "Japon",
+      "Corée du Sud",
+      "Chine",
+      "Indonésie",
+      "Vietnam",
+      "Laos",
+      "Philippines",
+      "Malaisie"
+    ]
+  },
+  {
+    "id": "europe",
+    "nom": "Europe",
+    "pays": [
+      "France",
+      "Italie & Grèce",
+      "Autriche",
+      "Écosse",
+      "Norvège",
+      "Islande"
+    ]
+  },
+  {
+    "id": "amerique-nord",
+    "nom": "Amérique du Nord",
+    "pays": [
+      "USA et Canada",
+      "Ouest américain"
+    ]
+  },
+  {
+    "id": "amerique-centrale",
+    "nom": "Amérique centrale & Caraïbes",
+    "pays": [
+      "Mexique",
+      "Costa Rica",
+      "Guadeloupe & Martinique"
+    ]
+  },
+  {
+    "id": "amerique-sud",
+    "nom": "Amérique du Sud",
+    "pays": [
+      "Colombie",
+      "Pérou",
+      "Brésil",
+      "Argentine & Chili"
+    ]
+  },
+  {
+    "id": "ocean-indien",
+    "nom": "Océan Indien",
+    "pays": [
+      "Sri Lanka",
+      "Île Maurice",
+      "Île de la Réunion",
+      "Rodrigues",
+      "Nosy Be"
+    ]
+  },
+  {
+    "id": "oceanie",
+    "nom": "Océanie",
+    "pays": [
+      "Nouvelle-Zélande",
+      "Australie",
+      "Polynésie française"
+    ]
+  }
+]

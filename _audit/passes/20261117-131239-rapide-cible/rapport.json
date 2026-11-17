@@ -1,0 +1,2349 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/comment-ca-marche-fr.jpg",
+      "etape": "fichiers",
+      "page": "comment-ca-marche.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/faire-un-don-fr.jpg",
+      "etape": "fichiers",
+      "page": "faire-un-don.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/accueil-fr.jpg",
+      "etape": "fichiers",
+      "page": "index.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/mon-projet-fr.jpg",
+      "etape": "fichiers",
+      "page": "mon-projet-de-voyage.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/themes-et-destinations-fr.jpg",
+      "etape": "fichiers",
+      "page": "themes-et-destinations.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#match « Une envie, une destination : votre match Choisisse »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.conteneur > div.match-table:nth-of-type(2) > div.match-carte.match-carte--envie:nth-of-type(1) > p.match-label « Votre envie »",
+      "lieux": [
+        "1366×768 normal",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.match-carte.match-carte--envie:nth-of-type(1) > ul.puces > li:nth-of-type(6) > button.puce « Road trips & itinéraires »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.match-carte.match-carte--envie:nth-of-type(1) > ul.puces > li:nth-of-type(3) > button.puce « Rencontre d’animaux sauvages éthique »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#pourquoi > ul.fiches > li.fiche:nth-of-type(1) > p « Une destination, une passion ou un type de voyage  »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#pourquoi > ul.fiches > li.fiche:nth-of-type(1) > h3 « Son domaine, son expertise »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#pourquoi > p.note-main.pourquoi-note « Je trouve mon travel planner à vos côtés, pour un  »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#pourquoi > ul.fiches > li.fiche:nth-of-type(1) > p « Une destination, une passion ou un type de voyage  »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#pourquoi > ul.fiches > li.fiche:nth-of-type(2) > p « Un voyage adapté à vos envies, votre rythme, vos c »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#pourquoi > ul.fiches > li.fiche:nth-of-type(2) > h3 « Un itinéraire sur mesure »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#pourquoi > p.note-main.pourquoi-note « Je trouve mon travel planner à vos côtés, pour un  »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#pourquoi > ul.fiches > li.fiche:nth-of-type(2) > p « Un voyage adapté à vos envies, votre rythme, vos c »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#pourquoi > ul.fiches > li.fiche:nth-of-type(3) > p « Fini les heures de recherches et les dizaines d’on »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#pourquoi > ul.fiches > li.fiche:nth-of-type(3) > h3 « Moins de charge mentale »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#pourquoi > ul.fiches > li.fiche:nth-of-type(4) > p « Vos étapes, vos bonnes adresses, vos conseils et v »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#pourquoi > ul.fiches > li.fiche:nth-of-type(4) > h3 « Un carnet de voyage personnalisé »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(1) « Sénégal »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > h3 « Afrique »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays « Sénégal · Maroc · Algérie · Égypte · Tanzanie · Af »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > h3 « Afrique »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > h3 « Afrique »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(4) « Égypte »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(1) « Sénégal »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(1) « Sénégal »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(1) « Sénégal »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(5) « Tanzanie »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(2) « Maroc »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(2) « Maroc »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(3) « Algérie »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(4) « Égypte »",
+      "lieux": [
+        "1366×768 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(4) « Égypte »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(5) « Tanzanie »",
+      "lieux": [
+        "1366×768 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(5) « Tanzanie »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "lieux": [
+        "1366×768 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(8) « Ouganda »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "lieux": [
+        "1366×768 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(9) « Mozambique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(6) « Afrique du Sud »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(9) « Mozambique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(7) « Côte d’Ivoire »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(4) « Indonésie »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(1) « Japon »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(4) « Indonésie »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(2) « Corée du Sud »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(5) « Vietnam »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(2) « Corée du Sud »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(7) « Philippines »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(2) « Corée du Sud »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(6) « Laos »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(3) « Chine »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(7) « Philippines »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(4) « Indonésie »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(8) « Malaisie »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(5) « Vietnam »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(1) « France »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > h3 « Europe »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays « France · Italie & Grèce · Autriche · Écosse · Norv »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > h3 « Europe »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(2) « Italie & Grèce »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > h3 « Europe »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(4) « Écosse »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(1) « France »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(5) « Norvège »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(2) « Italie & Grèce »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(6) « Islande »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(2) « Italie & Grèce »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(1) « USA et Canada »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > h3 « Amérique du Nord »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays « USA et Canada · Ouest américain »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > h3 « Amérique du Nord »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(2) « Ouest américain »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > h3 « Amérique du Nord »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(2) « Ouest américain »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(1) « USA et Canada »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(1) « Mexique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays « Mexique · Costa Rica · Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(2) « Costa Rica »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(1) « Mexique »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(2) « Costa Rica »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(1) « Colombie »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > h3 « Amérique du Sud »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays « Colombie · Pérou · Brésil · Argentine & Chili »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > h3 « Amérique du Sud »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(2) « Pérou »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > h3 « Amérique du Sud »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > h3 « Amérique du Sud »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(1) « Colombie »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(2) « Pérou »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(1) « Sri Lanka »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > h3 « Océan Indien »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays « Sri Lanka · Île Maurice · Île de la Réunion · Rodr »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > h3 « Océan Indien »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(2) « Île Maurice »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > h3 « Océan Indien »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > h3 « Océan Indien »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(4) « Rodrigues »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > h3 « Océan Indien »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(1) « Sri Lanka »",
+      "lieux": [
+        "1366×768 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(2) « Île Maurice »",
+      "lieux": [
+        "1366×768 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(4) « Rodrigues »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(2) « Île Maurice »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(4) « Rodrigues »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "lieux": [
+        "1366×768 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(5) « Nosy Be »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "lieux": [
+        "1366×768 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(8) > p.etiquette-pays > a:nth-of-type(1) « Nouvelle-Zélande »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(8) > h3 « Océanie »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(8) > p.etiquette-pays « Nouvelle-Zélande · Australie · Polynésie française »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(8) > h3 « Océanie »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(8) > p.etiquette-pays > a:nth-of-type(3) « Polynésie française »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(8) > p.etiquette-pays > a:nth-of-type(1) « Nouvelle-Zélande »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#pourquoi > p.note-main.pourquoi-note « Je trouve mon travel planner à vos côtés, pour un  »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#pourquoi > ul.fiches > li.fiche:nth-of-type(4) > p « Vos étapes, vos bonnes adresses, vos conseils et v »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays « Sénégal · Maroc · Algérie · Égypte · Tanzanie · Af »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > figure.media.destinations-bande > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(4) « Égypte »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > figure.media.destinations-bande > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(5) « Tanzanie »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(1) « Sénégal »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(8) « Ouganda »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays > a:nth-of-type(5) « Tanzanie »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > h3 « Europe »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays « Japon · Corée du Sud · Chine · Indonésie · Vietnam »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(1) « France »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays « Japon · Corée du Sud · Chine · Indonésie · Vietnam »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays « France · Italie & Grèce · Autriche · Écosse · Norv »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays « Japon · Corée du Sud · Chine · Indonésie · Vietnam »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(2) « Italie & Grèce »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays « Japon · Corée du Sud · Chine · Indonésie · Vietnam »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(3) « Autriche »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays « Japon · Corée du Sud · Chine · Indonésie · Vietnam »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(6) « Islande »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays « Japon · Corée du Sud · Chine · Indonésie · Vietnam »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(6) « Laos »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(2) « Corée du Sud »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(7) « Philippines »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(3) « Chine »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays « France · Italie & Grèce · Autriche · Écosse · Norv »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(3) « Chine »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(3) « Autriche »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(3) « Chine »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(8) « Malaisie »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(4) « Indonésie »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays « France · Italie & Grèce · Autriche · Écosse · Norv »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(4) « Indonésie »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(3) « Autriche »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(4) « Indonésie »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays « France · Italie & Grèce · Autriche · Écosse · Norv »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(6) « Laos »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays « France · Italie & Grèce · Autriche · Écosse · Norv »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(7) « Philippines »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(2) « Italie & Grèce »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(7) « Philippines »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(3) « Autriche »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(7) « Philippines »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays « France · Italie & Grèce · Autriche · Écosse · Norv »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(8) « Malaisie »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(3) « Autriche »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(8) « Malaisie »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > h3 « Amérique du Nord »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays « Mexique · Costa Rica · Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > h3 « Amérique du Nord »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > h3 « Amérique du Nord »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(1) « USA et Canada »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays « Mexique · Costa Rica · Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(1) « USA et Canada »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(1) « USA et Canada »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays « USA et Canada · Ouest américain »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays « Mexique · Costa Rica · Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays « USA et Canada · Ouest américain »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(2) « Costa Rica »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays « USA et Canada · Ouest américain »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays « USA et Canada · Ouest américain »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(2) « Ouest américain »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays « Mexique · Costa Rica · Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(2) « Ouest américain »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(2) « Costa Rica »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(2) « Ouest américain »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > p.etiquette-pays > a:nth-of-type(3) « Guadeloupe & Martinique »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays > a:nth-of-type(2) « Ouest américain »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > h3 « Océan Indien »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays « Colombie · Pérou · Brésil · Argentine & Chili »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays « Sri Lanka · Île Maurice · Île de la Réunion · Rodr »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays « Colombie · Pérou · Brésil · Argentine & Chili »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays « Colombie · Pérou · Brésil · Argentine & Chili »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays « Sri Lanka · Île Maurice · Île de la Réunion · Rodr »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(2) « Pérou »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(3) « Brésil »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays « Sri Lanka · Île Maurice · Île de la Réunion · Rodr »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(3) « Brésil »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(3) « Brésil »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > h3 « Océan Indien »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays « Sri Lanka · Île Maurice · Île de la Réunion · Rodr »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(3) « Île de la Réunion »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(6) > p.etiquette-pays > a:nth-of-type(4) « Argentine & Chili »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(5) « Nosy Be »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > h3 « Océan Indien »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(4) « Rodrigues »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(1) « Sri Lanka »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(5) « Nosy Be »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(7) > p.etiquette-pays > a:nth-of-type(2) « Île Maurice »",
+      "lieux": [
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#pourquoi « Pourquoi passer par un travel planner ? Son domain »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#pourquoi > p.note-main.pourquoi-note « Je trouve mon travel planner à vos côtés, pour un  »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#match « Une envie, une destination : votre match Choisisse »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "div.match-carte.match-carte--envie:nth-of-type(1) > ul.puces > li:nth-of-type(1) > button.puce « Partir avec son chien »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#match « Une envie, une destination : votre match Choisisse »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "div.match-carte.match-carte--envie:nth-of-type(1) > ul.puces > li:nth-of-type(3) > button.puce « Rencontre d’animaux sauvages éthique »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#match « Une envie, une destination : votre match Choisisse »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "div.match-carte.match-carte--envie:nth-of-type(1) > ul.puces > li:nth-of-type(6) > button.puce « Road trips & itinéraires »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.hero-feuille:nth-of-type(2) > h1.hero-titre > span.ligne-masque:nth-of-type(1) > span.hero-ligne « Du rêve au trip, »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "section#debut > div.hero-feuille:nth-of-type(2) > div.pastille.hero-pastille > span.pastille-texte « Match ! »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.match-carte.match-carte--envie:nth-of-type(1) > ul.puces > li:nth-of-type(7) > button.puce « Partir hors des sentiers battus »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "div.match-carte.match-carte--envie:nth-of-type(1) > ul.puces > li:nth-of-type(3) > button.puce « Rencontre d’animaux sauvages éthique »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(5) « Vietnam »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays > a:nth-of-type(1) « Japon »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(5) « Norvège »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(1) « France »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays « France · Italie & Grèce · Autriche · Écosse · Norv »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(5) > h3 « Amérique centrale & Caraïbes »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "ul.conteneur.etiquettes > li.etiquette:nth-of-type(3) > p.etiquette-pays > a:nth-of-type(5) « Norvège »",
+      "lieux": [
+        "844×390 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "section#debut > div.hero-feuille:nth-of-type(2) > p.hero-info:nth-of-type(4) « L’application est en construction : déposez votre  »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > p.etiquette-pays « Sénégal · Maroc · Algérie · Égypte · Tanzanie · Af »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(1) > h3 « Afrique »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > p.etiquette-pays « Japon · Corée du Sud · Chine · Indonésie · Vietnam »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(2) > h3 « Asie »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par section#fin > div.conteneur.fin-contenu > svg.avion.fin-avion",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#fin > div.conteneur.fin-contenu > h2.titre-section « Prêt·e à faire le premier pas ? »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > p.etiquette-pays « USA et Canada · Ouest américain »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#destinations > ul.conteneur.etiquettes > li.etiquette:nth-of-type(4) > h3 « Amérique du Nord »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : color-contrast",
+      "detail": "Elements must meet minimum color contrast ratio thresholds",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": ".tampon--match ; .ruban-statut ; .fin-note",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien profond",
+      "detail": "choix « destination=Europe » non prérempli (valeur : Partir avec son chien · Europe)",
+      "etape": "parcours",
+      "page": "/ → /mon-projet-de-voyage?envie=Partir%20avec%20son%20chien&destination=Europe#formulaire",
+      "taille": "1366×768",
+      "mode": "lien profond",
+      "lieux": [
+        "1366×768 lien profond",
+        "390×844 lien profond"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« jumelles » : aucun élément data-effet=\"jumelles\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« mosaique » : aucun élément data-effet=\"mosaique\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« billet » : aucun élément data-effet=\"billet\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« ballon » : aucun élément data-effet=\"ballon\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« benefices » : aucun élément data-effet=\"benefices\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "effet du plan absent",
+      "detail": "« mots-papier » : aucun élément data-effet=\"mots-papier\"",
+      "etape": "mouvement",
+      "lieux": [
+        ""
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "faire-un-don.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "mon-projet-de-voyage.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "journal du projet",
+      "detail": "_audit/journal.json absent (modèle : journal.exemple.json) : heure de chaque étape, attentes, modules, audit",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : effet signature qui ne se manipule pas (point 1)",
+      "detail": "aucun élément data-grille=\"manipuler\" sur l’accueil : objet à attraper, faire tourner ou glisser (module objet-a-faire-tourner, lumiere-au-pointeur…)",
+      "etape": "grille",
+      "page": "/",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : rien ne relie les sections (point 4)",
+      "detail": "sur aucune page : élément du métier qui relie les sections et les pages (fil dans la marge, objet unique qui change, lumière qui passe, carte, folio, frise), marqué data-grille=\"fil\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "sur aucune page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : action principale sans retour physique (point 7)",
+      "detail": "ajout au panier, réservation, envoi ou filtre : quelque chose de l’objet part, se pose ou se transforme (module envol-vers-le-panier, tampon « reçu »), marqué data-grille=\"retour\"",
+      "etape": "grille",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.vedettes-piste:nth-of-type(2) > article.vedette.vedette--1:nth-of-type(5) > figure.media.vedette-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.vedettes-piste:nth-of-type(2) > article.vedette.vedette--2:nth-of-type(6) > figure.media.vedette-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#destinations > figure.media.destinations-bande > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "texte de contenu sous 13 px (ordinateur)",
+      "detail": "12.0 px : surtitres et légendes à 13 px au moins, textes de cartes à 15 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#fin > figure.media.fin-media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#match « Une envie, une destination : votre match Choisisse »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs",
+        "844×390 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#formules « Plusieurs façons de préparer son aventure Le trave »",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansWebgl",
+        "390×844 sansJs",
+        "844×390 normal",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "typographie française",
+      "detail": "espace insécable manquante avant ou après « : »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "footer#pied > div.conteneur.pied-grille:nth-of-type(1) > div:nth-of-type(2) > p.pied-legal:nth-of-type(2) « Mentions légales : à compléter Politique de confid »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#pourquoi « Pourquoi passer par un travel planner ? Son domain »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 69 ms (différence 20 %) (films/retour-arrière-1366.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "lieux": [
+        "1366×768 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 64 ms (différence 21 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/comment-ca-marche",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 3,
+    "mesures": 6,
+    "films d’ouverture": 2,
+    "films de transition": 2,
+    "bords de l’écran": 1,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 1,
+    "liens et boutons": 1,
+    "liens profonds": 16,
+    "liens vers la page en cours": 1,
+    "changements de hauteur": 1,
+    "parcours du projet": 1,
+    "fluidité": 2,
+    "défilement selon l’appareil": 5,
+    "mouvement": 2,
+    "effets du plan": 10,
+    "souris immobile": 1,
+    "vitesse": 1,
+    "captures": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=1",
+    "Audit rapide : étapes lourdes sur /.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Balayage des largeurs : non fait en audit rapide.",
+    "Ouverture / (1366×768) : 2905 ms depuis le premier octet",
+    "Ouverture / (390×844) : 2907 ms depuis le premier octet",
+    "Bords de l’écran : 92 images d’intro, 5 de voile et 34 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Tient dans l'écran / : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 428, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1342, tâche la plus longue 0 ms",
+    "Vitesse / : 0.54 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "absent",
+      "detail": "aucun data-grille=\"manipuler\" sur l’accueil"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 5 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en vague"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "sans objet",
+      "detail": "aucune scène épinglée marquée ni galerie générique"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "absent",
+      "detail": "sur aucune page"
+    }
+  ]
+}

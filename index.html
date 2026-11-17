@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MatchYourTrip : du rêve au trip, il n’y a qu’un match</title>
+<meta name="description" content="Un·e professionnel·le du voyage, spécialiste de votre destination ou de votre envie, conçoit un séjour 100 % personnalisé selon vos envies, votre rythme et votre budget.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://matchyourtrip-maquette.vercel.app/">
+<style>:root{--fond:#F7F0E6;--texte:#2B1F24;--voile-fond:#2B1A27;--ouverture-fond:#F7F0E6;--menu-fond:#F7F0E6}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F7F0E6">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MatchYourTrip">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="MatchYourTrip : du rêve au trip, il n’y a qu’un match">
+<meta property="og:description" content="Un·e professionnel·le du voyage, spécialiste de votre destination ou de votre envie, conçoit un séjour 100 % personnalisé selon vos envies, votre rythme et votre budget.">
+<meta property="og:url" content="https://matchyourtrip-maquette.vercel.app/">
+<meta property="og:image" content="https://matchyourtrip-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MatchYourTrip : collage en papier découpé, une silhouette regarde l’horizon">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MatchYourTrip","url":"https://www.matchyourtrip.fr","slogan":"Du rêve au trip, il n'y a qu'un match","description":"Mise en relation entre voyageurs et professionnels du voyage (travel planners) pour des voyages 100 % personnalisés."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="intro-scene">
+    <svg class="intro-bande intro-bande--g" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M0 14 L600 6 L590 18 L598 30 L586 44 L597 58 L588 72 L600 84 L0 80 Z"/></svg>
+    <svg class="intro-bande intro-bande--d" viewBox="0 0 600 90" preserveAspectRatio="none"><path d="M600 10 L0 4 L12 16 L2 30 L14 42 L3 56 L13 70 L0 86 L600 82 Z"/></svg>
+    <img class="ouverture-logo" src="/assets/images/logo.svg" alt="" width="72" height="72" data-ouverture-objet>
+    <svg class="intro-coeur" viewBox="0 0 24 22"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg>
+  </div>
+  <p class="ouverture-nom"><span>Match</span><em>Your</em><span>Trip</span></p>
+  <p class="ouverture-ligne">Du rêve au trip, il n’y a qu’un match</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span class="logo-mot">Match<em>Your</em>Trip</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/comment-ca-marche" data-libelle="Comment ça marche">Comment ça marche</a></li><li><a href="/themes-et-destinations" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li><a href="/faire-un-don" data-libelle="Faire un don">Faire un don</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/mon-projet-de-voyage" data-libelle="Mon projet de voyage">Mon projet de voyage</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/comment-ca-marche" class="menu-lien" data-libelle="Comment ça marche">Comment ça marche</a></li><li style="--i:2"><a href="/themes-et-destinations" class="menu-lien" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li style="--i:3"><a href="/faire-un-don" class="menu-lien" data-libelle="Faire un don">Faire un don</a></li><li style="--i:4"><a href="/mon-projet-de-voyage" class="menu-lien" data-libelle="Mon projet de voyage">Mon projet de voyage</a></li></ul>
+  <p class="menu-note">Du rêve au trip, il n’y a qu’un match</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero" id="debut">
+  <figure class="media hero-media" data-effet="papier-couches" style="--cadrage:0% 46%;--cadrage-mobile:14% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-ouverture-mobile-640.webp 640w, /assets/images/accueil-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/accueil-ouverture-1280.webp" srcset="/assets/images/accueil-ouverture-640.webp 640w, /assets/images/accueil-ouverture-1280.webp 1280w, /assets/images/accueil-ouverture-1920.webp 1920w" sizes="100vw" alt="Collage en papier découpé : une silhouette regarde l’horizon depuis une falaise" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  <div class="hero-couches" aria-hidden="true" data-visuel>
+    <svg class="couche couche--1" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 70 L60 52 L140 74 L230 46 L320 70 L410 40 L520 66 L620 44 L720 72 L830 48 L930 70 L1040 42 L1150 68 L1250 50 L1350 74 L1440 56 L1440 160 L0 160Z"/></svg>
+    <svg class="couche couche--2" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 92 L90 78 L170 98 L260 74 L370 96 L470 80 L560 102 L660 76 L760 98 L860 82 L970 104 L1070 78 L1170 98 L1270 84 L1370 100 L1440 86 L1440 160 L0 160Z"/></svg>
+    <svg class="couche couche--3" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 122 L70 112 L160 128 L250 108 L350 126 L450 114 L550 130 L650 110 L750 128 L850 116 L950 132 L1050 112 L1150 128 L1250 116 L1350 130 L1440 118 L1440 160 L0 160Z"/></svg>
+  </div>
+  <div class="hero-feuille">
+    <div class="pastille hero-pastille" data-iris-centre="disque" data-grille="fil">
+  <svg class="pastille-bord" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56"/></svg>
+  <img src="/assets/images/logo.svg" alt="" width="46" height="46">
+  <span class="pastille-texte">Match !</span>
+</div>
+    <p class="note-main hero-note">Votre voyage, notre passion !</p>
+    <h1 class="hero-titre" data-grille="typo"><span class="ligne-masque"><span class="hero-ligne">Du rêve au trip,</span></span><span class="ligne-masque"><span class="hero-ligne">il n’y a qu’un <em>match</em></span></span></h1>
+    <p class="hero-intro">Un·e professionnel·le du voyage, spécialiste de votre destination ou de votre envie, conçoit pour vous un séjour 100 % personnalisé, selon vos envies, votre rythme et votre budget.</p>
+    <p class="hero-actions">
+      <a href="/mon-projet-de-voyage#formulaire" class="bouton" data-libelle="Mon projet de voyage" data-action-principale data-survol="magnetique">Je trouve mon travel planner</a>
+      <a href="/comment-ca-marche" class="bouton bouton--contour" data-libelle="Comment ça marche">Comment ça marche</a>
+    </p>
+    <p class="hero-info" data-info-cle><span class="point-vivant" aria-hidden="true"></span>L’application est en construction : déposez votre projet dès maintenant.</p>
+  </div>
+</section>
+<section class="match" id="match">
+  <svg class="dechirure dechirure--haut dechirure--prune" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 9.9 L42 22.8 L85 12.9 L127 17.8 L169 10.6 L212 23.3 L254 13.7 L296 12.8 L339 14.7 L381 23.1 L424 19.0 L466 12.5 L508 17.4 L551 18.6 L593 6.3 L635 22.2 L678 19.2 L720 21.5 L762 8.9 L805 10.2 L847 11.8 L889 21.1 L932 17.2 L974 20.4 L1016 12.3 L1059 11.7 L1101 19.0 L1144 7.9 L1186 19.1 L1228 15.1 L1271 15.4 L1313 11.0 L1355 16.1 L1398 6.4 L1440 12.9 L1440 40 Z"/></svg>
+  <div class="conteneur">
+    <div class="match-tete">
+      <h2 class="titre-section" data-anime="lignes">Une envie, une destination : votre <em>match</em></h2>
+      <p data-anime>Choisissez ce qui vous fait rêver. Nous cherchons pour vous le·la professionnel·le du voyage qui le connaît par cœur.</p>
+    </div>
+    <div class="match-table" data-match data-grille="manipuler retour">
+      <div class="match-carte match-carte--envie" data-match-carte="g" data-effet="match">
+        <p class="match-label"><svg class="icone " viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 39s-13-8-13-17a7 7 0 0 1 13-3.6A7 7 0 0 1 37 22c0 9-13 17-13 17z"/></g></svg>Votre envie</p>
+        <ul class="puces" role="list"><li><button type="button" class="puce" data-match-envie="Partir avec son chien" aria-pressed="true">Partir avec son chien</button></li><li><button type="button" class="puce" data-match-envie="Voyage de noces &amp; lune de miel" aria-pressed="false">Voyage de noces &amp; lune de miel</button></li><li><button type="button" class="puce" data-match-envie="Rencontre d’animaux sauvages éthique" aria-pressed="false">Rencontre d’animaux sauvages éthique</button></li><li><button type="button" class="puce" data-match-envie="Bien-être" aria-pressed="false">Bien-être</button></li><li><button type="button" class="puce" data-match-envie="Gastronomie &amp; œnologie" aria-pressed="false">Gastronomie &amp; œnologie</button></li><li><button type="button" class="puce" data-match-envie="Road trips &amp; itinéraires" aria-pressed="false">Road trips &amp; itinéraires</button></li><li><button type="button" class="puce" data-match-envie="Partir hors des sentiers battus" aria-pressed="false">Partir hors des sentiers battus</button></li><li><button type="button" class="puce" data-match-envie="Voyage surprise" aria-pressed="false">Voyage surprise</button></li></ul>
+      </div>
+      <div class="match-centre" aria-hidden="true" data-visuel>
+        <span class="tampon tampon--match" data-match-tampon data-effet="match">Match !</span>
+        <svg class="coeur match-coeur" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg>
+      </div>
+      <div class="match-carte match-carte--dest" data-match-carte="d" data-effet="match">
+        <p class="match-label"><svg class="icone " viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>Votre destination</p>
+        <ul class="puces" role="list"><li><button type="button" class="puce" data-match-dest="Afrique" aria-pressed="false">Afrique</button></li><li><button type="button" class="puce" data-match-dest="Asie" aria-pressed="false">Asie</button></li><li><button type="button" class="puce" data-match-dest="Europe" aria-pressed="true">Europe</button></li><li><button type="button" class="puce" data-match-dest="Amérique du Nord" aria-pressed="false">Amérique du Nord</button></li><li><button type="button" class="puce" data-match-dest="Amérique centrale &amp; Caraïbes" aria-pressed="false">Amérique centrale &amp; Caraïbes</button></li><li><button type="button" class="puce" data-match-dest="Amérique du Sud" aria-pressed="false">Amérique du Sud</button></li><li><button type="button" class="puce" data-match-dest="Océan Indien" aria-pressed="false">Océan Indien</button></li><li><button type="button" class="puce" data-match-dest="Océanie" aria-pressed="false">Océanie</button></li></ul>
+      </div>
+    </div>
+    <div class="match-resultat">
+      <p class="match-phrase" data-match-texte aria-live="polite">« Partir avec son chien » × Europe : nous cherchons pour vous le·la pro qui connaît les deux.</p>
+      <p class="match-actions">
+        <a class="bouton bouton--clair" data-match-lien href="/mon-projet-de-voyage?envie=Partir%20avec%20son%20chien&amp;destination=Europe#formulaire" data-libelle="Mon projet de voyage">Déposer ce projet</a>
+        <a href="/themes-et-destinations" class="lien-fleche lien-fleche--clair" data-libelle="Thèmes &amp; destinations">Voir les thèmes et les pays</a>
+      </p>
+      <p class="match-aide">Touchez une envie, puis une destination.</p>
+    </div>
+  </div>
+  <svg class="dechirure dechirure--bas dechirure--prune" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 22.0 L42 15.4 L85 20.7 L127 15.9 L169 12.8 L212 6.4 L254 8.8 L296 23.7 L339 14.0 L381 8.1 L424 19.5 L466 15.2 L508 21.4 L551 7.8 L593 17.3 L635 20.1 L678 14.0 L720 9.8 L762 11.8 L805 9.7 L847 18.3 L889 22.0 L932 20.3 L974 14.3 L1016 22.1 L1059 17.5 L1101 23.2 L1144 19.7 L1186 8.5 L1228 16.6 L1271 22.2 L1313 19.0 L1355 19.9 L1398 19.2 L1440 20.5 L1440 40 Z"/></svg>
+</section>
+<section class="pourquoi conteneur" id="pourquoi">
+  <h2 class="titre-section" data-anime="lignes">Pourquoi passer par un <em>travel planner</em>&nbsp;?</h2>
+  <ul class="fiches" role="list">
+    <li class="fiche" style="--r:-0.8deg" data-effet="fiches">
+      <span class="scotch" aria-hidden="true"></span>
+      <svg class="icone fiche-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l10-4 10 4 10-4v24l-10 4-10-4-10 4z"/><path d="M19 10v24M29 14v24"/><circle cx="34" cy="17" r="3.2"/></g></svg>
+      <h3>Son domaine, son expertise</h3>
+      <p>Une destination, une passion ou un type de voyage qu’il ou elle connaît particulièrement bien. Le·la pro partage ses connaissances et vous conseille des expériences adaptées à vos envies.</p>
+    </li><li class="fiche" style="--r:0.6deg" data-effet="fiches">
+      <span class="scotch" aria-hidden="true"></span>
+      <svg class="icone fiche-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><path d="M29.5 18.5l-3.6 7.4-7.4 3.6 3.6-7.4z"/><path d="M24 6v4M24 38v4M6 24h4M38 24h4"/></g></svg>
+      <h3>Un itinéraire sur mesure</h3>
+      <p>Un voyage adapté à vos envies, votre rythme, vos contraintes et votre budget. Le·la pro vous accompagne à chaque étape et vous propose plusieurs alternatives.</p>
+    </li><li class="fiche" style="--r:-0.5deg" data-effet="fiches">
+      <span class="scotch" aria-hidden="true"></span>
+      <svg class="icone fiche-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="32" height="23" rx="3"/><path d="M8 18h32M13 15h4M20 15h4"/><path d="M18 41h12M24 35v6"/><circle cx="24" cy="26.5" r="4"/></g></svg>
+      <h3>Moins de charge mentale</h3>
+      <p>Fini les heures de recherches et les dizaines d’onglets ouverts ! Le·la pro s’occupe des recherches pour vous faire gagner du temps et simplifier l’organisation de votre voyage.</p>
+    </li><li class="fiche" style="--r:0.8deg" data-effet="fiches">
+      <span class="scotch" aria-hidden="true"></span>
+      <svg class="icone fiche-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="7" width="26" height="34" rx="3"/><path d="M11 13H8M11 21H8M11 29H8M11 37H8"/><circle cx="25" cy="21" r="6.5"/><path d="M18.5 21h13M25 14.5c2.4 3.6 2.4 9.4 0 13M25 14.5c-2.4 3.6-2.4 9.4 0 13"/></g></svg>
+      <h3>Un carnet de voyage personnalisé</h3>
+      <p>Vos étapes, vos bonnes adresses, vos conseils et vos réservations réunis au même endroit, pour éviter les pertes de temps et les galères en tout genre.</p>
+    </li>
+  </ul>
+  <p class="note-main pourquoi-note" data-anime>Je trouve mon travel planner à vos côtés, pour un voyage qui vous ressemble ! <svg class="coeur note-coeur" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12z"/></svg></p>
+</section>
+<section class="vedettes" id="themes">
+  <div class="conteneur vedettes-tete">
+    <h2 class="titre-section" data-anime="lignes">Des thèmes de voyage <em>inédits</em></h2>
+    <p data-anime>Plus de quarante envies, de la lune de miel au safari éthique, pour trouver le·la pro qui les partage.</p>
+    <p class="vedettes-glisser" aria-hidden="true">Faites glisser →</p>
+  </div>
+  <div class="vedettes-piste" data-galerie tabindex="0" role="region" aria-label="Des thèmes de voyage inédits">
+    <article class="vedette vedette--0" data-effet="colonnes">
+      <figure class="media vedette-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/theme-animaux-784.webp" srcset="/assets/images/theme-animaux-480.webp 480w, /assets/images/theme-animaux-640.webp 640w, /assets/images/theme-animaux-784.webp 784w" sizes="(max-width: 760px) 78vw, 30vw" alt="Collage d’animaux sauvages : orang-outan, éléphant, léopard, calao" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="vedette-texte">
+        <p class="vedette-famille">Voyage engagé</p>
+        <h3>Rencontre d’animaux sauvages éthique</h3>
+        <p class="vedette-items">Écotourisme &amp; voyages responsables · Nature préservée</p>
+        <a href="/mon-projet-de-voyage?envie=Rencontre%20d%E2%80%99animaux%20sauvages%20%C3%A9thique#formulaire" class="lien-fleche" data-libelle="Mon projet de voyage">Ce thème me tente</a>
+      </div>
+    </article><article class="vedette vedette--1" data-effet="colonnes">
+      <figure class="media vedette-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/theme-chien-784.webp" srcset="/assets/images/theme-chien-480.webp 480w, /assets/images/theme-chien-640.webp 640w, /assets/images/theme-chien-784.webp 784w" sizes="(max-width: 760px) 78vw, 30vw" alt="Collage : voyager avec son chien, de la plage à la montagne" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="vedette-texte">
+        <p class="vedette-famille">Styles de voyage</p>
+        <h3>Partir avec son chien</h3>
+        <p class="vedette-items">En couple · En famille · Solo</p>
+        <a href="/mon-projet-de-voyage?envie=Partir%20avec%20son%20chien#formulaire" class="lien-fleche" data-libelle="Mon projet de voyage">Ce thème me tente</a>
+      </div>
+    </article><article class="vedette vedette--2" data-effet="colonnes">
+      <figure class="media vedette-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/theme-aventure-784.webp" srcset="/assets/images/theme-aventure-480.webp 480w, /assets/images/theme-aventure-640.webp 640w, /assets/images/theme-aventure-784.webp 784w" sizes="(max-width: 760px) 78vw, 30vw" alt="Collage : randonnée, paddle, yoga et volley sur la plage" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="vedette-texte">
+        <p class="vedette-famille">Nature et aventure</p>
+        <h3>Voyages sportifs et d’aventures</h3>
+        <p class="vedette-items">Montagne &amp; nature · Sports extrêmes</p>
+        <a href="/mon-projet-de-voyage?envie=Voyages%20sportifs%20et%20d%E2%80%99aventures#formulaire" class="lien-fleche" data-libelle="Mon projet de voyage">Ce thème me tente</a>
+      </div>
+    </article><article class="vedette vedette--0" data-effet="colonnes">
+      <figure class="media vedette-media" style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/theme-rencontres-784.webp" srcset="/assets/images/theme-rencontres-480.webp 480w, /assets/images/theme-rencontres-640.webp 640w, /assets/images/theme-rencontres-784.webp 784w" sizes="(max-width: 760px) 78vw, 30vw" alt="Partir hors des sentiers battus" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="vedette-texte">
+        <p class="vedette-famille">Cultures et rencontres</p>
+        <h3>Partir hors des sentiers battus</h3>
+        <p class="vedette-items">Rencontres &amp; expériences locales · Voyage authentique et immersif</p>
+        <a href="/mon-projet-de-voyage?envie=Partir%20hors%20des%20sentiers%20battus#formulaire" class="lien-fleche" data-libelle="Mon projet de voyage">Ce thème me tente</a>
+      </div>
+    </article><article class="vedette vedette--1" data-effet="colonnes">
+      <figure class="media vedette-media" data-grok style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/theme-bien-etre-784.webp" srcset="/assets/images/grok/theme-bien-etre-480.webp 480w, /assets/images/grok/theme-bien-etre-640.webp 640w, /assets/images/grok/theme-bien-etre-784.webp 784w" sizes="(max-width: 760px) 78vw, 30vw" alt="Collage : une personne de dos médite au-dessus d’une mer de nuages" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="vedette-texte">
+        <p class="vedette-famille">Bien-être</p>
+        <h3>Bien-être</h3>
+        <p class="vedette-items">Introspection · Séjour spirituel</p>
+        <a href="/mon-projet-de-voyage?envie=Bien-%C3%AAtre#formulaire" class="lien-fleche" data-libelle="Mon projet de voyage">Ce thème me tente</a>
+      </div>
+    </article><article class="vedette vedette--2" data-effet="colonnes">
+      <figure class="media vedette-media" data-grok style="--cadrage:50% 50%;aspect-ratio:4 / 5">
+  <picture>
+    <img src="/assets/images/grok/theme-route-784.webp" srcset="/assets/images/grok/theme-route-480.webp 480w, /assets/images/grok/theme-route-640.webp 640w, /assets/images/grok/theme-route-784.webp 784w" sizes="(max-width: 760px) 78vw, 30vw" alt="Collage : route côtière sinueuse et petit van" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="vedette-texte">
+        <p class="vedette-famille">Façons de voyager</p>
+        <h3>Road trips &amp; itinéraires</h3>
+        <p class="vedette-items">Vanlife &amp; camping-car · Escapades en voiture</p>
+        <a href="/mon-projet-de-voyage?envie=Road%20trips%20%26%20itin%C3%A9raires#formulaire" class="lien-fleche" data-libelle="Mon projet de voyage">Ce thème me tente</a>
+      </div>
+    </article>
+  </div>
+  <p class="conteneur vedettes-tous" data-anime><a href="/themes-et-destinations" class="bouton bouton--contour" data-libelle="Thèmes &amp; destinations">Tous les thèmes</a></p>
+</section>
+<section class="destinations" id="destinations">
+  <div class="conteneur destinations-tete">
+    <h2 class="titre-section" data-anime="lignes">Et des destinations de <em>rêve</em></h2>
+    <p data-anime>Une quarantaine de destinations sur 8 grandes régions du monde. Touchez un pays pour le mettre dans votre projet.</p>
+  </div>
+  <figure class="media destinations-bande" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/themes-ouverture-mobile-640.webp 640w, /assets/images/grok/themes-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/themes-ouverture-1280.webp" srcset="/assets/images/grok/themes-ouverture-640.webp 640w, /assets/images/grok/themes-ouverture-1280.webp 1280w, /assets/images/grok/themes-ouverture-1920.webp 1920w" sizes="100vw" alt="Panorama en papier déchiré : lagon, collines, dunes et sommets enneigés" width="1280" height="549" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <ul class="conteneur etiquettes" role="list">
+    <li class="etiquette" style="--r:-3deg" data-effet="etiquettes">
+      <span class="etiquette-trou" aria-hidden="true"></span>
+      <h3>Afrique</h3>
+      <p class="etiquette-pays"><a href="/mon-projet-de-voyage?destination=S%C3%A9n%C3%A9gal#formulaire" data-libelle="Mon projet de voyage">Sénégal</a> · <a href="/mon-projet-de-voyage?destination=Maroc#formulaire" data-libelle="Mon projet de voyage">Maroc</a> · <a href="/mon-projet-de-voyage?destination=Alg%C3%A9rie#formulaire" data-libelle="Mon projet de voyage">Algérie</a> · <a href="/mon-projet-de-voyage?destination=%C3%89gypte#formulaire" data-libelle="Mon projet de voyage">Égypte</a> · <a href="/mon-projet-de-voyage?destination=Tanzanie#formulaire" data-libelle="Mon projet de voyage">Tanzanie</a> · <a href="/mon-projet-de-voyage?destination=Afrique%20du%20Sud#formulaire" data-libelle="Mon projet de voyage">Afrique du Sud</a> · <a href="/mon-projet-de-voyage?destination=C%C3%B4te%20d%E2%80%99Ivoire#formulaire" data-libelle="Mon projet de voyage">Côte d’Ivoire</a> · <a href="/mon-projet-de-voyage?destination=Ouganda#formulaire" data-libelle="Mon projet de voyage">Ouganda</a> · <a href="/mon-projet-de-voyage?destination=Mozambique#formulaire" data-libelle="Mon projet de voyage">Mozambique</a></p>
+    </li><li class="etiquette" style="--r:2deg" data-effet="etiquettes">
+      <span class="etiquette-trou" aria-hidden="true"></span>
+      <h3>Asie</h3>
+      <p class="etiquette-pays"><a href="/mon-projet-de-voyage?destination=Japon#formulaire" data-libelle="Mon projet de voyage">Japon</a> · <a href="/mon-projet-de-voyage?destination=Cor%C3%A9e%20du%20Sud#formulaire" data-libelle="Mon projet de voyage">Corée du Sud</a> · <a href="/mon-projet-de-voyage?destination=Chine#formulaire" data-libelle="Mon projet de voyage">Chine</a> · <a href="/mon-projet-de-voyage?destination=Indon%C3%A9sie#formulaire" data-libelle="Mon projet de voyage">Indonésie</a> · <a href="/mon-projet-de-voyage?destination=Vietnam#formulaire" data-libelle="Mon projet de voyage">Vietnam</a> · <a href="/mon-projet-de-voyage?destination=Laos#formulaire" data-libelle="Mon projet de voyage">Laos</a> · <a href="/mon-projet-de-voyage?destination=Philippines#formulaire" data-libelle="Mon projet de voyage">Philippines</a> · <a href="/mon-projet-de-voyage?destination=Malaisie#formulaire" data-libelle="Mon projet de voyage">Malaisie</a></p>
+    </li><li class="etiquette" style="--r:-1.5deg" data-effet="etiquettes">
+      <span class="etiquette-trou" aria-hidden="true"></span>
+      <h3>Europe</h3>
+      <p class="etiquette-pays"><a href="/mon-projet-de-voyage?destination=France#formulaire" data-libelle="Mon projet de voyage">France</a> · <a href="/mon-projet-de-voyage?destination=Italie%20%26%20Gr%C3%A8ce#formulaire" data-libelle="Mon projet de voyage">Italie &amp; Grèce</a> · <a href="/mon-projet-de-voyage?destination=Autriche#formulaire" data-libelle="Mon projet de voyage">Autriche</a> · <a href="/mon-projet-de-voyage?destination=%C3%89cosse#formulaire" data-libelle="Mon projet de voyage">Écosse</a> · <a href="/mon-projet-de-voyage?destination=Norv%C3%A8ge#formulaire" data-libelle="Mon projet de voyage">Norvège</a> · <a href="/mon-projet-de-voyage?destination=Islande#formulaire" data-libelle="Mon projet de voyage">Islande</a></p>
+    </li><li class="etiquette" style="--r:2.5deg" data-effet="etiquettes">
+      <span class="etiquette-trou" aria-hidden="true"></span>
+      <h3>Amérique du Nord</h3>
+      <p class="etiquette-pays"><a href="/mon-projet-de-voyage?destination=USA%20et%20Canada#formulaire" data-libelle="Mon projet de voyage">USA et Canada</a> · <a href="/mon-projet-de-voyage?destination=Ouest%20am%C3%A9ricain#formulaire" data-libelle="Mon projet de voyage">Ouest américain</a></p>
+    </li><li class="etiquette" style="--r:-2deg" data-effet="etiquettes">
+      <span class="etiquette-trou" aria-hidden="true"></span>
+      <h3>Amérique centrale &amp; Caraïbes</h3>
+      <p class="etiquette-pays"><a href="/mon-projet-de-voyage?destination=Mexique#formulaire" data-libelle="Mon projet de voyage">Mexique</a> · <a href="/mon-projet-de-voyage?destination=Costa%20Rica#formulaire" data-libelle="Mon projet de voyage">Costa Rica</a> · <a href="/mon-projet-de-voyage?destination=Guadeloupe%20%26%20Martinique#formulaire" data-libelle="Mon projet de voyage">Guadeloupe &amp; Martinique</a></p>
+    </li><li class="etiquette" style="--r:1.5deg" data-effet="etiquettes">
+      <span class="etiquette-trou" aria-hidden="true"></span>
+      <h3>Amérique du Sud</h3>
+      <p class="etiquette-pays"><a href="/mon-projet-de-voyage?destination=Colombie#formulaire" data-libelle="Mon projet de voyage">Colombie</a> · <a href="/mon-projet-de-voyage?destination=P%C3%A9rou#formulaire" data-libelle="Mon projet de voyage">Pérou</a> · <a href="/mon-projet-de-voyage?destination=Br%C3%A9sil#formulaire" data-libelle="Mon projet de voyage">Brésil</a> · <a href="/mon-projet-de-voyage?destination=Argentine%20%26%20Chili#formulaire" data-libelle="Mon projet de voyage">Argentine &amp; Chili</a></p>
+    </li><li class="etiquette" style="--r:-2.5deg" data-effet="etiquettes">
+      <span class="etiquette-trou" aria-hidden="true"></span>
+      <h3>Océan Indien</h3>
+      <p class="etiquette-pays"><a href="/mon-projet-de-voyage?destination=Sri%20Lanka#formulaire" data-libelle="Mon projet de voyage">Sri Lanka</a> · <a href="/mon-projet-de-voyage?destination=%C3%8Ele%20Maurice#formulaire" data-libelle="Mon projet de voyage">Île Maurice</a> · <a href="/mon-projet-de-voyage?destination=%C3%8Ele%20de%20la%20R%C3%A9union#formulaire" data-libelle="Mon projet de voyage">Île de la Réunion</a> · <a href="/mon-projet-de-voyage?destination=Rodrigues#formulaire" data-libelle="Mon projet de voyage">Rodrigues</a> · <a href="/mon-projet-de-voyage?destination=Nosy%20Be#formulaire" data-libelle="Mon projet de voyage">Nosy Be</a></p>
+    </li><li class="etiquette" style="--r:2deg" data-effet="etiquettes">
+      <span class="etiquette-trou" aria-hidden="true"></span>
+      <h3>Océanie</h3>
+      <p class="etiquette-pays"><a href="/mon-projet-de-voyage?destination=Nouvelle-Z%C3%A9lande#formulaire" data-libelle="Mon projet de voyage">Nouvelle-Zélande</a> · <a href="/mon-projet-de-voyage?destination=Australie#formulaire" data-libelle="Mon projet de voyage">Australie</a> · <a href="/mon-projet-de-voyage?destination=Polyn%C3%A9sie%20fran%C3%A7aise#formulaire" data-libelle="Mon projet de voyage">Polynésie française</a></p>
+    </li>
+  </ul>
+</section>
+<section class="etapes" id="etapes">
+  <div class="conteneur">
+    <h2 class="titre-section" data-anime="lignes">Comment ça <em>marche</em>&nbsp;?</h2>
+    <div class="etapes-parcours">
+      <svg class="etapes-trace" aria-hidden="true" data-visuel><path class="etapes-trace-fond" d=""/><path class="etapes-trace-plein" d=""/></svg>
+      <svg class="avion etapes-avion" viewBox="0 0 48 40" aria-hidden="true" data-visuel data-effet="avion"><path d="M2 20L46 2 34 38 24 26z" fill="#F7F0E6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 26L46 2 18 22z" fill="#F29B4B" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      <ol class="etapes-liste" role="list">
+        <li class="etape"><span class="etape-num" aria-hidden="true">1</span><h3>Vous partagez vos envies</h3><p>Destination, thème, nombre de voyageurs, budget : quelques lignes suffisent pour raconter le voyage dont vous rêvez.</p></li><li class="etape"><span class="etape-num" aria-hidden="true">2</span><h3>Nous cherchons votre pro</h3><p>L’équipe MatchYourTrip regarde avec vous quel·le professionnel·le du voyage peut vous accompagner.</p></li><li class="etape"><span class="etape-num" aria-hidden="true">3</span><h3>Votre voyage se dessine</h3><p>Votre pro conçoit un itinéraire sur mesure et votre carnet de voyage personnalisé, avec plusieurs alternatives.</p></li>
+      </ol>
+    </div>
+    <p class="etapes-action" data-anime><a href="/comment-ca-marche" class="bouton" data-libelle="Comment ça marche">Je découvre comment ça marche</a></p>
+  </div>
+</section>
+<section class="formules conteneur" id="formules">
+  <div class="formules-tete">
+    <h2 class="titre-section" data-anime="lignes">Plusieurs façons de préparer son <em>aventure</em></h2>
+    <p data-anime>Le travel planner, c’est maintenant. Le reste arrive avec l’application.</p>
+  </div>
+  <ul class="formules-liste" role="list">
+    <li class="formule formule--disponible">
+      <svg class="icone formule-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="7"/><path d="M11 40c1.5-8 6.5-12 13-12s11.5 4 13 12"/><path d="M33 9l3-3M36 13h4"/></g></svg>
+      <h3>Travel planner</h3>
+      <p>Un·e spécialiste organise pour vous un voyage sur mesure, sans charge de préparation.</p>
+      <span class="ruban-statut">Disponible</span><a href="/mon-projet-de-voyage#formulaire" class="lien-fleche" data-libelle="Mon projet de voyage">Matchez avec votre expert du voyage</a>
+    </li><li class="formule formule--bientot">
+      <svg class="icone formule-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="15" width="30" height="23" rx="3"/><path d="M18 15v-4h12v4M9 24h30M17 38v3M31 38v3"/></g></svg>
+      <h3>Voyages existants</h3>
+      <p>Découvrez des voyages proposés par des professionnels ou par d’autres voyageurs.</p>
+      <span class="tampon tampon--bientot" data-tampon data-effet="tampons">Prochainement</span>
+    </li><li class="formule formule--bientot">
+      <svg class="icone formule-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="18" r="5"/><circle cx="31" cy="18" r="5"/><path d="M7 37c1-6 5-9 10-9s9 3 10 9M21 37c1-6 5-9 10-9s9 3 10 9"/></g></svg>
+      <h3>Compagnons de voyage</h3>
+      <p>Trouvez des voyageurs qui partagent vos thèmes, votre destination, votre budget et vos dates.</p>
+      <span class="tampon tampon--bientot" data-tampon data-effet="tampons">Prochainement</span>
+    </li><li class="formule formule--bientot">
+      <svg class="icone formule-icone" viewBox="0 0 48 48" aria-hidden="true" data-visuel><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 30c-3.5-2.6-5-6-5-9.5a11 11 0 0 1 22 0c0 3.5-1.5 6.9-5 9.5v4H18z"/><path d="M19 39h10"/></g></svg>
+      <h3>Partager une idée de voyage</h3>
+      <p>Publiez un projet ou un thème : un voyageur peut s’y joindre, ou un·e pro peut le concrétiser.</p>
+      <span class="tampon tampon--bientot" data-tampon data-effet="tampons">Prochainement</span>
+    </li>
+  </ul>
+</section>
+<section class="rencontres" id="rencontres">
+  <figure class="media rencontres-media" data-fx="parallaxe" data-fx-force="10" style="--cadrage:53% 54%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/accueil-rencontres-mobile-640.webp 640w, /assets/images/accueil-rencontres-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/accueil-rencontres-1280.webp" srcset="/assets/images/accueil-rencontres-640.webp 640w, /assets/images/accueil-rencontres-1280.webp 1280w, /assets/images/accueil-rencontres-1920.webp 1920w" sizes="100vw" alt="Quatre amies dans la mer au coucher du soleil, les mains en cœur" width="1280" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="conteneur rencontres-contenu">
+    <blockquote class="feuille rencontres-feuille" data-anime>
+      <p class="rencontres-titre">Le voyage, c’est une histoire de rencontres…</p>
+      <p>Derrière chaque projet, il y a un·e professionnel·le passionné·e, qui connaît sa destination sur le bout des doigts et qui a à cœur de créer des voyages uniques, pensés pour vous.</p>
+    </blockquote>
+  </div>
+</section>
+<section class="fin" id="fin">
+  <svg class="dechirure dechirure--haut dechirure--prune" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 16.1 L42 8.1 L85 10.4 L127 14.0 L169 15.1 L212 7.4 L254 21.8 L296 16.6 L339 13.4 L381 11.1 L424 20.1 L466 17.8 L508 7.4 L551 15.0 L593 10.2 L635 18.1 L678 8.8 L720 16.1 L762 14.8 L805 9.2 L847 6.9 L889 22.9 L932 23.5 L974 8.2 L1016 14.0 L1059 23.2 L1101 9.4 L1144 13.5 L1186 15.9 L1228 18.1 L1271 11.1 L1313 9.1 L1355 23.7 L1398 14.0 L1440 10.2 L1440 40 Z"/></svg>
+  <figure class="media fin-media" data-grok data-fx="zoom" data-fx-force="12" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/appel-nuit-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/appel-nuit-1280.webp" srcset="/assets/images/grok/appel-nuit-640.webp 640w, /assets/images/grok/appel-nuit-1280.webp 1280w, /assets/images/grok/appel-nuit-1920.webp 1920w" sizes="100vw" alt="" width="1280" height="853" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur fin-contenu">
+    <p class="note-main fin-note">Du rêve au trip…</p>
+    <h2 class="titre-section" data-anime="lignes">Prêt·e à faire le <em>premier pas</em>&nbsp;?</h2>
+    <p class="fin-texte" data-anime>Racontez-nous le voyage dont vous rêvez : nous cherchons avec vous votre match.</p>
+    <p class="fin-actions" data-anime>
+      <a href="/mon-projet-de-voyage#formulaire" class="bouton bouton--clair" data-libelle="Mon projet de voyage" data-survol="magnetique">Je donne vie à mon idée de voyage</a>
+      <a href="/faire-un-don" class="bouton bouton--contour-clair" data-libelle="Faire un don">Soutenir le projet</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <svg class="pied-dechirure" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 18 L40 10 L86 22 L130 8 L178 20 L226 6 L270 19 L318 9 L366 23 L410 7 L458 18 L506 8 L552 21 L600 10 L648 24 L694 9 L742 19 L790 6 L838 20 L884 10 L932 23 L980 8 L1026 18 L1074 7 L1120 21 L1168 9 L1216 22 L1262 8 L1310 19 L1358 10 L1404 21 L1440 12 L1440 40 Z"/></svg>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="44" height="44"><span class="logo-mot">Match<em>Your</em>Trip</span></p>
+      <p class="pied-slogan">Du rêve au trip, il n’y a qu’un match</p>
+      <p class="pied-signature">Des experts · des voyages · vous</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/comment-ca-marche" data-libelle="Comment ça marche">Comment ça marche</a></li><li><a href="/themes-et-destinations" data-libelle="Thèmes &amp; destinations">Thèmes &amp; destinations</a></li><li><a href="/faire-un-don" data-libelle="Faire un don">Faire un don</a></li><li><a href="/mon-projet-de-voyage" data-libelle="Mon projet de voyage">Mon projet de voyage</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Pour aller plus loin</p>
+      <ul>
+        <li><a href="/mon-projet-de-voyage?profil=pro#formulaire" data-libelle="Mon projet de voyage">Vous êtes un·e pro du voyage ? Présentez-vous</a></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+      <p class="pied-legal">Mentions légales&nbsp;: à compléter<br>Politique de confidentialité&nbsp;: à compléter</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : formulaires et dons simulés, rien n’est envoyé.</p><p>© 2026 MatchYourTrip</p></div>
+</footer>
+<div data-barre-fixe>
+  <a href="/themes-et-destinations" class="bouton bouton--contour" data-libelle="Thèmes &amp; destinations">Thèmes</a>
+  <a href="/mon-projet-de-voyage" class="bouton" data-libelle="Mon projet de voyage">Mon projet</a>
+</div>
+</body>
+</html>

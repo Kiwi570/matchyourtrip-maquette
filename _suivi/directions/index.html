@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MatchYourTrip, trois directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Figtree:wght@400;600&family=Caveat:wght@600&family=Gloock&family=Manrope:wght@400;600&family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE chaleureux, concret : une planche de choix pour l'utilisateur
+   IDEA trois premières pages d'un carnet de voyage, une par direction
+   PICTURE pour chaque direction, son premier écran en miniature avec les vraies images du client
+   COLOUR et TYPE chaque bande porte la palette et les polices de sa direction
+   LAYOUT bandes pleine largeur empilées ; écran à gauche, fiche à droite, empilés sous 860px */
+:root{color-scheme:light}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:#f4efe8;color:#231c1f;font:16px/1.55 Figtree,system-ui,sans-serif;overflow-x:clip}
+header.top{padding:40px max(5vw,16px) 24px;max-width:1240px;margin:auto}
+header.top h1{font:600 clamp(28px,4vw,44px)/1.08 Fraunces,serif;margin:0 0 8px;text-wrap:balance}
+header.top p{margin:0;max-width:70ch;color:#5a4f53}
+.dir{padding:clamp(28px,4vw,56px) max(5vw,16px)}
+.in{max-width:1240px;margin:auto;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(20px,3vw,44px);align-items:start}
+@media(max-width:860px){.in{grid-template-columns:minmax(0,1fr)}}
+.tag{display:inline-block;font-size:13px;font-weight:600;padding:4px 10px;border-radius:99px;margin-bottom:10px}
+.dir h2{margin:0 0 6px;font-size:clamp(28px,3.4vw,40px);line-height:1.08;text-wrap:balance}
+.dir .lead{margin:0 0 18px;max-width:60ch}
+.ecran{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 18px 40px -18px rgba(0,0,0,.35)}
+.ecran .nav{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;gap:14px;padding:12px 16px;font-size:12px;z-index:3}
+.ecran .nav b{font-size:14px;margin-right:auto}
+.ecran .nav i{font-style:normal;padding:6px 12px;border-radius:99px;font-weight:600}
+.ecran .txt{position:absolute;z-index:3;left:6%;bottom:12%;width:52%}
+.ecran .txt h3{margin:0 0 10px;font-size:clamp(22px,3.3vw,42px);line-height:1.02;font-weight:400}
+.ecran .txt p{margin:0 0 12px;font-size:13px;max-width:34ch}
+.ecran .btn{display:inline-block;padding:9px 16px;border-radius:99px;font-size:13px;font-weight:600}
+.sw{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.sw span{display:flex;flex-direction:column;justify-content:flex-end;width:92px;height:72px;border-radius:10px;padding:6px 8px;font-size:12px;line-height:1.2;border:1px solid rgba(0,0,0,.08)}
+.typo{margin:0 0 16px;padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.55)}
+.typo .t{font-size:30px;line-height:1.05;margin:0 0 4px}
+.typo .s{font-size:13px;opacity:.8;margin:0}
+dl{margin:0;display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:8px 14px;font-size:15px}
+dt{font-weight:600}dd{margin:0}
+ol{margin:0;padding-left:1.2em}ol li{margin:2px 0}
+.note{font-size:13px;opacity:.75;margin-top:14px}
+/* A */
+.a{background:#f7f0e6;color:#2b1f24;font-family:Figtree,sans-serif}
+.a h2,.a .typo .t{font-family:Fraunces,serif;font-weight:600}
+.a em{font-style:italic;color:#c42a7e;font-weight:400}
+.a .tag{background:#c42a7e;color:#fff}
+.a .ecran{background:#efe2cf}
+.a .ecran img{position:absolute;right:0;top:0;width:62%;height:100%;object-fit:cover}
+.a .dech{position:absolute;inset:auto 0 -2px 0;height:34%;z-index:2}
+.a .ecran .txt h3{font-family:Fraunces,serif;font-weight:600}
+.a .ecran .txt h3 em{font-weight:400}
+.a .ecran .nav i,.a .btn{background:#c42a7e;color:#fff}
+.a .main{font-family:Caveat,cursive;font-size:20px;color:#c42a7e;transform:rotate(-4deg);display:inline-block}
+/* B */
+.b{background:#2c1527;color:#fbefe9;font-family:Manrope,sans-serif}
+.b h2,.b .typo .t{font-family:Gloock,serif;font-weight:400}
+.b em{font-style:normal;color:#ff9b57}
+.b .tag{background:#ff9b57;color:#2c1527}
+.b .typo{background:rgba(255,255,255,.07)}
+.b .ecran img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.b .ecran::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(44,21,39,.82),rgba(44,21,39,.15) 70%);z-index:1}
+.b .ecran .txt h3{font-family:Gloock,serif;color:#fff;font-size:clamp(20px,2.6vw,32px)}
+.b .ecran .txt p{color:#fbe3d6}
+.b .ecran .nav{color:#fff}
+.b .ecran .nav i,.b .btn{background:#e0397f;color:#fff}
+.b .sw span{border-color:rgba(255,255,255,.15)}
+/* C */
+.c{background:#fffaf2;color:#20323a;font-family:Nunito,sans-serif}
+.c h2,.c .typo .t{font-family:Fredoka,sans-serif;font-weight:600}
+.c em{font-style:normal;color:#c8217a}
+.c .tag{background:#1f9e98;color:#fff}
+.c .ecran{background:#dff2ef}
+.c .ecran .txt{left:5%;width:46%}
+.c .ecran .txt h3{font-family:Fredoka,sans-serif;font-weight:600}
+.c .ecran .nav i,.c .btn{background:#c8217a;color:#fff}
+.c .ecran svg{position:absolute;right:3%;top:12%;width:50%;height:80%}
+.choix{background:#231c1f;color:#f4efe8;padding:28px max(5vw,16px) 40px}
+.choix .in{display:block}
+.choix h2{font:600 26px/1.1 Fraunces,serif;margin:0 0 10px}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>MatchYourTrip : trois directions pour la maquette</h1>
+  <p>Chaque bande montre l'ambiance, la palette, les polices, le premier écran en miniature (avec les vraies images du client) et le plan de l'accueil. Les textes sont ceux du site actuel.</p>
+</header>
+
+<section class="dir a">
+  <div class="in">
+    <div>
+      <span class="tag">A · Recommandée</span>
+      <h2>Carnet de papier <em>déchiré</em></h2>
+      <p class="lead">Le site devient le carnet de voyage que promet le client : « Du rêve au trip, une aventure dessinée ». Papier crème, couches de papier découpé qui s'écartent au défilement, collages du client en grand, notes manuscrites fuchsia.</p>
+      <div class="ecran" aria-label="Premier écran, direction A">
+        <div class="nav"><b>MatchYourTrip</b><span>Comment ça marche</span><span>Thèmes</span><span>Faire un don</span><i>Mon projet</i></div>
+        <img src="a-falaise.jpg" alt="Collage en papier découpé du client : une silhouette regarde l'horizon depuis une falaise">
+        <svg class="dech" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 38 L18 30 L34 41 L55 27 L71 36 L96 24 L120 37 L141 29 L166 40 L189 26 L214 35 L240 25 L262 39 L288 28 L311 37 L335 26 L361 38 L382 30 L400 36 L400 100 L0 100Z" fill="#f7f0e6"/><path d="M0 62 L22 55 L44 66 L70 52 L95 63 L118 54 L143 66 L170 55 L196 64 L221 53 L247 65 L272 56 L299 66 L324 54 L350 64 L376 55 L400 61 L400 100 L0 100Z" fill="#c42a7e" opacity=".18"/></svg>
+        <div class="txt">
+          <span class="main">Votre voyage, notre passion !</span>
+          <h3>Du rêve au trip, il n'y a qu'un <em>match</em></h3>
+          <p>Un·e professionnel·le du voyage conçoit un séjour 100 % personnalisé, selon vos envies, votre rythme et votre budget.</p>
+          <span class="btn">Je trouve mon travel planner</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="sw">
+        <span style="background:#f7f0e6">Papier<br>#F7F0E6</span>
+        <span style="background:#efe2cf">Sable<br>#EFE2CF</span>
+        <span style="background:#2b1a27;color:#fff">Prune encre<br>#2B1A27</span>
+        <span style="background:#c42a7e;color:#fff">Fuchsia<br>#C42A7E</span>
+        <span style="background:#f29b4b">Abricot<br>#F29B4B</span>
+      </div>
+      <div class="typo"><p class="t">Fraunces, <em>en italique</em></p><p class="s">Titres : Fraunces · texte : Figtree · notes à la main : Caveat (courtes, rares)</p></div>
+      <dl>
+        <dt>Plan de l'accueil</dt><dd><ol><li>Ouverture : collage en grand, couches de papier qui s'écartent</li><li>Le match : je choisis un thème et une destination, les deux cartes se rejoignent</li><li>Les 4 bénéfices du travel planner, en fiches de carnet</li><li>Les thèmes en grands collages (galerie qui glisse)</li><li>Les destinations par continent</li><li>Comment ça marche, en 3 étapes</li><li>Bientôt sur l'application (3 formules « Prochainement »)</li><li>« Le voyage, c'est une histoire de rencontres… » en plein cadre</li><li>Appel final sur fond prune, puis pied</li></ol></dd>
+        <dt>Idée qui relie</dt><dd>Le papier : bords déchirés entre sections, voile de transition au bord déchiré. Le « match » reste à sa place (l'outil, le bouton).</dd>
+        <dt>Animations</dt><dd>Couches de papier en profondeur, fiches qui se posent l'une sur l'autre, cartes du match qui s'emboîtent avec un petit cœur, mots de titre qui montent, collages qui se décollent légèrement.</dd>
+        <dt>Favorite proche</dt><dd>Agence AE (chaleur, alternance clair et sombre) et Château Haut-Piquat (images en grand).</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="dir b">
+  <div class="in">
+    <div>
+      <span class="tag">B</span>
+      <h2>L'heure <em>dorée</em></h2>
+      <p class="lead">Une direction photographique et émotionnelle, née des couchers de soleil du client : grandes photos plein cadre, ouverture sombre aubergine qui se réchauffe au défilement, chiffres et titres très grands.</p>
+      <div class="ecran" aria-label="Premier écran, direction B">
+        <div class="nav"><b>MatchYourTrip</b><span>Comment ça marche</span><span>Thèmes</span><span>Faire un don</span><i>Mon projet</i></div>
+        <img src="b-dunes.jpg" alt="Photo du client : dunes au coucher du soleil">
+        <div class="txt">
+          <h3>Et si votre prochain voyage était encore mieux que vous l'imaginez ?</h3>
+          <p>Un·e spécialiste de votre destination dessine votre voyage avec vous.</p>
+          <span class="btn">Je trouve mon travel planner</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="sw">
+        <span style="background:#2c1527;color:#fff">Aubergine<br>#2C1527</span>
+        <span style="background:#fbf3ee;color:#2c1527">Ivoire rosé<br>#FBF3EE</span>
+        <span style="background:#f6dccb;color:#2c1527">Pêche<br>#F6DCCB</span>
+        <span style="background:#e0397f;color:#fff">Fuchsia<br>#E0397F</span>
+        <span style="background:#ff9b57;color:#2c1527">Orange soleil<br>#FF9B57</span>
+      </div>
+      <div class="typo"><p class="t">Gloock, très grand</p><p class="s">Titres : Gloock · texte : Manrope</p></div>
+      <dl>
+        <dt>Plan de l'accueil</dt><dd><ol><li>Ouverture plein cadre : la lumière passe de la fin d'après-midi au coucher du soleil au défilement</li><li>La promesse en une grande phrase</li><li>Galerie horizontale épinglée des thèmes</li><li>Les 4 bénéfices sur fond ivoire</li><li>Destinations sur un planisphère en pointillés</li><li>Formulaire court en bas d'accueil</li><li>Appel final et pied</li></ol></dd>
+        <dt>Idée qui relie</dt><dd>La lumière du jour qui baisse, de page en page.</dd>
+        <dt>Animations</dt><dd>Changement d'ambiance au défilement, galerie horizontale, zoom lent des photos, planisphère qui s'allume.</dd>
+        <dt>Limite</dt><dd>Le client a peu de photos (6, prises au téléphone) : Grok ferait la plus grande partie des images.</dd>
+        <dt>Favorite proche</dt><dd>Les Plus Hautes Eaux (élégance sombre), Château Haut-Piquat.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="dir c">
+  <div class="in">
+    <div>
+      <span class="tag">C</span>
+      <h2>Panneaux et <em>carte du monde</em></h2>
+      <p class="lead">Une direction ludique et colorée, tirée des panneaux indicateurs du site actuel : une carte du monde illustrée au cœur de l'accueil, des panneaux redessinés proprement en code qui pointent vers les thèmes et les pays.</p>
+      <div class="ecran" aria-label="Premier écran, direction C">
+        <div class="nav"><b>MatchYourTrip</b><span>Comment ça marche</span><span>Thèmes</span><span>Faire un don</span><i>Mon projet</i></div>
+        <svg viewBox="0 0 200 160" aria-hidden="true"><rect x="96" y="20" width="8" height="140" rx="3" fill="#b9814e"/><g font-family="Fredoka" font-size="11" font-weight="600"><path d="M30 28h110l14 10-14 10H30z" fill="#c8217a"/><text x="40" y="42" fill="#fff">Bien-être</text><path d="M60 58h110l14 10-14 10H60z" fill="#1f9e98"/><text x="70" y="72" fill="#fff">Océan Indien</text><path d="M24 88h116l14 10-14 10H24z" fill="#ffc23d"/><text x="34" y="102" fill="#20323a">Partir avec son chien</text><path d="M56 118h104l14 10-14 10H56z" fill="#f08a3e"/><text x="66" y="132" fill="#fff">Voyage surprise</text></g></svg>
+        <div class="txt">
+          <h3>Votre envie a sa <em>destination</em></h3>
+          <p>Un thème, un pays : on vous présente le·la pro qui les connaît par cœur.</p>
+          <span class="btn">Je trouve mon travel planner</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="sw">
+        <span style="background:#fffaf2">Blanc chaud<br>#FFFAF2</span>
+        <span style="background:#dff2ef">Lagon<br>#DFF2EF</span>
+        <span style="background:#c8217a;color:#fff">Fuchsia<br>#C8217A</span>
+        <span style="background:#1f9e98;color:#fff">Turquoise<br>#1F9E98</span>
+        <span style="background:#ffc23d">Soleil<br>#FFC23D</span>
+      </div>
+      <div class="typo"><p class="t">Fredoka, ronde et gaie</p><p class="s">Titres : Fredoka · texte : Nunito</p></div>
+      <dl>
+        <dt>Plan de l'accueil</dt><dd><ol><li>Ouverture : panneaux qui se dressent et pivotent</li><li>Carte du monde : toucher une zone ouvre son panneau de pays</li><li>Thèmes en panneaux à trier</li><li>Les 4 bénéfices</li><li>Comment ça marche, en carte d'embarquement</li><li>Appel final et pied</li></ol></dd>
+        <dt>Idée qui relie</dt><dd>Le panneau indicateur, qui sert aussi de menu.</dd>
+        <dt>Animations</dt><dd>Panneaux qui se balancent au défilement, carte qui s'allume par zone, avion qui suit la lecture.</dd>
+        <dt>Limite</dt><dd>Risque d'un rendu « enfantin » pour un public adulte (lune de miel, séjours spirituels).</dd>
+        <dt>Favorite proche</dt><dd>Cool Canyoning (ludique et vivant).</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="choix">
+  <div class="in">
+    <h2>Ce que je recommande</h2>
+    <p>La direction A part de ce que le client a de plus fort et de plus personnel : ses collages en papier découpé (de grande qualité, 2000 px), son slogan « une aventure dessinée » et ses couleurs fuchsia et abricot. Elle reste chaleureuse et lisible pour tous les thèmes, de la lune de miel au safari éthique.</p>
+  </div>
+</section>
+</body>
+</html>

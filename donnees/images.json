@@ -1,0 +1,1481 @@
+{
+  "accueil-ouverture": {
+    "nom": "accueil-ouverture",
+    "source": "recu/accueil-matchyourtrip-7.png",
+    "role": "ouverture",
+    "alt": "Collage en papier découpé : une silhouette regarde l'horizon depuis une falaise",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "0e2d90119c15eca5",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "27% 48%"
+    },
+    "cadrage": "12% 50%",
+    "sujet": {
+      "x": 2.9,
+      "y": 2.6,
+      "l": 66.2,
+      "h": 85.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.69,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.68,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.65,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.41,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "droite",
+    "recadrage": {
+      "left": 0,
+      "top": 206,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1600
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-ouverture-640.webp",
+      "accueil-ouverture-1280.webp",
+      "accueil-ouverture-1920.webp",
+      "accueil-ouverture-mobile-640.webp",
+      "accueil-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "accueil-ouverture-640.webp": 10616,
+      "accueil-ouverture-1280.webp": 46500,
+      "accueil-ouverture-1920.webp": 90792,
+      "accueil-ouverture-mobile-640.webp": 38098,
+      "accueil-ouverture-mobile-1080.webp": 82584
+    },
+    "media": "c.media({ nom: 'accueil-ouverture', alt: \"Collage en papier découpé : une silhouette regarde l'horizon depuis une falaise\", cadrage: '12% 50%', cadrageMobile: '27% 48%', sizes: '100vw', priorite: true })"
+  },
+  "accueil-rencontres": {
+    "nom": "accueil-rencontres",
+    "source": "recu/accueil-matchyourtrip-6.png",
+    "role": "section-fond",
+    "alt": "Quatre amies dans la mer au coucher du soleil, les mains en cœur",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "0dd8b0fbffe99263",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 45%"
+    },
+    "cadrage": "53% 54%",
+    "sujet": {
+      "x": 27.9,
+      "y": 38.9,
+      "l": 50,
+      "h": 26.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.77,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.65,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.64,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.54,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1600
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-rencontres-640.webp",
+      "accueil-rencontres-1280.webp",
+      "accueil-rencontres-1920.webp",
+      "accueil-rencontres-mobile-640.webp",
+      "accueil-rencontres-mobile-1080.webp"
+    ],
+    "poids": {
+      "accueil-rencontres-640.webp": 26466,
+      "accueil-rencontres-1280.webp": 79640,
+      "accueil-rencontres-1920.webp": 139682,
+      "accueil-rencontres-mobile-640.webp": 52308,
+      "accueil-rencontres-mobile-1080.webp": 104218
+    },
+    "media": "c.media({ nom: 'accueil-rencontres', alt: \"Quatre amies dans la mer au coucher du soleil, les mains en cœur\", cadrage: '53% 54%', cadrageMobile: '50% 45%', sizes: '100vw' })"
+  },
+  "cmm-ouverture": {
+    "nom": "cmm-ouverture",
+    "source": "recu/accueil-matchyourtrip-10.png",
+    "role": "ouverture",
+    "alt": "Collage en papier : une voyageuse observe le paysage aux jumelles depuis un véhicule de safari",
+    "grok": false,
+    "mention": null,
+    "beaute": 5,
+    "empreinte": "a26cb32484d06601",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1080
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 4.9,
+      "l": 100,
+      "h": 95.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.38,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 590,
+      "top": 0,
+      "width": 1101,
+      "height": 1376,
+      "source": [
+        2000,
+        1376
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "cmm-ouverture-640.webp",
+      "cmm-ouverture-1080.webp"
+    ],
+    "poids": {
+      "cmm-ouverture-640.webp": 28536,
+      "cmm-ouverture-1080.webp": 66344
+    },
+    "media": "c.media({ nom: 'cmm-ouverture', alt: \"Collage en papier : une voyageuse observe le paysage aux jumelles depuis un véhicule de safari\", cadrage: '50% 45%', sizes: '100vw', priorite: true })"
+  },
+  "cmm-rencontres": {
+    "nom": "cmm-rencontres",
+    "source": "recu/accueil-matchyourtrip-9.png",
+    "role": "galerie",
+    "alt": "Collage de rencontres en voyage : repas partagé, artisans, marche dans une rivière, pont dans la jungle",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "cdd4d0115afa3169",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 28,
+      "y": 50.1,
+      "l": 26,
+      "h": 49.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 43,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1376
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "cmm-rencontres-480.webp",
+      "cmm-rencontres-640.webp",
+      "cmm-rencontres-960.webp"
+    ],
+    "poids": {
+      "cmm-rencontres-480.webp": 31520,
+      "cmm-rencontres-640.webp": 50108,
+      "cmm-rencontres-960.webp": 92892
+    },
+    "media": "c.media({ nom: 'cmm-rencontres', alt: \"Collage de rencontres en voyage : repas partagé, artisans, marche dans une rivière, pont dans la jungle\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "theme-rencontres": {
+    "nom": "theme-rencontres",
+    "source": "recu/accueil-matchyourtrip-9.png",
+    "role": "carte-service",
+    "alt": "Collage : rencontres et repas partagés hors des sentiers battus",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "2a55a3b5d192c4eb",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 60%",
+    "sujet": {
+      "x": 19.1,
+      "y": 51.7,
+      "l": 47.2,
+      "h": 48.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 350,
+      "top": 0,
+      "width": 1101,
+      "height": 1376,
+      "source": [
+        2000,
+        1376
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "theme-rencontres-480.webp",
+      "theme-rencontres-640.webp",
+      "theme-rencontres-784.webp"
+    ],
+    "poids": {
+      "theme-rencontres-480.webp": 46256,
+      "theme-rencontres-640.webp": 72208,
+      "theme-rencontres-784.webp": 97104
+    },
+    "media": "c.media({ nom: 'theme-rencontres', alt: \"Collage : rencontres et repas partagés hors des sentiers battus\", cadrage: '50% 60%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "theme-animaux": {
+    "nom": "theme-animaux",
+    "source": "recu/accueil-matchyourtrip-3.png",
+    "role": "carte-service",
+    "alt": "Collage d'animaux sauvages : orang-outan, éléphant, léopard, calao et biches",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "1488eee0c099f8c4",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "38% 50%",
+    "sujet": {
+      "x": 0.6,
+      "y": 3,
+      "l": 99.4,
+      "h": 96.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 512,
+      "top": 0,
+      "width": 1280,
+      "height": 1600,
+      "source": [
+        2000,
+        1600
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "theme-animaux-480.webp",
+      "theme-animaux-640.webp",
+      "theme-animaux-784.webp"
+    ],
+    "poids": {
+      "theme-animaux-480.webp": 41844,
+      "theme-animaux-640.webp": 68880,
+      "theme-animaux-784.webp": 101918
+    },
+    "media": "c.media({ nom: 'theme-animaux', alt: \"Collage d'animaux sauvages : orang-outan, éléphant, léopard, calao et biches\", cadrage: '38% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "theme-chien": {
+    "nom": "theme-chien",
+    "source": "recu/accueil-matchyourtrip-4.png",
+    "role": "carte-service",
+    "alt": "Collage : voyager avec son chien, de la plage à la montagne",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "2e6c8ab19f34f5d8",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 10.3,
+      "l": 99.5,
+      "h": 67.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 520,
+      "top": 0,
+      "width": 1280,
+      "height": 1600,
+      "source": [
+        2000,
+        1600
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "theme-chien-480.webp",
+      "theme-chien-640.webp",
+      "theme-chien-784.webp"
+    ],
+    "poids": {
+      "theme-chien-480.webp": 37758,
+      "theme-chien-640.webp": 56266,
+      "theme-chien-784.webp": 76710
+    },
+    "media": "c.media({ nom: 'theme-chien', alt: \"Collage : voyager avec son chien, de la plage à la montagne\", sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "theme-aventure": {
+    "nom": "theme-aventure",
+    "source": "recu/accueil-matchyourtrip-5.png",
+    "role": "carte-service",
+    "alt": "Collage : randonnée, paddle, yoga et volley sur la plage",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d3091e5ce9de7a80",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 2,
+      "y": 1.8,
+      "l": 13.4,
+      "h": 14.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.36,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.33,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 260,
+      "top": 0,
+      "width": 1280,
+      "height": 1600,
+      "source": [
+        2000,
+        1600
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "theme-aventure-480.webp",
+      "theme-aventure-640.webp",
+      "theme-aventure-784.webp"
+    ],
+    "poids": {
+      "theme-aventure-480.webp": 46600,
+      "theme-aventure-640.webp": 72548,
+      "theme-aventure-784.webp": 98120
+    },
+    "media": "c.media({ nom: 'theme-aventure', alt: \"Collage : randonnée, paddle, yoga et volley sur la plage\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "page-404": {
+    "nom": "page-404",
+    "source": "recu/accueil-matchyourtrip-8.png",
+    "role": "404",
+    "alt": "Collage en papier découpé : un volcan dans la nuit",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "8a6126b061ffede4",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 56%"
+    },
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 38.2,
+      "y": 16.4,
+      "l": 25,
+      "h": 79.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.82,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.79,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.7,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.7,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 334,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1600
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "page-404-800.webp",
+      "page-404-1600.webp",
+      "page-404-mobile-640.webp",
+      "page-404-mobile-1080.webp"
+    ],
+    "poids": {
+      "page-404-800.webp": 23508,
+      "page-404-1600.webp": 79630,
+      "page-404-mobile-640.webp": 39996,
+      "page-404-mobile-1080.webp": 84804
+    },
+    "media": "c.media({ nom: 'page-404', alt: \"Collage en papier découpé : un volcan dans la nuit\", cadrage: '51% 50%', cadrageMobile: '50% 56%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "grok/themes-ouverture": {
+    "nom": "grok/themes-ouverture",
+    "source": "recu/grok/themes-ouverture.png",
+    "role": "ouverture",
+    "alt": "Panorama en papier déchiré mêlant lagon, collines, dunes et sommets enneigés",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "6422f4575fb4af35",
+    "ratio": "21:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 69%"
+    },
+    "cadrage": "46% 69%",
+    "sujet": {
+      "x": 0,
+      "y": 28.6,
+      "l": 100,
+      "h": 71.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.78,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.05,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2100,
+      "height": 900,
+      "source": [
+        2100,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/themes-ouverture-640.webp",
+      "grok/themes-ouverture-1280.webp",
+      "grok/themes-ouverture-1920.webp",
+      "grok/themes-ouverture-mobile-640.webp",
+      "grok/themes-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/themes-ouverture-640.webp": 29538,
+      "grok/themes-ouverture-1280.webp": 113442,
+      "grok/themes-ouverture-1920.webp": 225162,
+      "grok/themes-ouverture-mobile-640.webp": 69964,
+      "grok/themes-ouverture-mobile-1080.webp": 133622
+    },
+    "media": "c.media({ nom: 'grok/themes-ouverture', alt: \"Panorama en papier déchiré mêlant lagon, collines, dunes et sommets enneigés\", cadrage: '46% 69%', cadrageMobile: '50% 69%', sizes: '100vw', priorite: true })"
+  },
+  "grok/don-ouverture": {
+    "nom": "grok/don-ouverture",
+    "source": "recu/grok/don-ouverture.png",
+    "role": "ouverture",
+    "alt": "Montgolfière en papier fuchsia et abricot qui s'élève au-dessus de collines en papier",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "be8196d5c0544777",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "52% 71%"
+    },
+    "cadrage": "70% 40%",
+    "sujet": {
+      "x": 0,
+      "y": 44.4,
+      "l": 100,
+      "h": 50
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.88,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.35,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.3,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/don-ouverture-640.webp",
+      "grok/don-ouverture-1280.webp",
+      "grok/don-ouverture-1920.webp",
+      "grok/don-ouverture-mobile-640.webp",
+      "grok/don-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/don-ouverture-640.webp": 33944,
+      "grok/don-ouverture-1280.webp": 130368,
+      "grok/don-ouverture-1920.webp": 221676,
+      "grok/don-ouverture-mobile-640.webp": 86362,
+      "grok/don-ouverture-mobile-1080.webp": 168848
+    },
+    "media": "c.media({ nom: 'grok/don-ouverture', alt: \"Montgolfière en papier fuchsia et abricot qui s'élève au-dessus de collines en papier\", cadrage: '70% 40%', cadrageMobile: '52% 71%', sizes: '100vw', priorite: true })"
+  },
+  "grok/projet-ouverture": {
+    "nom": "grok/projet-ouverture",
+    "source": "recu/grok/projet-ouverture.png",
+    "role": "ouverture",
+    "alt": "Carnet de voyage ouvert en papier, entouré d'un avion en papier, d'une boussole et d'un chapeau de paille",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "5e00703e1246bfa4",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1080
+    ],
+    "mobile": null,
+    "cadrage": "49% 57%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.2,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1400,
+      "height": 1750,
+      "source": [
+        1400,
+        1750
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/projet-ouverture-640.webp",
+      "grok/projet-ouverture-1080.webp"
+    ],
+    "poids": {
+      "grok/projet-ouverture-640.webp": 59998,
+      "grok/projet-ouverture-1080.webp": 111966
+    },
+    "media": "c.media({ nom: 'grok/projet-ouverture', alt: \"Carnet de voyage ouvert en papier, entouré d'un avion en papier, d'une boussole et d'un chapeau de paille\", cadrage: '49% 57%', sizes: '100vw', priorite: true })"
+  },
+  "grok/theme-bien-etre": {
+    "nom": "grok/theme-bien-etre",
+    "source": "recu/grok/theme-bien-etre.png",
+    "role": "carte-service",
+    "alt": "Collage : une personne de dos médite au-dessus d'une mer de nuages au lever du soleil",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "88b3cc9b4b08d665",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "47% 64%",
+    "sujet": {
+      "x": 0,
+      "y": 3.1,
+      "l": 96.2,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.16,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1400,
+      "height": 1750,
+      "source": [
+        1400,
+        1750
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/theme-bien-etre-480.webp",
+      "grok/theme-bien-etre-640.webp",
+      "grok/theme-bien-etre-784.webp"
+    ],
+    "poids": {
+      "grok/theme-bien-etre-480.webp": 44776,
+      "grok/theme-bien-etre-640.webp": 61754,
+      "grok/theme-bien-etre-784.webp": 79148
+    },
+    "media": "c.media({ nom: 'grok/theme-bien-etre', alt: \"Collage : une personne de dos médite au-dessus d'une mer de nuages au lever du soleil\", cadrage: '47% 64%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/theme-occasions": {
+    "nom": "grok/theme-occasions",
+    "source": "recu/grok/theme-occasions.png",
+    "role": "carte-service",
+    "alt": "Collage : deux silhouettes de dos au bout d'un ponton au coucher du soleil, sous des lampions",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 3,
+    "empreinte": "068e6d74f4af7619",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "49% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.41,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.32,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.31,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1400,
+      "height": 1750,
+      "source": [
+        1400,
+        1750
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/theme-occasions-480.webp",
+      "grok/theme-occasions-640.webp",
+      "grok/theme-occasions-784.webp"
+    ],
+    "poids": {
+      "grok/theme-occasions-480.webp": 10700,
+      "grok/theme-occasions-640.webp": 18514,
+      "grok/theme-occasions-784.webp": 33682
+    },
+    "media": "c.media({ nom: 'grok/theme-occasions', alt: \"Collage : deux silhouettes de dos au bout d'un ponton au coucher du soleil, sous des lampions\", cadrage: '49% 52%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/theme-experiences": {
+    "nom": "grok/theme-experiences",
+    "source": "recu/grok/theme-experiences.png",
+    "role": "carte-service",
+    "alt": "Collage : étal d'épices colorées sous des tentures et des lanternes",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 3,
+    "empreinte": "2ca5912f9674c991",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 9.4,
+      "l": 96.2,
+      "h": 90.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.41,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.34,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.31,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1400,
+      "height": 1750,
+      "source": [
+        1400,
+        1750
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/theme-experiences-480.webp",
+      "grok/theme-experiences-640.webp",
+      "grok/theme-experiences-784.webp"
+    ],
+    "poids": {
+      "grok/theme-experiences-480.webp": 15346,
+      "grok/theme-experiences-640.webp": 25508,
+      "grok/theme-experiences-784.webp": 47326
+    },
+    "media": "c.media({ nom: 'grok/theme-experiences', alt: \"Collage : étal d'épices colorées sous des tentures et des lanternes\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/theme-villes": {
+    "nom": "grok/theme-villes",
+    "source": "recu/grok/theme-villes.png",
+    "role": "carte-service",
+    "alt": "Collage : toits d'une vieille ville aux tuiles ocre au soleil couchant",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "f60ef0df22d22fd1",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "46% 43%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.2,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1400,
+      "height": 1750,
+      "source": [
+        1400,
+        1750
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/theme-villes-480.webp",
+      "grok/theme-villes-640.webp",
+      "grok/theme-villes-784.webp"
+    ],
+    "poids": {
+      "grok/theme-villes-480.webp": 47320,
+      "grok/theme-villes-640.webp": 64926,
+      "grok/theme-villes-784.webp": 82434
+    },
+    "media": "c.media({ nom: 'grok/theme-villes', alt: \"Collage : toits d'une vieille ville aux tuiles ocre au soleil couchant\", cadrage: '46% 43%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/theme-route": {
+    "nom": "grok/theme-route",
+    "source": "recu/grok/theme-route.png",
+    "role": "carte-service",
+    "alt": "Collage : route côtière sinueuse et petit van en papier",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "143cc79b2af780cb",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "46% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.2,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.19,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1400,
+      "height": 1750,
+      "source": [
+        1400,
+        1750
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/theme-route-480.webp",
+      "grok/theme-route-640.webp",
+      "grok/theme-route-784.webp"
+    ],
+    "poids": {
+      "grok/theme-route-480.webp": 46760,
+      "grok/theme-route-640.webp": 63698,
+      "grok/theme-route-784.webp": 81226
+    },
+    "media": "c.media({ nom: 'grok/theme-route', alt: \"Collage : route côtière sinueuse et petit van en papier\", cadrage: '46% 49%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/theme-engage": {
+    "nom": "grok/theme-engage",
+    "source": "recu/grok/theme-engage.png",
+    "role": "carte-service",
+    "alt": "Collage : une tortue de mer nage au-dessus d'un récif de corail",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 3,
+    "empreinte": "b6be664a5c8eac67",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "47% 72%",
+    "sujet": {
+      "x": 0,
+      "y": 18.8,
+      "l": 96.2,
+      "h": 81.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.64,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.47,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.41,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.35,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1400,
+      "height": 1750,
+      "source": [
+        1400,
+        1750
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/theme-engage-480.webp",
+      "grok/theme-engage-640.webp",
+      "grok/theme-engage-784.webp"
+    ],
+    "poids": {
+      "grok/theme-engage-480.webp": 16640,
+      "grok/theme-engage-640.webp": 26910,
+      "grok/theme-engage-784.webp": 47894
+    },
+    "media": "c.media({ nom: 'grok/theme-engage', alt: \"Collage : une tortue de mer nage au-dessus d'un récif de corail\", cadrage: '47% 72%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/appel-nuit": {
+    "nom": "grok/appel-nuit",
+    "source": "recu/grok/appel-nuit-prune.png",
+    "role": "section-fond",
+    "alt": "Nuit en papier prune sur la mer, une lune de papier et un petit avion",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "d7b65239c6739737",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 25%"
+    },
+    "cadrage": "68% 25%",
+    "sujet": {
+      "x": 12.5,
+      "y": 13.6,
+      "l": 78.1,
+      "h": 27.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.95,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.76,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.66,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.5,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "centre",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 1000,
+      "source": [
+        1500,
+        1000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,28 fois (source de 1500 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/appel-nuit-640.webp",
+      "grok/appel-nuit-1280.webp",
+      "grok/appel-nuit-1920.webp",
+      "grok/appel-nuit-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/appel-nuit-640.webp": 3790,
+      "grok/appel-nuit-1280.webp": 14618,
+      "grok/appel-nuit-1920.webp": 44484,
+      "grok/appel-nuit-mobile-640.webp": 11404
+    },
+    "media": "c.media({ nom: 'grok/appel-nuit', alt: \"Nuit en papier prune sur la mer, une lune de papier et un petit avion\", cadrage: '68% 25%', cadrageMobile: '50% 25%', sizes: '100vw' })"
+  },
+  "tableau-volcan": {
+    "nom": "tableau-volcan",
+    "source": "recu/accueil-matchyourtrip-8.png",
+    "role": "galerie",
+    "alt": "Collage en papier découpé : un volcan dans la nuit",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "d7be6b2780e67a87",
+    "ratio": "21:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 38.2,
+      "y": 2.3,
+      "l": 25,
+      "h": 97.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.82,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.79,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.7,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.7,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 499,
+      "width": 2000,
+      "height": 857,
+      "source": [
+        2000,
+        1600
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "tableau-volcan-640.webp",
+      "tableau-volcan-1280.webp",
+      "tableau-volcan-1920.webp"
+    ],
+    "poids": {
+      "tableau-volcan-640.webp": 10892,
+      "tableau-volcan-1280.webp": 42030,
+      "tableau-volcan-1920.webp": 78196
+    },
+    "media": "c.media({ nom: 'tableau-volcan', alt: \"Collage en papier découpé : un volcan dans la nuit\", cadrage: '51% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '21 / 9' })"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MatchYourTrip",
+  "url": "https://www.matchyourtrip.fr",
+  "slogan": "Du rêve au trip, il n'y a qu'un match",
+  "description": "Mise en relation entre voyageurs et professionnels du voyage (travel planners) pour des voyages 100 % personnalisés."
+}
